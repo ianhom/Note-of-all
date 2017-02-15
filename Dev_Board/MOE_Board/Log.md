@@ -1,3 +1,5 @@
+## Day 4 / 15th Feb 2017
+- 增加1117芯片，完成5V转3.3V电路
 
 ## Day 3 / 14th Feb 2017
 - 下载MicroUSB原理图及PCB库，参考现有的JOB设计方案。
