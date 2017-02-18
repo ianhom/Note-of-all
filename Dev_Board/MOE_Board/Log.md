@@ -1,3 +1,6 @@
+## Day 6 / 17th Feb 2017
+- Do nothing
+
 ## Day 5 / 16th Feb 2017
 - 添加USB接口对接DAP芯片
 
