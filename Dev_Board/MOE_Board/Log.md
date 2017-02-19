@@ -1,3 +1,9 @@
+## Day 8 / 19th Feb 2017
+- Do nothing
+
+## Day 7 / 18th Feb 2017
+- Do nothing
+
 ## Day 6 / 17th Feb 2017
 - Do nothing
 
