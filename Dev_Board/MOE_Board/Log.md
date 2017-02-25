@@ -1,22 +1,5 @@
-## Day 11 / 23rd Feb 2017
-- Do nothing
 
-## Day 10 / 22nd Feb 2017
-- Do nothing
-
-## Day 9 / 21st Feb 2017
-- Do nothing
-
-## Day 8 / 20th Feb 2017
-- Do nothing
-
-## Day 8 / 19th Feb 2017
-- Do nothing
-
-## Day 7 / 18th Feb 2017
-- Do nothing
-
-## Day 6 / 17th Feb 2017
+## Day 6~13 / 17th Feb 2017 ~ 25th Feb 2017
 - Do nothing
 
 ## Day 5 / 16th Feb 2017
