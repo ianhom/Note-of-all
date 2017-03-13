@@ -1,5 +1,5 @@
 
-## Day 6~17 / 17th Feb 2017 ~ 1st Mar 2017
+## Day 6~31 / 17th Feb 2017 ~ 13th Mar 2017
 - Do nothing
 
 ## Day 5 / 16th Feb 2017
