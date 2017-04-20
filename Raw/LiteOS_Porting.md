@@ -328,17 +328,17 @@ IAR工具需要开发者自行购买，HAPPYGECKO START-KIT(3400A)自带板载J-
 	        return ;   
         }   
 
-### 修改los\_bsp\_key文件
+### 修改los_bsp_key文件
 - 此文件为LiteOS与key相关底层功能接口，在此需要实现key的初始化及key状态的读取。
 - 关于key的相关函数，可以从官方提供的库或模块中提取使用。   
 ![](./meta/iar/HAPPYGECKO-STARTER_KIT(SLSTK3400A)/Code_Porting_4.jpg) 
 
-### 修改los\_bsp\_led文件
+### 修改los_bsp_led文件
 - 此文件为LiteOS与led相关底层功能接口，在此需要实现led的初始化及led的的ON/OFF控制。
 - 关于led的相关函数，可以从官方提供的库或模块中提取使用。   
 ![](./meta/iar/HAPPYGECKO-STARTER_KIT(SLSTK3400A)/Code_Porting_5.jpg) 
 
-### 修改los\_bsp\_uart文件
+### 修改los_bsp_uart文件
 - 此文件为LiteOS与uart相关底层功能接口，在此需要实现uart的初始化及读写等操作。
 - 关于uart的相关函数，可以从官方提供的库或模块中提取使用。   
 ![](./meta/iar/HAPPYGECKO-STARTER_KIT(SLSTK3400A)/Code_Porting_6.jpg) 
