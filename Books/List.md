@@ -51,3 +51,11 @@ No. | Name | Description
 47  | 《Arduino开发实战指南》 |
 48  | 《Altium Designer 14超级手册》 |
 49  | 《软件架构设计-程序员想架构师转型必备》 |
+50  | 《深入理解Android内核设计思想》 |
+51  | 《Linux C编程从入门到精通》 |
+52  | 《Linux Shell脚本攻略》 |
+53  | 《Linux系统命令及Shell脚本实践指南》 |
+54  | 《鸟哥的Linux私房菜-基础学习篇》 |
+55  | 《深入理解LINUX内核》 |
+56  | 《ARM嵌入式Linux系统开发详解》 |
+57  | 《嵌入式Linux应用开发完全手册》 |
