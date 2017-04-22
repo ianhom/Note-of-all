@@ -59,3 +59,5 @@ No. | Name | Description
 55  | 《深入理解LINUX内核》 |
 56  | 《ARM嵌入式Linux系统开发详解》 |
 57  | 《嵌入式Linux应用开发完全手册》 |
+58  | 《Linux大棚命令百篇上-文件和文本篇》 |
+59  | 《Linux大棚命令百篇下-网络和系统篇》 |
