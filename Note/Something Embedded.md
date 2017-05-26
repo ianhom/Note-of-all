@@ -18,9 +18,9 @@
 ```C
 typedef sturct _T_TIMER
 {
-    struct _T_TIMER  *ptNext;
-    uint32 u32OldTm;
-    uint32 u32Period; 
+    struct _T_TIMER  *ptNext;  /* Address of next node  */
+    uint32 u32OldTm;           /* The start time point  */
+    uint32 u32Period;          /* The delay time period */
 }T_TIMER；
 ```
 
@@ -29,13 +29,29 @@ typedef sturct _T_TIMER
 ```C
 typedef sturct _T_TIMER
 {
-    struct _T_TIMER  *ptNext;
-    uint32 u32OldTm;
-    uint32 u32Period; 
-    uint16 u16Count; 
+    struct _T_TIMER  *ptNext;   /* Address of next node           */
+    uint32 u32OldTm;            /* The start time point           */
+    uint32 u32Period;           /* The delay time period          */
+    uint16 u16Count;            /* The count for repeating timing */
 }T_TIMER；
 ```
 
 如果u16Count的值为1，那就是单次触发，触发完就可以删除该节点。如果0，那这里可以表示永远重复计时，时间一到就重新启动。    
-但是这里为什么要定义一个u16类型呢，一个BOOL型的变量不就足够了吗？相信聪明的读者已经发现了，其实我们不经可以做单次触发和无限制触发，我们还可以设定触发次数，比如u16Count的值为10次，那这个定时器就可以计10的相同周期时间。
+但是这里为什么要定义一个u16类型呢，一个BOOL型的变量不就足够了吗？相信聪明的读者已经发现了，其实我们不经可以做单次触发和无限制触发，我们还可以设定触发次数，比如u16Count的值为10次，那这个定时器就可以计10的相同周期时间。    
+
+至此，一个软件定时器模块所需要的数据结构就定义好了，结构中的成员是定时功能所需要的信息，其实我们可以增加更多成员，来构建更有趣的功能。    
+定时器计时结束可以视为一个事件发生（定时时间到事件），一般情况下对这个事件有相应的操作，比如定时结束就点亮LED，关闭风扇等等。如果我们将此类和某个定时器相关的操作也放进定时器节点中会怎样呢？
+```C
+typedef uint32 (*PF_TIMER_CB)(void *p);  /* Callback function when time is up */
+
+typedef sturct _T_TIMER
+{
+    struct _T_TIMER  *ptNext;   /* Address of next node              */
+    PF_TIMER_CB pfTmCb;         /* Callback function when time is up */
+    uint32 u32OldTm;            /* The start time point              */
+    uint32 u32Period;           /* The delay time period             */
+    uint16 u16Count;            /* The count for repeating timing */
+}T_TIMER；
+```
+
 未完待续。。。。
