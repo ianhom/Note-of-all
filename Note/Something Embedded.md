@@ -50,8 +50,8 @@ typedef sturct _T_TIMER
     PF_TIMER_CB pfTmCb;         /* Callback function when time is up */
     uint32 u32OldTm;            /* The start time point              */
     uint32 u32Period;           /* The delay time period             */
-    uint16 u16Count;            /* The count for repeating timing */
+    uint16 u16Count;            /* The count for repeating timing    */
 }T_TIMER；
 ```
-
+这里设置无限次重触发，在每次定时结束后就执行一次pfTmCb回调函数，那就可以构建一个基于时间轮片的多任务框架。
 未完待续。。。。
