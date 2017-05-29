@@ -1,5 +1,5 @@
 
-# 嵌入式软件工程师成长经验
+# 嵌入式软件工程师学习笔记
 
 ## 目标
 本文档记录一些本人嵌入式学习过程的经验总结，旨在帮助大家更好地学习嵌入式软件知识，助力成为独当一面的优秀嵌软程序员！
@@ -54,6 +54,21 @@ typedef sturct _T_TIMER
 }T_TIMER；
 ```
 这里设置无限次重触发，在每次定时结束后就执行一次pfTmCb回调函数，那就可以构建一个基于时间轮片的多任务框架。
+
+下面我们再进一步，在多任务嵌入式操作系统中的时间管理模块，就会使用类似于上述的数据结构，但是还需要一个变量，用于标记与该定时器相关联的任务编号。
+```C
+typedef uint32 (*PF_TIMER_CB)(void *p);  /* Callback function when time is up */
+
+typedef sturct _T_TIMER
+{
+    struct _T_TIMER  *ptNext;   /* Address of next node              */
+    PF_TIMER_CB pfTmCb;         /* Callback function when time is up */
+    uint32 u32OldTm;            /* The start time point              */
+    uint32 u32Period;           /* The delay time period             */
+    uint16 u16Count;            /* The count for repeating timing    */
+    uint16 u16TaskId;           /* The ID of destination task        */
+}T_TIMER；
+```
 
 
 未完待续。。。。
