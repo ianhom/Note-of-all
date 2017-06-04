@@ -79,5 +79,16 @@ typedef sturct _T_TIMER
 
 #### 队列的应用 ———— 缓存
 在写通讯类应用的时候，经常会遇到一种情况，就是接收到一条报文，还没有来得及处理又来了一条报文。对于这种“生产速度”瞬时大于“消费速度”的情形，缓存是最常见的方法。
+首先我们来定义一个简单的数组型的队列缓存    
+```c
+typedef struct _BUFFER
+{
+    uint8  *pu8Data;        /* Pointer of buffer data     */
+    uint32  u32DataLen;     /* The bytes of per data      */
+    uint32  u32DataCntMax;  /* The count of datas         */
+    uint32  u32DataCntCur;  /* Current count of datas     */
+    uint32  u32DataHead;    /* The position of first data */
+}
+```
 
 未完待续。。。。
