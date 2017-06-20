@@ -159,5 +159,41 @@ c语言是面向过程的语言，它更多地描述的是处理一个事情的�
 
 **高效的函数指针数组**
 switch的原理其实是很多个if，越靠后的case则与靠后进行if判断。这里的判断类似于挨家挨户的询问，知道询问的case为想要的状态。既然我们都已经知道了状态，为何不能像数组一样直接索引到具体的状态的操作呢？我们当然可以，而且我们使用的也正是数组。
+在switch的方案中，每个case内的代码就是当前状态下的操作。
+```c
+switch(u8State)
+{
+    case STATE_A:         /* State A */
+    {
+        a1();             /* State A下的操作1 */
+        a2();             /* State A下的操作2 */
+        a3();             /* State A下的操作3 */
+        StateUpate();     /* 更新状态         */
+        break;
+    }
+    case STATE_B:         /* State B */
+    {
+        b1();             /* State B下的操作1 */
+        b2();             /* State B下的操作2 */
+        b3();             /* State B下的操作3 */
+        StateUpate();     /* 更新状态         */
+        break;
+    }
+    case STATE_C:         /* State C */
+    {
+        c1();             /* State C下的操作1 */
+        c2();             /* State C下的操作2 */
+        c3();             /* State C下的操作3 */
+        StateUpate();     /* 更新状态         */
+        break;
+    }
+    default:              /* 异常情况         */
+    {
+        break;
+    }
+}
+```
+
+如果我们把这段代码封装成函数
 
 未完待续。。。。
