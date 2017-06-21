@@ -195,5 +195,52 @@ switch(u8State)
 ```
 
 如果我们把这段代码封装成函数
+```c
+void State_A(void)    /* State A的操作函数 */
+{
+    a1();             /* State A下的操作1 */
+    a2();             /* State A下的操作2 */
+    a3();             /* State A下的操作3 */
+    StateUpate();     /* 更新状态         */
+}
 
+void State_B(void)    /* State B的操作函数 */
+{
+    b1();             /* State B下的操作1 */
+    b2();             /* State B下的操作2 */
+    b3();             /* State B下的操作3 */
+    StateUpate();     /* 更新状态         */
+}
+
+void State_C(void)    /* State C的操作函数 */
+{
+    c1();             /* State C下的操作1 */
+    c2();             /* State C下的操作2 */
+    c3();             /* State C下的操作3 */
+    StateUpate();     /* 更新状态         */
+}
+
+switch(u8State)
+{
+    case STATE_A:         /* State A */
+    {
+        State_A();
+        break;
+    }
+    case STATE_B:         /* State B */
+    {
+        State_B();
+        break;
+    }
+    case STATE_C:         /* State C */
+    {
+        State_C();
+        break;
+    }
+    default:              /* 异常情况         */
+    {
+        break;
+    }
+}
+```
 未完待续。。。。
