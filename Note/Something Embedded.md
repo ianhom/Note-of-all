@@ -283,5 +283,26 @@ while(1)
 ----
 ## 编译
 用习惯IDE的同学对编译的理解就是一个按钮，而实际上这个按钮的背后有很多细节，可以分为“预处理、编译、汇编、链接”    
+### 预处理     
+在预处理阶段，将对C源码进行一次替换处理，形成最终的“源文件”。与预处理阶段相关的操作有#define，#include，#if,#ifdef等。下面举一个简单的例子：    
+头文件Head.h
+```c
+#define A 20
+#define B 10
+#define OPERATION_ADD 
+```    
+源文件main.c
+```c
+#include "Head.h"
+int main(void)
+{
+#ifdef OPERATION_ADD
+    int c = A + B;
+#else
+    int c = A - B;
+#endif
+    return c;
+}
+```
 
 未完待续。。。。
