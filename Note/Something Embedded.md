@@ -152,7 +152,51 @@ c语言是面向过程的语言，它更多地描述的是处理一个事情的�
 在无多线程支持的环境中，对任务进行状态分割，每次进入都有一个当前状态，每个状态下有对应的处理。   　　　　
 **经典的switch**    
 上面的描述很容易联想到C语言中switch语句——switch一个状态变量，跳转到对应的分支，就可以进行相应的处理。    
-    
+```c
+/**************************************************************************************
+                 ________                             _____________ ________ 
+                         |  Debounce |               |  Debounce   |
+                   Idle  | Press PRE |   Pressed     | Release Pre |  Idle         
+                         |           |               |             |    
+                         |___________|_______________|             |
+                         |           |               |             |
+                         V           V               V             V
+                    Press Evt    Pressed Evt   Short release Evt   Short release Evt
+****************************************************************************************/
+swtich(u8St)
+{
+    case BTN_IDLE_ST:
+        .....
+        if(BTN_PRESS)
+            u8St = BTN_PRESS_PRE_ST;
+        break;
+    case BTN_PRESS_PRE_ST:
+        ....
+        if(BTN_PRESS)
+        {
+            if(TIME_UP)
+                u8St =BTN_PRESSED_ST;
+        }
+        else
+            u8St = BTN_IDLE_ST;
+        break;
+    case BTN_PRESSED_ST:
+        ....
+        if(BTN_RELEASE)
+            u8St = BTN_RELEASE_PRE_ST;
+        break;
+    case BTN_RELEASE_PRE_ST:
+        if(BTN_RELEASE)
+        {
+            if(TIME_UP)
+                u8St = BTN_IDLE_ST; 
+        }
+        else
+            u8St = BTN_PRESSED_ST;
+        break;
+}
+
+```    
 **改良的状态转移表**       
 每次的状态切换都会明确指定下一次状态，如果我们对状态进行整理排序，通过一个数组来将下一次的状态整理好，那整体的处理流程将更为清晰。
 
@@ -170,13 +214,13 @@ c语言是面向过程的语言，它更多地描述的是处理一个事情的�
 
 const uint8 cg_aau8StateMachine[BTN_STATE_NUM][BTN_TRG_NUM] = 
 {
-    /*  Situation 1  */    /*  Situation 2 */    /*  Situation 3  */     /* Situation 4  */
-    /* Btn NOT press */    /* Btn press    */    /* Btn NOT press */     /* Btn press    */
-    /* Time NOT out  */    /* Time NOT out */    /* Time out      */     /* Time out     */
-    {BTN_IDLE_ST         , BTN_PRESS_PRE_ST    , BTN_IDLE_ST         ,  BTN_PRESSED_PRE_ST   },    /* BTN_IDLE_ST          */  
-    {BTN_IDLE_ST         , BTN_PRESS_PRE_ST    , BTN_IDLE_ST         ,  BTN_PRESSED_ST       },    /* BTN_PRESS_PRE_ST     */
-    {BTN_RELEASE_PRE_ST  , BTN_PRESSED_ST      , BTN_RELEASE_PRE_ST  ,  BTN_PRESSED_ST       },    /* BTN_PRESSED_ST       */
-    {BTN_RELEASE_PRE_ST  , BTN_PRESSED_ST      , BTN_IDLE_ST         ,  BTN_PRESSED_ST       },    /* BTN_RELEASE_PRE_ST   */
+    /*  Situation 1  */   /*  Situation 2 */   /*  Situation 3  */    /* Situation 4  */
+    /* Btn NOT press */   /* Btn press    */   /* Btn NOT press */    /* Btn press    */
+    /* Time NOT out  */   /* Time NOT out */   /* Time out      */    /* Time out     */
+    {BTN_IDLE_ST       , BTN_PRESS_PRE_ST    , BTN_IDLE_ST         , BTN_PRESSED_PRE_ST},  /* BTN_IDLE_ST        */  
+    {BTN_IDLE_ST       , BTN_PRESS_PRE_ST    , BTN_IDLE_ST         , BTN_PRESSED_ST    },  /* BTN_PRESS_PRE_ST   */
+    {BTN_RELEASE_PRE_ST, BTN_PRESSED_ST      , BTN_RELEASE_PRE_ST  , BTN_PRESSED_ST    },  /* BTN_PRESSED_ST     */
+    {BTN_RELEASE_PRE_ST, BTN_PRESSED_ST      , BTN_IDLE_ST         , BTN_PRESSED_ST    }   /* BTN_RELEASE_PRE_ST */
 };
 
      switch(u8BtnSt)
@@ -327,6 +371,33 @@ while(1)
 }
 
 ```    
+
+```c
+/**************************************************************************************
+                 ________                             _____________ ________ 
+                         |  Debounce |               |  Debounce   |
+                   Idle  | Press PRE |   Pressed     | Release Pre |  Idle         
+                         |           |               |             |    
+                         |___________|_______________|             |
+                         |           |               |             |
+                         V           V               V             V
+                    Press Evt    Pressed Evt   Short release Evt   Short release Evt
+****************************************************************************************/
+typedef void (*PF_STATE)(void);
+
+void Btn_Idle(void){....};
+void Btn_Press_Pre(void){....};
+void Btn_Pressed(void){....};
+void Btn_Release_Pre(void){....};
+
+PF_STATE apfState[4] = {Btn_Idle, Btn_Press_Pre, Btn_Pressed, Btn_Release_Pre};
+
+while(1)
+{
+    apfState[u8State]();   /* 执行状态机 */
+}
+
+```
 这样就从switch逐个case的判断，转换为函数指针数组直接的调用。在case比较多的情况下，执行效率会高很多，但是这里没有了default分支，所以在状态更新的时候，需要特别注意异常状态。
 
 ----
