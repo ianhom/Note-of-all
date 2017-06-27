@@ -154,7 +154,56 @@ c语言是面向过程的语言，它更多地描述的是处理一个事情的�
 上面的描述很容易联想到C语言中switch语句——switch一个状态变量，跳转到对应的分支，就可以进行相应的处理。    
     
 **改良的状态转移表**       
-每次的状态切换都会明确指定下一次状态，如果我们对状态进行整理排序，通过一个数组来将下一次的状态整理好，那整体的处理流程将更为清晰。    
+每次的状态切换都会明确指定下一次状态，如果我们对状态进行整理排序，通过一个数组来将下一次的状态整理好，那整体的处理流程将更为清晰。
+
+```c
+/**************************************************************************************
+                 ________                             _____________ ________ 
+                         |  Debounce |               |  Debounce   |
+                   Idle  | Press PRE |   Pressed     | Release Pre |  Idle         
+                         |           |               |             |    
+                         |___________|_______________|             |
+                         |           |               |             |
+                         V           V               V             V
+                    Press Evt    Pressed Evt   Short release Evt   Short release Evt
+****************************************************************************************/
+
+const uint8 cg_aau8StateMachine[BTN_STATE_NUM][BTN_TRG_NUM] = 
+{
+    /*  Situation 1  */    /*  Situation 2 */    /*  Situation 3  */     /* Situation 4  */
+    /* Btn NOT press */    /* Btn press    */    /* Btn NOT press */     /* Btn press    */
+    /* Time NOT out  */    /* Time NOT out */    /* Time out      */     /* Time out     */
+    {BTN_IDLE_ST         , BTN_PRESS_PRE_ST    , BTN_IDLE_ST         ,  BTN_PRESSED_PRE_ST   },    /* BTN_IDLE_ST          */  
+    {BTN_IDLE_ST         , BTN_PRESS_PRE_ST    , BTN_IDLE_ST         ,  BTN_PRESSED_ST       },    /* BTN_PRESS_PRE_ST     */
+    {BTN_RELEASE_PRE_ST  , BTN_PRESSED_ST      , BTN_RELEASE_PRE_ST  ,  BTN_PRESSED_ST       },    /* BTN_PRESSED_ST       */
+    {BTN_RELEASE_PRE_ST  , BTN_PRESSED_ST      , BTN_IDLE_ST         ,  BTN_PRESSED_ST       },    /* BTN_RELEASE_PRE_ST   */
+};
+
+     switch(u8BtnSt)
+     {
+         case BTN_IDLE_ST:
+             ....
+             break;
+         case BTN_PRESS_PRE_ST:
+             ....
+             break;
+         ...
+     }
+
+    /*************************** Find the Next state ***************************/
+    /* Check if button is press or NOT */
+    if(u8BtnSt != ptBtnPara->u8NormalSt)
+    {   /* If button is pressed, update index number  */
+        u8NextSt++;
+    }
+    
+    /* Check if the debounce or long-press time is out or NOT */
+    if(u8TmOut)
+    {   /* If time is out, update index number */
+        u8NextSt += BTN_TM_TRG_EVT_OFFSET;
+    }
+    u8BtnSt = cg_aau8StateMachine[u8BtnSt][u8NextSt];
+```
     
 **高效的函数指针数组**    
 switch的原理其实是很多个if，越靠后的case则与靠后进行if判断。这里的判断类似于挨家挨户的询问，知道询问的case为想要的状态。既然我们都已经知道了状态，为何不能像数组一样直接索引到具体的状态的操作呢？我们当然可以，而且我们使用的也正是数组。    
