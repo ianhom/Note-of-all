@@ -424,5 +424,41 @@ int main(void)
     return c;
 }
 ```
+在预处理中先对main.c源文件进行include
+```c
+#define A 20
+#define B 10
+#define OPERATION_ADD 
+int main(void)
+{
+#ifdef OPERATION_ADD
+    int c = A + B;
+#else
+    int c = A - B;
+#endif
+    return c;
+}
+```
+然后对main.c源文件进行条件编译
+```c
+#define A 20
+#define B 10
+#define OPERATION_ADD 
+int main(void)
+{
+    int c = A + B;
+    return c;
+}
+```
+最后再对main.c源文件进行宏定义替换
+```c
+int main(void)
+{
+    int c = 20 + 10;
+    return c;
+}
+```
+至此我们就获得了真正的用于后续编译的源文件了。
+
 
 未完待续。。。。
