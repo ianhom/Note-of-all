@@ -82,4 +82,5 @@ No. | Name | Description
 78  | 《一步一步写嵌入式操作系统》 |   
 79  | 《深入理解Android内核设计》 |   
 80  | 《Linux Shell脚本攻略》 |   
+81  | 《看板实战》 |
 
