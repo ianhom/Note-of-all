@@ -448,7 +448,7 @@ int main(void)
 ```c
 #define A 20
 #define B 10
-#define OPERATION_ADD 
+
 int main(void)
 {
     int c = A + B;
@@ -466,9 +466,13 @@ int main(void)
 ### 编译
 这里的编译不是我们平常理解的宏观定义（完成的预处理、编译、汇编、链接），而是更明确的“由C转换会汇编”的过程。这里几乎所有的操作都有编译器完成，由编译器决定如何将源码的c语句转换成汇编指令。当然程序员对转换的结果有一定的控制，这时就需要关注如const，volatile，static等修饰词，同时还有编译器优化等级和偏向这些要素来影响最终的汇编指令。经过编译器的的编译处理，我们上述的源代码将会转换成如下的汇编指令。    
 ```asm
-    MOV R1,#20
-    MOV R2,#10
-    ADD R0,{R1,R2}
+main:
+        sub     sp, sp, #16
+        mov     w0, 30
+        str     w0, [sp, 12]
+        ldr     w0, [sp, 12]
+        add     sp, sp, 16
+        ret
 ```
 
 ### 汇编
