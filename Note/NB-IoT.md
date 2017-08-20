@@ -4,6 +4,14 @@
 - NB-IoT：Narrow Band Internet of Things，即窄带物联网
 - LPWAN：Low Power Wide Area Network，即低功耗广域网
      
+## 网络架构
+![](../Pic/NB-IoT/NetArc.png)
+- Device：NB-IoT终端（如智能水表、智能气表等）通过空口连接到eNodeB。    
+- eNodeB：主要承担空口接入处理和小区管理等相关功能，通过S1-lite接口与IoT核心网进行连接，将非接入层数据转发给高层网元处理。
+- IoT Core：承担与终端非接入层交互的功能，将IoT业务相关数据转发到IoT平台进行处理。
+- IoT Platform：IoT联接管理平台汇聚从各种接入网得到的IoT数据，根据不同类型转发给相应的业务应用进行处理。
+- APP Server：是IoT数据的最终汇聚点，根据客户的需求进行数据处理等操作。   
+
 ## NB-IoT主要应用
 ● 物联网设备    
 涉及低功耗广域物联网的物联网设备主要是通过传感器和无线通信模块为用户提供实时的信息传输    
