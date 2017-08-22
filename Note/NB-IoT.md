@@ -61,16 +61,19 @@ NB-IoT的超小芯片可以让穿戴产品做得更加小巧，其网络的深�
 
 - IOT平台资源申请步骤如下：
 
-   1. 开发者首先申请加入IoT解决方案伙伴计划，加入方法请参考附件《MAR系统使用简要手册》和《华为IoT合作伙伴计划政策》，请仔细阅读《华为IoT合作伙伴计划政策》。 MAR流程中合作方案审批通过后，你将收到MAR系统自动发出的知会邮件，收到后方可申请获取IoT平台资源。
+   1. 开发者首先申请加入IoT解决方案伙伴计划，加入方法请参考附件《![MAR系统使用简要手册](http://developer.huawei.com/ilink/esdk/download/HW_484292)》和《![华为IoT合作伙伴计划政策](http://developer.huawei.com/ilink/esdk/download/HW_484293)》，请仔细阅读《![华为IoT合作伙伴计划政策](http://developer.huawei.com/ilink/esdk/download/HW_484293)》。 MAR流程中合作方案审批通过后，你将收到MAR系统自动发出的知会邮件，收到后方可申请获取IoT平台资源。
 
    2. 华为IoT平台账号与密码申请，开发者合作伙伴将 “业务合作审批通过邮件”转发到 iotadmin@huawei.com 进行申请，邮件标题为“MAR伙伴申请IoT平台远程接入”，邮件内容附加企业名称，联系人及联系方式。
 
    3. 如何基于华为IoT平台进行应用开发以及想了解更多IoT平台信息，请参考http://developer.huawei.com/ict/cn/site-oceanconnect。
 
-- SoftRadio是一款PC软件，合作伙伴在没有芯片/模组、NB-IOT基站和核心网的情况下，借助SoftRadio通过互联网连接到IOT平台和应用服务器，用于设备到应用服务器端到端的基本功能调试。详细介绍和申请请参考“SoftRadio”部分。
+- SoftRadio是一款PC软件，合作伙伴在没有芯片/模组、NB-IOT基站和核心网的情况下，借助SoftRadio通过互联网连接到IOT平台和应用服务器，用于设备到应用服务器端到端的基本功能调试。详细介绍和申请请参考“![SoftRadio](http://developer.huawei.com/ict/cn/site-iot/article/softradio)”部分。
 
 - 如下图是NB-IOT端到端集成开发流程。
+![](../Pic/NB-IoT/flow.jpg) 
 
+
+    
 未完待续。。。
 
 ---
