@@ -36,16 +36,16 @@ NB-IoT的超小芯片可以让穿戴产品做得更加小巧，其网络的深�
 - B8 : 900MHz（移动、联通，欧洲）
 
 ### SIM7000C
-高通芯片方案
-![](../Pic/NB-IoT/SIM7000C.jpg) 
+高通芯片方案    
+![](../Pic/NB-IoT/SIM7000C.jpg)     
 
 ### C1100
-高通芯片方案
-![](../Pic/NB-IoT/C1100.jpg) 
+高通芯片方案    
+![](../Pic/NB-IoT/C1100.jpg)     
 
 ## 开发板（持续更新）
 ### 	TurboX NB-IoT 开发板
-![](../Pic/NB-IoT/TURBOX-F.png)   ![](../Pic/NB-IoT/TURBOX-B.png) 
+![](../Pic/NB-IoT/TURBOX-F.png)       ![](../Pic/NB-IoT/TURBOX-B.png)     
 中科创达LiteOS+NB-IoT开发板，此开发板借鉴了Arduino的设计，采用了低功耗的STM32L476的MCU，同时板载了三款常用的传感器，分别是：温湿度，压力和六轴。此款开发板的外观尺寸和Arduino Uno相似，因此市面上现有的大多数扣板可以直接拿来使用。    
 
 
@@ -70,7 +70,7 @@ NB-IoT的超小芯片可以让穿戴产品做得更加小巧，其网络的深�
 - SoftRadio是一款PC软件，合作伙伴在没有芯片/模组、NB-IOT基站和核心网的情况下，借助SoftRadio通过互联网连接到IOT平台和应用服务器，用于设备到应用服务器端到端的基本功能调试。详细介绍和申请请参考“![SoftRadio](http://developer.huawei.com/ict/cn/site-iot/article/softradio)”部分。
 
 - 如下图是NB-IOT端到端集成开发流程。
-![](../Pic/NB-IoT/flow.jpg) 
+![](../Pic/NB-IoT/flow.png)     
 
 
     
