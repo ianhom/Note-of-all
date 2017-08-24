@@ -3,7 +3,9 @@
 ## 概念
 - NB-IoT：Narrow Band Internet of Things，即窄带物联网
 - LPWAN：Low Power Wide Area Network，即低功耗广域网
-     
+
+----
+
 ## 网络架构
 ![](../Pic/NB-IoT/NetArc.png)
 - Device：NB-IoT终端（如智能水表、智能气表等）通过空口连接到eNodeB。    
@@ -11,6 +13,8 @@
 - IoT Core：承担与终端非接入层交互的功能，将IoT业务相关数据转发到IoT平台进行处理。
 - IoT Platform：IoT联接管理平台汇聚从各种接入网得到的IoT数据，根据不同类型转发给相应的业务应用进行处理。
 - APP Server：是IoT数据的最终汇聚点，根据客户的需求进行数据处理等操作。   
+
+----
 
 ## NB-IoT主要应用
 ● 物联网设备    
@@ -22,9 +26,13 @@ NB-IoT的超小芯片可以让穿戴产品做得更加小巧，其网络的深�
 ● 工业应用    
 窄带物联网技术应用于工业制造领域，将会带来工业制造转型升级。如今工厂逐渐开始将无线连接技术应用到产品或生产线中，以改进制造流程，而目前像WiFi这样的无线连接技术不够安全、可靠性不够高，NB-IoT为工业物联网无线连接提供了理想的解决方案。    
 
+----
+
 ## 芯片（持续更新）
 - 海思Hi2110
 - 高通
+
+----
 
 ## 模组（持续更新）
 ### LTE BC95 NB-IoT模组
@@ -48,7 +56,7 @@ NB-IoT的超小芯片可以让穿戴产品做得更加小巧，其网络的深�
 ![](../Pic/NB-IoT/TURBOX-F.png)       ![](../Pic/NB-IoT/TURBOX-B.png)     
 中科创达LiteOS+NB-IoT开发板，此开发板借鉴了Arduino的设计，采用了低功耗的STM32L476的MCU，同时板载了三款常用的传感器，分别是：温湿度，压力和六轴。此款开发板的外观尺寸和Arduino Uno相似，因此市面上现有的大多数扣板可以直接拿来使用。    
 
-
+----
 
 ## 开发概述
 ### 概述
@@ -83,6 +91,9 @@ NB-IoT的超小芯片可以让穿戴产品做得更加小巧，其网络的深�
 - 应用服务器用于保存NB-IOT终端发送的数据，以及发送下行数据给NB-IOT终端。在标准化的NB-IOT组网结构中，应用服务器连接在IOT平台的北向。IOT平台提供了支持http和https协议的北向接口，因此应用服务器与IOT平台的交互只需要调用相应的URL接口。
 - IOT平台相关开发资料可参考：
 http://developer.huawei.com/ict/cn/site-oceanconnect/resources    
+
+### SoftRadio
+- SoftRadio是一款PC软件，在测试场景下，合伙伙伴在不需要芯片/模组、NB-IoT基站和核心网的情况下，借助PC端的SoftRadio软件，任何时候都可通过互联网连接到IOT平台和APP应用，用于NB-IoT设备到APP Server端到端的基本功能调试，大大提升调试效率，加速Usecase业务快速上市。
 
     
 未完待续。。。
