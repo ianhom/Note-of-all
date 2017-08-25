@@ -101,8 +101,12 @@ http://developer.huawei.com/ict/cn/site-oceanconnect/resources
 - **IoT核心网**：承担与终端非接入层交互的功能，将IoT业务相关数据转发到IoT平台进行处理。
 - **IoT管理平台**：IoT联接管理平台（本文简称为IoT平台）汇聚从各种接入网得到的IoT数据，根据不同类型转发至相应的业务应用进行处理。当前，SoftRadio仅支持与华为IoT平台对接。
 - **应用服务器**：是IoT数据的最终汇聚点，根据客户的需求进行数据处理等操作。
-    
+
+
+#### SoftRadio网络架构 
 ![](../Pic/NB-IoT/SR-C.png) 
+- **Device <---> SoftRadio**：Device和SoftRadio之间通过承载在UART串口线上的AT命令进行通信。物理上只需要将设备原来连接模组的针脚连接到PC机即可。SoftRadio支持的AT命令请参考用户指南。 
+- **OceanConnect <---> Vertical Application**：二者之间通过Restful接口进行通信。
 
 
 未完待续。。。
