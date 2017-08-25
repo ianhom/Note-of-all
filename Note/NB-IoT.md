@@ -94,8 +94,17 @@ http://developer.huawei.com/ict/cn/site-oceanconnect/resources
 
 ### SoftRadio
 - SoftRadio是一款PC软件，在测试场景下，合伙伙伴在不需要芯片/模组、NB-IoT基站和核心网的情况下，借助PC端的SoftRadio软件，任何时候都可通过互联网连接到IOT平台和APP应用，用于NB-IoT设备到APP Server端到端的基本功能调试，大大提升调试效率，加速Usecase业务快速上市。
-
+![](../Pic/NB-IoT/SR-1.png)     
+- **NB-IoT Device/UE**：NB-IoT终端（如智能水表、智能气表等）通过空口连接到eNodeB。
+- **SoftRadio**：在测试场景中模拟NB-IoT芯片与模组、屏蔽无线空口的软件。
+- **eNodeB**：主要承担空口接入处理和小区管理等相关功能，通过S1-lite接口与IoT核心网进行连接，将非接入层数据转发给高层网元处理。
+- **IoT核心网**：承担与终端非接入层交互的功能，将IoT业务相关数据转发到IoT平台进行处理。
+- **IoT管理平台**：IoT联接管理平台（本文简称为IoT平台）汇聚从各种接入网得到的IoT数据，根据不同类型转发至相应的业务应用进行处理。当前，SoftRadio仅支持与华为IoT平台对接。
+- **应用服务器**：是IoT数据的最终汇聚点，根据客户的需求进行数据处理等操作。
     
+![](../Pic/NB-IoT/SR-C.png) 
+
+
 未完待续。。。
 
 ---
