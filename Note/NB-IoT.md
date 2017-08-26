@@ -3,7 +3,8 @@
 ## 概念
 - NB-IoT：Narrow Band Internet of Things，即窄带物联网
 - LPWAN：Low Power Wide Area Network，即低功耗广域网
-
+- 北向：面向服务器端
+- 南向：面向设备端
 ----
 
 ## 网络架构
@@ -107,6 +108,22 @@ http://developer.huawei.com/ict/cn/site-oceanconnect/resources
 ![](../Pic/NB-IoT/SR-C.png) 
 - **Device <---> SoftRadio**：Device和SoftRadio之间通过承载在UART串口线上的AT命令进行通信。物理上只需要将设备原来连接模组的针脚连接到PC机即可。SoftRadio支持的AT命令请参考用户指南。 
 - **OceanConnect <---> Vertical Application**：二者之间通过Restful接口进行通信。
+
+#### SoftRadio应用场景
+- SoftRadio工具支持三大应用场景的远程化调试：终端MCU功能调试、应用服务器功能调试、E2E业务联调；
+- SoftRadio主要应用于测试场景，不允许接入客户现网以及进行商业使用，开发者在无模组情况下，借助SoftRadio，进行端到端集成验证。在前期终端开发过程中，厂商只需要聚焦终端业务功能的开发，待基本功能在本地完成开发测试之后，再为终端设备集成好模组，申请到华为OpenLab实验室进行测试及验证。
+
+- 备注：
+    - SoftRadio目前仅能接入Huawei IoT Platform。
+    - SoftRadio目前仅支持海思芯片 
+    - 每台PC机只能接入一个Device设备，即每个SoftRadio软件每次只能接入一个Device设备
+
+#### SoftRadio软件获取
+- 用户可使用MAR账号或者开发者社区账号登陆华为开发者社区，直接下载SoftRadio工具（含用户指南）。
+- 下载链接：
+    - 中文链接：http://developer.huawei.com/ict/cn/rescenter/CMDA_FIELD_NB_IOT
+    - 英文链接：http://developer.huawei.com/ict/en/rescenter/CMDA_FIELD_NB_IOT
+- 将获取到的ESN按照《[license申请模板](http://developer.huawei.com/ict/rescenter/resource/download/eresource/171/28/SoftRadio-license%E7%94%B3%E8%AF%B7%E6%A8%A1%E6%9D%BF.xlsx)》反馈到邮箱softradio@huawei.com，来申请SoftRadio软件License。
 
 
 未完待续。。。
