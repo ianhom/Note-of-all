@@ -1,1 +1,2 @@
 # NanoPi
+![](../pic/NanoPi.jpg)
