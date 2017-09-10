@@ -1,2 +1,2 @@
 # Nano NEO 2
-![](../pic/NanoPi_NEO_2.jpg)
+![](../pic/NanoPi_NEO2.jpg)
