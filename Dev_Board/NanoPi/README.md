@@ -7,5 +7,5 @@
 - NanoPi M3
 - NanoPi NEO
 - NanoPi NEO2
-- NanoPi NEO2 Plus
+- NanoPi NEO Plus 2
 - NanoPi Duo
