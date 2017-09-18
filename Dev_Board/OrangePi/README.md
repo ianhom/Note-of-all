@@ -1,3 +1,5 @@
 # OrangePi
+![](../pic/OrangePi_Logo.png)
 - OrangePi Zero
-- OrangePi Lite
+- OrangePi One
+- OrangePi PC Plus
