@@ -125,6 +125,20 @@ http://developer.huawei.com/ict/cn/site-oceanconnect/resources
     - 英文链接：http://developer.huawei.com/ict/en/rescenter/CMDA_FIELD_NB_IOT
 - 将获取到的ESN按照《[license申请模板](http://developer.huawei.com/ict/rescenter/resource/download/eresource/171/28/SoftRadio-license%E7%94%B3%E8%AF%B7%E6%A8%A1%E6%9D%BF.xlsx)》反馈到邮箱softradio@huawei.com，来申请SoftRadio软件License。
 
+### 与IOT平台的对接
+#### 终端与IOT平台的对接
+- 终端与IOT平台对接，首先需要设置设备ID和IOT平台地址；其次终端入网；然后发送数据到IOT平台。详细步骤如下所示：
+   - 步骤1：终端上电，执行“AT+NRB”复位终端。如果返回OK，表示终端正常运行。
+   - 步骤2：执行“AT+CFUN=0”关闭功能开关。如果执行成功，返回OK。 
+   - 步骤3：执行“AT+NTSETID=1,设备ID”设置设备ID。设备ID为IMEI号，如果执行成功，返回OK。 
+   - 步骤4：执行“AT+NCDP=IP,PORT”设置需要对接IOT平台的地址，端口为5683。如果执行成功，返回OK。 
+   - 步骤5：执行“AT+CFUN=1”开启功能开关。如果执行成功，返回OK。 
+   - 步骤6：执行“AT+NBAND=频段”设置频段。如果执行成功，返回OK。频段信息可以咨询模组厂商。 
+   - 步骤7：执行“AT+CGDCONT=1,“IP”,“APN””设置核心网APN。如果执行成功，返回 OK，核心网APN可联系运营商（与运营商网络对接）或者OpenLab负责人（OpenLab网络对接）进行获取。
+   - 步骤8：执行“AT+CGATT=1”进行入网。如果执行成功，返回OK。 
+   - 步骤9：执行“AT+CGPADDR”查询终端是否获取到核心网分配的地址，如果获取到地址，表示终端入网成功。 
+   - 步骤10：执行“AT+NNMI=1”设置下行数据通知功能，如果执行成功，返回OK。 
+   - 步骤11：执行“AT+NMGS=数据长度，数据”发送上行数据，如果上行数据发送成功，返回OK。由于设置了 “AT+NNMI=1”，如果应用服务器发送了下行数据，上行数据发送成功后会自动携带下行数据。
 
 未完待续。。。
 
