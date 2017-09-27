@@ -53,9 +53,33 @@ NB-IoT的超小芯片可以让穿戴产品做得更加小巧，其网络的深�
 ![](../Pic/NB-IoT/C1100.jpg)     
 
 ## 开发板（持续更新）
-### 	TurboX NB-IoT 开发板
+### TurboX NB-IoT 开发板
 ![](../Pic/NB-IoT/TURBOX-F.png)       ![](../Pic/NB-IoT/TURBOX-B.png)     
 中科创达LiteOS+NB-IoT开发板，此开发板借鉴了Arduino的设计，采用了低功耗的STM32L476的MCU，同时板载了三款常用的传感器，分别是：温湿度，压力和六轴。此款开发板的外观尺寸和Arduino Uno相似，因此市面上现有的大多数扣板可以直接拿来使用。    
+
+### 
+![](../Pic/NB-IoT/NB_DB_1.jpg)   
+硬件支持：    
+   1. 支持SIM卡芯片卡两种方式
+   2. 使用开关电源供电，保证供电可靠
+   3. 支持USB串口升级，带复位按钮
+   4. SIMCard TVS保护，支持SIM热插拔
+   5. 三个系统状态指示：电源、数据、网络    
+
+软件支持：    
+   1. BC95中文AT指令集，全网首发
+   2. NB-IoT 上位机软件演示 
+   3. NB-IoT升级工具及教程
+   4. NB-IoT UDP数据发送
+   5. NB-IoT CoAP 数据发送
+   
+### 
+![](../Pic/NB-IoT/NB_DB_2.jpg)     
+ 1. 功能强大的NBIOT终端设备（开发板）
+ 2. 电信NBIOT专用的SIM （免费赠送）
+ 3. 可靠的华为云服务  （免费测试）
+ 4. 一对一技术支持服务    
+
 
 ----
 
