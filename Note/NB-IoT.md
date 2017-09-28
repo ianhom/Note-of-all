@@ -54,7 +54,7 @@ NB-IoT的超小芯片可以让穿戴产品做得更加小巧，其网络的深�
 
 ## 开发板（持续更新）
 ### TurboX NB-IoT 开发板
-![](../Pic/NB-IoT/TURBOX-F.png)       ![](../Pic/NB-IoT/TURBOX-B.png)     
+![](../Pic/NB-IoT/TURBOX-F-small.png)       ![](../Pic/NB-IoT/TURBOX-B-small.png)     
 中科创达LiteOS+NB-IoT开发板，此开发板借鉴了Arduino的设计，采用了低功耗的STM32L476的MCU，同时板载了三款常用的传感器，分别是：温湿度，压力和六轴。此款开发板的外观尺寸和Arduino Uno相似，因此市面上现有的大多数扣板可以直接拿来使用。    
 
 ### IOT-Club USB_EVB 
