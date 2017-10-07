@@ -13,4 +13,4 @@
  
 ## 原理
 - 在MCU上直接建立Python解释器，python应用程序直接运行在硬件上。python的库函数通过更底层语言（c或汇编），python应用可以通过这些库函数直接操作硬件。
-- 目前最主流的可以运行在MCU上的python解释器是MicroPython，已在多款硬件平台上完成移植。
+- 目前最主流的可以运行在MCU上的python解释器是[MicroPython](https://github.com/micropython/micropython)，已在多款硬件平台上完成移植。
