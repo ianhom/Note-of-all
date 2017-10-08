@@ -1,5 +1,10 @@
 # NB-IoT学习笔记
 ![](../Pic/NB-IoT/NB_logo.jpg)
+
+----
+## **注：该笔记仅为网络资料收集整理，请参考最新的官方文档和指南进行学习及开发**
+----
+
 ## 概念
 - NB-IoT：Narrow Band Internet of Things，即窄带物联网
 - LPWAN：Low Power Wide Area Network，即低功耗广域网
