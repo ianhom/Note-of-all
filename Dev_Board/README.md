@@ -2,4 +2,4 @@
 - Detailed descriptions of my boards    
 
 
-![](../Pic/Misc/all boards.jpg)
+![a](../Pic/Misc/all_boards.jpg)
