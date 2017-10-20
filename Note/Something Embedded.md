@@ -573,6 +573,9 @@ main:
 
 ## 学习路线
 ![](../Pic/Misc/png-EmbeddedEngineer-by-StuQ.png)
+![](../Pic/Misc/png-ProgrammingLanguage-by-StuQ.png)
+
+
 
 未完待续。。。。    
 
