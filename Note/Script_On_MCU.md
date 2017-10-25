@@ -19,10 +19,9 @@
 - 依然分为交互模式和脚本模式，在交互模式下可以即刻编写并执行所输入的代码，而脚本模式则对已保存的文本文件进行逐行解析
 
 ## 示例
-[MicroPython](https://github.com/micropython/micropython)是目前非常流行的运行在单片机上的Python解释器，符合python3语法，有很多实用的库函数供应用实用。    
-
-未完待续。。。。    
-
+[MicroPython](https://github.com/micropython/micropython)是目前非常流行的运行在单片机上的Python解释器，符合python3语法，有很多实用的库函数供应用实用，对硬件的操作使用machine的库。    
+ 
+未完待续。。。。    
 ---
 
 欢迎关注我的微信公众号：**墨意MOE**    
