@@ -20,3 +20,5 @@ i.MX RT1050是业界首款跨界处理器，兼具应用处理器的高性能与
    - 无线连接接口：
        - Wi-Fi®、Bluetooth®、BLE、ZigBee®和Thread™
 
+## 结构图
+![](../Pic/Misc/rtkt2.jpg)
