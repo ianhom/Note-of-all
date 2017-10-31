@@ -6,3 +6,4 @@
     - Something Embedded
     - Script on MCU
     - Deep Learning
+    - i.MX RT 1050
