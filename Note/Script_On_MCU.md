@@ -21,9 +21,13 @@
 - 目前很多MCU都有很高的主频（i.mx rt 1050可达到600MHz），RAM也可以达到上百KByte，已经基础以不成长，具备条件来运行脚本语言。
 
 ## 示例
-[MicroPython](https://github.com/micropython/micropython)是目前非常流行的运行在单片机上的Python解释器，符合python3语法，有很多实用的库函数供应用实用，对硬件的操作使用machine的库。同样也支持os简单文件系统、time等库    
-
-
+[MicroPython](https://github.com/micropython/micropython)是目前非常流行的运行在单片机上的Python解释器，符合python3语法，有很多实用的库函数供应用实用，对硬件的操作使用machine的库。同样也支持os简单文件系统、time等库        
+```python 
+import machine
+     
+machine.freq()          # get the current frequency of the CPU
+machine.freq(160000000) # set the CPU frequency to 160 MHz
+```
 
 
  
