@@ -39,7 +39,7 @@ start = time.ticks_ms() # get millisecond counter
 delta = time.ticks_diff(time.ticks_ms(), start) # compute time difference
 ```
  
- ```python
+```python
 from machine import Pin
 
 p0 = Pin(0, Pin.OUT)    # create output pin on GPIO0
@@ -54,6 +54,12 @@ p4 = Pin(4, Pin.IN, Pin.PULL_UP) # enable internal pull-up resistor
 p5 = Pin(5, Pin.OUT, value=1) # set pin high on creation
 ```
  
+```python
+from machine import ADC
+
+adc = ADC(0)            # create ADC object on ADC pin
+adc.read()              # read value, 0-1024
+```
  
 未完待续。。。。    
 ---
