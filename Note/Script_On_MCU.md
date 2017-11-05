@@ -85,7 +85,24 @@ spi.write_readinto(b'1234', buf) # write to MOSI and read from MISO into the buf
 spi.write_readinto(buf, buf) # write buf to MOSI and read MISO back into buf 
 ```    
 
+``` python
+from machine import Pin, SPI
 
+hspi = SPI(1, baudrate=80000000, polarity=0, phase=0)
+```    
+
+``` python
+from machine import Pin, I2C
+
+# construct an I2C bus
+i2c = I2C(scl=Pin(5), sda=Pin(4), freq=100000)
+
+i2c.readfrom(0x3a, 4)   # read 4 bytes from slave device with address 0x3a
+i2c.writeto(0x3a, '12') # write '12' to slave device with address 0x3a
+
+buf = bytearray(10)     # create a buffer with 10 bytes
+i2c.writeto(0x3a, buf)  # write the given buffer to the slave
+```  
 
 未完待续。。。。    
 ---
