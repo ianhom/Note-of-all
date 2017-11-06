@@ -104,6 +104,32 @@ buf = bytearray(10)     # create a buffer with 10 bytes
 i2c.writeto(0x3a, buf)  # write the given buffer to the slave
 ```  
 
+```python
+from machine import RTC
+
+rtc = RTC()
+rtc.datetime((2017, 8, 23, 1, 12, 48, 0, 0)) # set a specific date and time
+rtc.datetime() # get date and time
+```    
+
+```python
+import machine
+
+# configure RTC.ALARM0 to be able to wake the device
+rtc = machine.RTC()
+rtc.irq(trigger=rtc.ALARM0, wake=machine.DEEPSLEEP)
+
+# check if the device woke from a deep sleep
+if machine.reset_cause() == machine.DEEPSLEEP_RESET:
+    print('woke from a deep sleep')
+
+# set RTC.ALARM0 to fire after 10 seconds (waking the device)
+rtc.alarm(rtc.ALARM0, 10000)
+
+# put the device to sleep
+machine.deepsleep()
+```    
+
 未完待续。。。。    
 ---
 
