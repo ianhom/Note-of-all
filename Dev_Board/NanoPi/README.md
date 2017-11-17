@@ -1,7 +1,7 @@
 # NanoPi Boards
 - NanoPi
 - NanoPi 2
-- NanoPi fire
+- NanoPi Fire
 - NanoPi M1
 - NanoPi M2
 - NanoPi M3
@@ -9,3 +9,4 @@
 - NanoPi NEO2
 - NanoPi NEO Plus 2
 - NanoPi Duo
+- NanoPi Fire 3
