@@ -21,14 +21,16 @@
 - 目前很多MCU都有很高的主频（i.mx rt 1050可达到600MHz），RAM也可以达到上百KByte，已经基础以不成长，具备条件来运行脚本语言。
 
 ## 示例
-[MicroPython](https://github.com/micropython/micropython)是目前非常流行的运行在单片机上的Python解释器，符合python3语法，有很多实用的库函数供应用实用，对硬件的操作使用machine的库。同样也支持os简单文件系统、time等库        
+[MicroPython](https://github.com/micropython/micropython)是目前非常流行的运行在单片机上的Python解释器，符合python3语法，有很多实用的库函数供应用实用，对硬件的操作使用machine的库。同样也支持os简单文件系统、time等库。        
+
+- 频率设置    
 ```python 
 import machine
      
 machine.freq()          # get the current frequency of the CPU
 machine.freq(160000000) # set the CPU frequency to 160 MHz
 ```
-
+- 定时器    
 ```python
 import time
 
@@ -38,7 +40,7 @@ time.sleep_us(10)       # sleep for 10 microseconds
 start = time.ticks_ms() # get millisecond counter
 delta = time.ticks_diff(time.ticks_ms(), start) # compute time difference
 ```
- 
+- GPIO    
 ```python
 from machine import Pin
 
@@ -53,14 +55,14 @@ print(p2.value())       # get value, 0 or 1
 p4 = Pin(4, Pin.IN, Pin.PULL_UP) # enable internal pull-up resistor
 p5 = Pin(5, Pin.OUT, value=1) # set pin high on creation
 ```
- 
+- ADC    
 ```python
 from machine import ADC
 
 adc = ADC(0)            # create ADC object on ADC pin
 adc.read()              # read value, 0-1024
 ```
-
+- SPI    
 ``` python
 from machine import Pin, SPI
 
@@ -83,14 +85,15 @@ spi.write(b'12345')     # write 5 bytes on MOSI
 buf = bytearray(4)      # create a buffer
 spi.write_readinto(b'1234', buf) # write to MOSI and read from MISO into the buffer
 spi.write_readinto(buf, buf) # write buf to MOSI and read MISO back into buf 
-```    
-
+```      
+    
 ``` python
 from machine import Pin, SPI
 
 hspi = SPI(1, baudrate=80000000, polarity=0, phase=0)
 ```    
 
+- I2C
 ``` python
 from machine import Pin, I2C
 
@@ -103,7 +106,7 @@ i2c.writeto(0x3a, '12') # write '12' to slave device with address 0x3a
 buf = bytearray(10)     # create a buffer with 10 bytes
 i2c.writeto(0x3a, buf)  # write the given buffer to the slave
 ```  
-
+- RTC
 ```python
 from machine import RTC
 
