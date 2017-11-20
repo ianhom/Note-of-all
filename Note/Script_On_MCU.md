@@ -132,7 +132,7 @@ rtc.alarm(rtc.ALARM0, 10000)
 # put the device to sleep
 machine.deepsleep()
 ```    
-
+- OneWire
 ```python
 from machine import Pin
 import onewire
@@ -146,6 +146,7 @@ ow.write('123')         # write bytes on the bus
 ow.select_rom(b'12345678') # select a specific device by its ROM code
 ```    
 
+- DS18x20
 ```python
 import time, ds18x20
 ds = ds18x20.DS18X20(ow)
@@ -155,7 +156,7 @@ time.sleep_ms(750)
 for rom in roms:
     print(ds.read_temp(rom))
 ```    
-
+- Neopixel
 ```python
 from machine import Pin
 from neopixel import NeoPixel
@@ -166,7 +167,7 @@ np[0] = (255, 255, 255) # set the first pixel to white
 np.write()              # write data to all pixels
 r, g, b = np[0]         # get first pixel colour
 ```   
-
+- DHT11
 ```python
 import dht
 import machine
@@ -182,6 +183,7 @@ d.temperature() # eg. 23.6 (°C)
 d.humidity()    # eg. 41.3 (% RH)
 ```    
 
+- APA102
 ```python
 from machine import Pin
 from apa102 import APA102
