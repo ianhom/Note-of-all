@@ -203,6 +203,7 @@ apa.write()                  # write data to all pixels
 r, g, b, brightness = apa[0] # get first pixel colour
 ```    
 
+- 脚本解释器的存在类似于操作系统的地位，实际上脚本解释器也是建立在rt内核之上，可以提供操作系统所能提供的资源。
 
 未完待续。。。。    
 ---
