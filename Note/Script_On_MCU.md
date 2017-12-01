@@ -206,11 +206,11 @@ r, g, b, brightness = apa[0] # get first pixel colour
 - 脚本解释器的存在类似于操作系统的地位，实际上脚本解释器也可以是建立在rt内核之上，可以提供操作系统所能提供的资源，实现多线程。
 - 而硬件驱动则会嵌入在解释器中，这样对于同一块核心板，只需要一个解释器就可以了，在上层实现不同的python应用。
 
- 内容 | Linux平台 | RTOS平台 | MicroPython平台     
- -----|----------|----------|----------------    
- 应用程序 | C/C++ | C | Python    
- 运行环境 | Linux | RTOS | MicroPython    
- 硬件控制 | 驱动文件 | HAL API | Module    
+ 内容    | Linux平台 | RTOS平台  | MicroPython平台 | 裸机平台     
+ --------|----------|----------|-----------------|----------            
+ 应用程序 | C/C++    | C        | Python          | C/汇编    
+ 运行环境 | Linux    | RTOS     | MicroPython     | 硬件    
+ 硬件控制 | 驱动文件  | HAL API  | Module          | 寄存器    
  
  
 
