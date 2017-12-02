@@ -213,7 +213,8 @@ r, g, b, brightness = apa[0] # get first pixel colour
   应用程序 | C/C++    | C        | Python          | C/汇编
   运行环境 | Linux    | RTOS     | MicroPython     | 硬件
   硬件控制 | 驱动文件  | HAL API  | Module          | 寄存器
-  开发难度 |   高     |    中    |      低          |   中
+  开发难度 |   高     |    中     |      低         |   中
+
  
  
 
