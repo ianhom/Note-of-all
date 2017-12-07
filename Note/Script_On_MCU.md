@@ -214,6 +214,7 @@ r, g, b, brightness = apa[0] # get first pixel colour
   运行环境 | Linux    | RTOS     | MicroPython     | 硬件
   硬件控制 | 驱动文件  | HAL API  | Module          | 寄存器
   开发难度 |   高     |    中     |      低         |   中
+  开发周期 |   长     |    中     |      短         |   中
 
  
 - 从上述表格可以看出，Python可以应用于嵌入式开发，且对应用开发有很好的优势：开发难度低，学习门槛低。
