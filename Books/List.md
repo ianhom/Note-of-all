@@ -104,5 +104,6 @@ No. | Name | Description
 100 | 《Python机器学习算法》 |
 101 | 《Python网络编程》 |
 102 | 《PythonQt GUI快速编程》 |
-
+103 | 《从芯片到云端Python物联网全栈开发实践》 |
+104 | 《Python硬件编程实战》
  
