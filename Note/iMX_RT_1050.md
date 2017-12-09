@@ -25,3 +25,7 @@ i.MX RT1050是业界首款跨界处理器，兼具应用处理器的高性能与
 
 ## 选型表
 ![](../Pic/Misc/IMXRT_10XX.jpg)
+ 
+## 开发板
+- MIMXRT1050-EVK
+- EasyARM-1052
