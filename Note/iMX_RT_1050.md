@@ -28,6 +28,6 @@ i.MX RT1050是业界首款跨界处理器，兼具应用处理器的高性能与
  
 ## 开发板     
 
-- MIMXRT1050-EVK：nxp官方开发板，配备SDRAM，hyper flash等。   
+- MIMXRT1050-EVK：nxp官方开发板，配备SDRAM，hyper flash等。   
 - EasyARM-1052：zlg开发板
 
