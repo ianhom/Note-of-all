@@ -8,7 +8,13 @@
     2. C语言拾遗
         2.1 C和指针
         2.2 编译
-        2.3 ....
+            2.2.1 预处理
+            2.2.2.编译
+            2.2.3 汇编
+            2.2.4 连接
+            2.2.5 库
+            2.2.6 编译器
+        2.3 ....
     3. 基本数据结构
         3.1 链表
         3.2 队列
@@ -37,13 +43,74 @@
 - **To be continue**
 
 # 2. C语言拾遗
+- 在嵌入式领域，C语言是非常重要的主战武器。对C的掌握程度直接决定了对嵌入式相关知识的理解。正所谓好的开始是成功的一般，本书开遍先拾遗C语言中的一些关键概念，有助于理解后续章节。
+- **To be continue**
+
+## 2.1 C和指针
+- **To be continue**
+
+## 2.2 编译
+- **To be continue**
+
+### 2.2.1 预处理
+- **To be continue**
+
+### 2.2.2.编译
+- **To be continue**
+
+### 2.2.3 汇编
+- **To be continue**
+
+### 2.2.4 连接
+- **To be continue**
+
+### 2.2.5 库
+- **To be continue**
+
+### 2.2.6 编译器
+- **To be continue**
+
+## 2.3 ....
 - **To be continue**
 
 # 3. 基本数据结构
 - **To be continue**
 
+## 3.1 链表
+- **To be continue**
+
+## 3.2 队列
+- **To be continue**
+
+## 3.3 ...
+- **To be continue**
+
 # 4. 浅谈操作系统
 - **To be continue**
 
+## 4.1 软件框架
+- **To be continue**
+
+## 4.2 操作系统基本概念
+- **To be continue**
+
+## 4.3 ...
+- **To be continue**
+
+
 # 5. 编程能力扩展
 - **To be continue**
+
+## 5.1 模块化
+- **To be continue**
+
+## 5.2 面向对象
+- **To be continue**
+
+## 5.3 脚本语言
+- **To be continue**
+
+## 5.4 ...
+- **To be continue**
+
+
