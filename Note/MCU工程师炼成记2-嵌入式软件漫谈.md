@@ -147,20 +147,6 @@ main:
 
 - **To be continue**
 
-### 2.2.1 预处理
-- **To be continue**
-
-### 2.2.2.编译
-- **To be continue**
-
-### 2.2.3 汇编
-- **To be continue**
-
-### 2.2.4 连接
-- **To be continue**
-
-### 2.2.5 库
-- **To be continue**
 
 ### 2.2.6 编译器
 - **To be continue**
