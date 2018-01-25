@@ -221,9 +221,11 @@ typedef struct _BUFFER
 - **To be continue**
 
 ## 5.2 面向对象
+- 面向对象是高级语言的一个重要特性，但面向过程的C语言一样也可以使用面向对象的思想来编程。
 - **To be continue**
 
 ## 5.3 脚本语言
+- 想了解脚本语言，首先要了解一下编译语言。
 - **To be continue**
 
 ## 5.4 ...
