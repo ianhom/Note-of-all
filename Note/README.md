@@ -7,3 +7,5 @@
     - Script on MCU
     - Deep Learning
     - i.MX RT 1050
+    - MicroPython Notes
+    - reStructuredText -- rst   
