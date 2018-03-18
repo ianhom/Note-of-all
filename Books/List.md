@@ -105,5 +105,6 @@ No. | Name | Description
 101 | 《Python网络编程》 |
 102 | 《PythonQt GUI快速编程》 |
 103 | 《从芯片到云端Python物联网全栈开发实践》 |
-104 | 《Python硬件编程实战》
- 
+104 | 《Python硬件编程实战》 |
+105 | 《解忧程序员》 | 
+106 | 《ARM Cotrex-M3与Cortex-M4权威指南》 |
