@@ -25,6 +25,11 @@ i.MX RT1050是业界首款跨界处理器，兼具应用处理器的高性能与
 
 ## 选型表
 ![](../Pic/Misc/imxrt10xx.jpg)
+
+## 型号差异
+条目  |  1020   |  1050   |   1060   |  1170
+-----|---------|----------|---------|---------
+SRAM |  256kB  |   512kB  |   1MB   |   2MB
  
 ## 开发板     
 - ShareBoard-i.MXRT1050：[ShareBoard](https://github.com/Share-Board/ShareBoard-iMXRT1050) ![ShareBoard](https://github.com/Share-Board/ShareBoard-iMXRT1050/blob/master/Pic/PCB_Front.png?raw=true)
