@@ -6,6 +6,7 @@
     - Something Embedded
     - Script on MCU
     - Deep Learning
-    - i.MX RT 1050
+    - i.MX RT
     - MicroPython Notes
     - reStructuredText -- rst   
+    - MCU工程师炼成记2-嵌入式软件漫谈    
