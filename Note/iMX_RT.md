@@ -39,12 +39,16 @@ SRAM |  256kB  |   512kB  |   1MB   |   2MB   |    2MB
 - ShareBoard-i.MXRT1050：[ShareBoard](https://github.com/Share-Board/ShareBoard-iMXRT1050)     
 ![ShareBoard](https://github.com/Share-Board/ShareBoard-iMXRT1050/blob/master/Pic/PCB_Front.png?raw=true)
 
-- MIMXRT1050-EVK：[nxp官方开发板，配备SDRAM，hyper flash等](https://www.nxp.com/products/processors-and-microcontrollers/applications-processors/i.mx-applications-processors/i.mx-rt-series/i.mx-rt1050-evaluation-kit:MIMXRT1050-EVK)     
+- MIMXRT1050-EVK：[nxp官方开发板](https://www.nxp.com/products/processors-and-microcontrollers/applications-processors/i.mx-applications-processors/i.mx-rt-series/i.mx-rt1050-evaluation-kit:MIMXRT1050-EVK)     
 ![](../Pic/imxrt/nxp1050.png)
 
 - EasyARM-1052：[zlg开发板](http://www.zlgmcu.com/Category_2495/Index.aspx#id3)        
 ![ZLG](../Pic/imxrt/zlg1050.png)
 
-- MIMXRT1052核心板：[野火](https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-10310241583.17.68856b46etnS2A&id=565533049348)     
+- MIMXRT1052开发板：[野火](https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-10310241583.17.68856b46etnS2A&id=565533049348)     
 ![](../Pic/imxrt/fire1050.png)
+
+
+- MIMXRT1052开发板：[正点原子](https://item.taobao.com/item.htm?spm=a1z10.3-c-s.w4002-17232804691.33.33b6f03c7jWZU6&id=567308850594)     
+![]()
 
