@@ -51,5 +51,5 @@ SRAM |  256kB  |   512kB  |   1MB   |   2MB   |    2MB
 
 
 - MIMXRT1052开发板：[正点原子](https://item.taobao.com/item.htm?spm=a1z10.3-c-s.w4002-17232804691.33.33b6f03c7jWZU6&id=567308850594)         
-![](../Pic/imxrt/atom1050.png)
+![](https://github.com/ianhom/ShareBoard/blob/master/pic/ATK1050.png)
 
