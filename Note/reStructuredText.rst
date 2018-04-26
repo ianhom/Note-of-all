@@ -50,7 +50,18 @@ A) 枚举列表1
  这是定义2的内容
 
 
+Simple table:
 
+=====  =====  ======
+   Inputs     Output
+------------  ------
+  A      B    A or B
+=====  =====  ======
+False  False  False
+True   False  True
+False  True   True
+True   True   True
+=====  =====  ======
 
 
 
@@ -58,5 +69,9 @@ A) 枚举列表1
 未完待续。。。。    
 ---
 
-欢迎关注我的微信公众号：**墨意MOE**    
-![](../Pic/Misc/qrcode_for_gh_a64f54357afb_258.jpg)
+欢迎关注我的微信公众号：**墨意MOE**      
+
+|QR|
+
+.. |QR| image:: ../Pic/Misc/qrcode_for_gh_a64f54357afb_258.jpg
+
