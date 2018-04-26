@@ -9,7 +9,7 @@
 
 ## 编译
 - 目前MicroPython采用GCC工具链进行编译，虽然有模板可以复用，但对无linux开发经验的工程师而言，还是有一定门槛
-- RT-Thread将MicroPython移植到RT-Thread上，同时将开发环境移植到KEIL中，这大大降低了入门们康，有利于更多的工程师了解使用MicroPython    
+- RT-Thread将MicroPython移植到RT-Thread上，同时将开发环境移植到KEIL中，这大大降低了入门门槛，有利于更多的工程师了解使用MicroPython    
 
 ## 开发
 - do_str()可以直接执行python语句，可以在合适位置直接执行。
