@@ -108,3 +108,5 @@ No. | Name | Description
 104 | 《Python硬件编程实战》 |
 105 | 《解忧程序员》 | 
 106 | 《ARM Cotrex-M3与Cortex-M4权威指南》 |
+107 | 《ARM Cortex-M0与Cortex-M0+权威指南》 |
+108 | 《贝叶斯思维python学习法》 | 
