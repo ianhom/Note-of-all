@@ -6,4 +6,4 @@
 
 - Linux分用户空间和内核空间，也存在用户态和内核态
 
-- Linux原生的交互环境是shell，通过shell命令行模式可以操作linux。多条既定的命名可以组成脚本，一般以.sh结尾。
+- Linux原生的交互环境是shell，通过shell命令行模式可以操作linux。多条既定的命名可以组成脚本，一般以.sh结尾。因为python的易学，可移植性强，现在一般的Linux发行版也自带python解释器，很多编译环节需要使用python
