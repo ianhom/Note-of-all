@@ -1682,8 +1682,8 @@
 
 --------
 # 《Python编程快速上手:让繁琐工作自动化》
-- 第一部分Python编程基础 
-- 第1章 Python基础 3 
+## 第一部分Python编程基础 
+## 第1章 Python基础 3 
 - 1.1 在交互式环境中输入表达式 3 
 - 1.2 整型、浮点型和字符串数据类型 6 
 - 1.3 字符串连接和复制 6 
@@ -1700,7 +1700,7 @@
 - 1.6.6 str（）、int（）和float（）函数 13 
 - 1.7 小结 15 
 - 1.8 习题 15 
-- 第2章 控制流 17 
+## 第2章 控制流 17 
 - 2.1 布尔值 18 
 - 2.2 比较操作符 19 
 - 2.3 布尔操作符 20 
@@ -1726,7 +1726,7 @@
 - 2.9 用sys.exit（）提前结束程序 41 
 - 2.10 小结 41 
 - 2.11 习题 41 
-- 第3章 函数 43 
+## 第3章 函数 43 
 - 3.1 def语句和参数 44 
 - 3.2 返回值和return语句 45 
 - 3.3 None值 46 
@@ -1744,7 +1744,7 @@
 - 3.11 实践项目 56 
 - 3.11.1 Collatz序列 56 
 - 3.11.2 输入验证 57 
-- 第4章 列表 59 
+## 第4章 列表 59 
 - 4.1 列表数据类型 59 
 - 4.1.1 用下标取得列表中的单个值 60 
 - 4.1.2 负数下标 61 
@@ -1776,7 +1776,7 @@
 - 4.10 实践项目 79 
 - 4.10.1 逗号代码 79 
 - 4.10.2 字符图网格 79 
-- 第5章 字典和结构化数据 81 
+## 第5章 字典和结构化数据 81 
 - 5.1 字典数据类型 81 
 - 5.1.1 字典与列表 82 
 - 5.1.2 keys（）、values（）和items（）方法 83 
@@ -1792,7 +1792,7 @@
 - 5.6 实践项目 93 
 - 5.6.1 好玩游戏的物品清单 93 
 - 5.6.2 列表到字典的函数，针对好玩游戏物品清单 94 
-- 第6章 字符串操作 95 
+## 第6章 字符串操作 95 
 - 6.1 处理字符串 95 
 - 6.1.1 字符串字面量 95 
 - 6.1.2 双引号 96 
@@ -1823,7 +1823,7 @@
 - 6.7 实践项目 111 
 - 表格打印 111 
 - 第二部分 自动化任务 
-- 第7章 模式匹配与正则表达式 115 
+## 第7章 模式匹配与正则表达式 115 
 - 7.1 不用正则表达式来查找文本模式 116 
 - 7.2 用正则表达式查找文本模式 117 
 - 7.2.1 创建正则表达式对象 118 
@@ -1861,7 +1861,7 @@
 - 7.18 实践项目 136 
 - 7.18.1 强口令检测 136 
 - 7.18.2 strip（）的正则表达式版本 136 
-- 第8章 读写文件 137 
+## 第8章 读写文件 137 
 - 8.1 文件与文件路径 137 
 - 8.1.1 Windows上的倒斜杠以及OS X和Linux上的正斜杠 138 
 - 8.1.2 当前工作目录 139 
@@ -1892,7 +1892,7 @@
 - 8.9.1 扩展多重剪贴板 156 
 - 8.9.2 疯狂填词 156 
 - 8.9.3 正则表达式查找 156 
-- 第9章 组织文件 157 
+## 第9章 组织文件 157 
 - 9.1 shutil模块 158 
 - 9.1.1 复制文件和文件夹 158 
 - 9.1.2 文件和文件夹的移动与改名 158 
@@ -1919,7 +1919,7 @@
 - 9.8.1 选择性拷贝 171 
 - 9.8.2 删除不需要的文件 172 
 - 9.8.3 消除缺失的编号 172 
-- 第10章 调试 173 
+## 第10章 调试 173 
 - 10.1 抛出异常 174 
 - 10.2 取得反向跟踪的字符串 175 
 - 10.3 断言 176 
@@ -1943,7 +1943,7 @@
 - 10.7 习题 187 
 - 10.7 实践项目 188 
 - 调试硬币抛掷 188 
-- 第11章 从Web抓取信息 189 
+## 第11章 从Web抓取信息 189 
 - 11.1 项目：利用webbrowser模块的mapIt.py 190 
 - 第1步：弄清楚URL 190 
 - 第2步：处理命令行参数 191 
@@ -1988,7 +1988,7 @@
 - 10.11.2 图像网站下载 215 
 - 10.11.32048215 
 - 10.11.4 链接验证 215 
-- 第12章 处理Excel电子表格 217 
+## 第12章 处理Excel电子表格 217 
 - 12.1 Excel文档 217 
 - 12.2 安装openpyxl模块 218 
 - 12.3 读取Excel文档 218 
@@ -2027,7 +2027,7 @@
 - 12.12.3 电子表格单元格翻转程序 242 
 - 12.12.4 文本文件到电子表格 242 
 - 12.12.5 电子表格到文本文件 242 
-- 第13章 处理PDF和Word文档 243 
+## 第13章 处理PDF和Word文档 243 
 - 13.1 PDF文档 243 
 - 13.1.1 从PDF提取文本 244 
 - 13.1.2 解密PDF 245 
@@ -2058,7 +2058,7 @@
 - 13.6.1 PDF偏执狂 263 
 - 13.6.2 定制邀请函，保存为Word文档 263 
 - 13.6.3 暴力PDF口令破解程序 264 
-- 第14章 处理CSV文件和JSON数据 265 
+## 第14章 处理CSV文件和JSON数据 265 
 - 14.1 csv模块 265 
 - 14.2.1 Reader对象 266 
 - 14.2.2 在for循环中，从Reader对象读取数据 267 
@@ -2085,7 +2085,7 @@
 - 14.8 习题 277 
 - 14.9 实践项目 277 
 - Excel到CSV的转换程序 277 
-- 第15章 保持时间、计划任务和启动程序 279 
+## 第15章 保持时间、计划任务和启动程序 279 
 - 15.1 time模块 279 
 - 15.1.1 time.time（）函数 279 
 - 15.1.2 time.sleep（）函数 280 
@@ -2123,7 +2123,7 @@
 - 15.12 实践项目 300 
 - 15.12.1 美化的秒表 300 
 - 15.12.2 计划的Web漫画下载 301 
-- 第16章 发送电子邮件和短信 303 
+## 第16章 发送电子邮件和短信 303 
 - 16.1 SMTP 303 
 - 16.2 发送电子邮件 304 
 - 16.2.1 连接到SMTP服务器 304 
@@ -2160,7 +2160,7 @@
 - 16.10.2 伞提醒程序 324 
 - 16.10.3 自动退订 324 
 - 16.10.4 通过电子邮件控制你的电脑 324 
-- 第17章 操作图像 327 
+## 第17章 操作图像 327 
 - 17.1 计算机图像基础 327 
 - 17.1.1 颜色和RGBA值 328 
 - 17.1.2 坐标和Box元组 329 
@@ -2186,7 +2186,7 @@
 - 17.7.1 扩展和修正本章项目的程序 348 
 - 17.7.2 在硬盘上识别照片文件夹 349 
 - 17.7.3 定制的座位卡 350 
-- 第18章 用GUI自动化控制键盘和鼠标 351 
+## 第18章 用GUI自动化控制键盘和鼠标 351 
 - 18.1 安装pyautogui模块 351 
 - 18.2 走对路 352 
 - 18.2.1 通过注销关闭所有程序 352 
@@ -2225,370 +2225,352 @@
 - 18.14.1 看起来很忙 373 
 - 18.14.2 即时通信机器人 373 
 - 18.14.3 玩游戏机器人指南 374 
-- 附录A 安装第三方模块 375 
-- 附录B 运行程序 377 
-- 附录C 习题答案 381
+## 附录A 安装第三方模块 375 
+## 附录B 运行程序 377 
+## 附录C 习题答案 381
 
 ----
 # 《深入理解Android内核设计思想》
-第1篇 Android编译篇 
-第1章 Android系统简介 
-1.1 Android系统发展历程 
-1.2 Android系统特点 
-1.3 Android系统框架 
-第2章 Android源码下载及编译 
-2.1 Android源码下载指南 
-2.1.1 基于Repo和Git的版本管理 
-2.1.2 Android源码下载流程 
-2.2 原生态系统编译指南 
-2.2.1 建立编译环境 
-2.2.2 编译流程 
-2.3 定制产品的编译与烧录 
-2.3.1 定制新产品 
-2.3.2 Linux内核编译 
-2.3.3 烧录 
-2.4 Android系统映像文件 
-2.4.1 boot.img 
-2.4.2 ramdisk.img 
-2.4.3 system.img 
-2.5 OTA系统升级 
-2.5.1 生成升级包 
-2.5.2 获取升级包 
-2.5.3 OTA升级—RecoveryMode 
-2.6 Android反编译 
-第3章 Android编译系统 
-3.1 Makefile入门 
-3.2 Android编译系统 
-3.2.1 Makefile依赖树的概念 
-3.2.2 树根节点droid 
-3.2.3 main.mk解析 
-3.2.4 droidcore节点 
-3.2.5 dist_files 
-3.2.6 Android.mk的编写规则 
-第2篇 Android原理篇 
-第4章 操作系统基础 
-4.1 计算机体系结构（Computer Architecture） 
-4.1.1 冯·诺依曼结构 
-4.1.2 哈佛结构 
-4.2 什么是操作系统 
-4.3 进程间通信的经典实现 
-4.3.1 共享内存（Shared Memory） 
-4.3.2 管道（Pipe） 
-4.3.3 Unix Domain Socket 
-4.3.4 RPC（RemoteProcedure Calls） 
-4.4 同步机制的经典实现 
-4.4.1 信号量（Semaphore） 
-4.4.2 Mutex 
-4.4.3 管程（Monitor） 
-4.4.4 同步范例 
-4.5 Android中的同步机制 
-4.5.1 进程间同步——Mutex 
-4.5.2 条件判断——Condition 
-4.5.3 “栅栏、障碍”——Barrier 
-4.5.4 加解锁的自动化操作——Autolock 
-4.6 操作系统内存管理基础 
-4.6.1 虚拟内存（Virtual Memory） 
-4.6.2 内存保护（Memory Protection） 
-4.6.3 内存分配与回收 
-4.6.4 进程间通信——mmap 
-4.7 Android中的Low Memory Killer 
-4.8 Android匿名共享内存（Anonymous Shared Memory） 
-4.8.1 Ashmem设备 
-4.8.2 Ashmem应用实例 
-4.9 JNI 
-4.9.1 Java函数的本地实现 
-4.9.2 本地代码访问JVM 
-4.10 学习Android系统的两条线索 
-第5章 Android进程／线程管理 
-5.1 Android进程和线程 
-5.2 Handler， MessageQueue，Runnable与Looper 
-5.3 UI主线程——ActivityThread 
-5.4 Thread类 
-5.4.1 Thread类的内部原理 
-5.4.2 Thread休眠和唤醒 
-5.4.3 Thread实例 
-5.5 Android应用程序的典型启动流程 
-第6章 进程间通信——Binder 
-6.1 智能指针 
-6.1.1 智能指针的设计理念 
-6.1.2 强指针sp 
-6.1.3 弱指针wp 
-6.2 进程间的数据传递载体——Parcel 
-6.3 Binder驱动与协议 
-6.3.1 打开Binder驱动——binder_open 
-6.3.2 binder_mmap 
-6.3.3 binder_ioctl 
-6.4 “DNS”服务器——ServiceManager（Binder Server） 
-6.4.1 ServiceManager的启动 
-6.4.2 ServiceManager的构建 
-6.4.3 获取ServiceManager服务——设计思考 
-6.4.4 ServiceManagerProxy 
-6.4.5 IBinder和BpBinder 
-6.4.6 ProcessState和IPCThreadState 
-6.5 Binder客户端——Binder Client 
-6.6 Android接口描述语言——AIDL 
-6.7 匿名Binder Server 
-第7章 Android启动过程简析 
-7.1 第一个系统进程（init） 
-7.1.1 init.rc语法 
-7.1.2 init.rc实例分析 
-7.2 系统关键服务的启动简析 
-7.2.1 Android的“DNS服务器”——ServiceManager 
-7.2.2 “孕育”新的线程和进程——Zygote 
-7.2.3 Android的“系统服务”——SystemServer 
-第8章 管理Activity和组件运行状态的系统进程——Activity ManagerService （AMS） 
-8.1 AMS功能概述 
-8.2 管理当前系统中Activity状态——Activity Stack 
-8.3 startActivity流程 
-8.4 完成同一任务的“集合”——Activity Task 
-8.4.1 “后进先出”——Last In，First Out 
-8.4.2 管理Activity Task 
-第9章 GUI系统之SurfaceFlinger 
-9.1 OpenGL ES与EGL 
-9.2 Android的硬件接口——HAL 
-9.3 Android终端显示设备的“化身”——Gralloc与Framebuffer 
-9.4 Android中的本地窗口 
-9.4.1 FramebufferNativeWindow 
-9.4.2 应用程序端的本地窗口——Surface 
-9.5 BufferQueue详解 
-9.5.1 BufferQueue的内部原理 
-9.5.2 BufferQueue中的缓冲区分配 
-9.5.3 应用程序的典型绘图流程 
-9.5.4 应用程序与BufferQueue的关系 
-9.6 SurfaceFlinger 
-9.6.1 “黄油计划”——Project Butter 
-9.6.2 SurfaceFlinger的启动 
-9.6.3 接口的服务端——Client 
-9.7 VSync的产生和处理 
-9.7.1 VSync信号的产生和分发 
-9.7.2 VSync信号的处理 
-9.7.3 handleMessageTransaction 
-9.7.4 “界面已经过时／无效，需要重新绘制”——handleMessageInvalidate 
-9.7.5 合成前的准备工作——precomposition 
-9.7.6 可见区域——rebuildLayerStacks 
-9.7.7 为“Composition”搭建环境——setupHWComposer 
-9.7.8 doDebugFlashRegions 
-9.7.9 docomposition 
-第10章 GUI系统之“窗口管理员”——WMS 
-10.1 “窗口管理员”——WMS综述 
-10.1.1 WMS的启动 
-10.1.2 WMS的基础功能 
-10.1.3 WMS的工作方式 
-10.1.4 WMS，AMS与Activity间的联系 
-10.2 窗口属性 
-10.2.1 窗口类型与层级 
-10.2.2 窗口策略（Window Policy） 
-10.2.3 窗口属性（LayoutParams） 
-10.3 窗口的添加过程 
-10.3.1 系统窗口的添加过程 
-10.3.2 Activity窗口的添加过程 
-10.3.3 窗口添加实例 
-10.4 Surface管理 
-10.4.1 Surface申请流程（relayout） 
-10.4.2 Surface的跨进程传递 
-10.4.3 Surface的业务操作 
-10.5 performLayoutAndPlaceSurfacesLockedInner 
-10.6 窗口大小的计算过程 
-10.7 启动窗口的添加与销毁 
-10.7.1 启动窗口的添加 
-10.7.2 启动窗口的销毁 
-10.8 窗口动画 
-10.8.1 窗口动画类型 
-10.8.2 动画流程跟踪——WindowStateAnimator 
-10.8.3 AppWindowAnimator 
-10.8.4 动画的执行过程 
-第11章 让你的界面炫彩起来的GUI系统之View体系 
-11.1 应用程序中的View框架 
-11.2 Activity中View Tree的创建过程 
-11.3 在WMS中注册窗口 
-11.4 ViewRoot的基本工作方式 
-11.5 View Tree的遍历时机 
-11.6 View Tree的遍历流程 
-11.7 View和ViewGroup属性 
-11.7.1 View的基本属性 
-11.7.2 ViewGroup的属性 
-11.7.3 View，ViewGroup和ViewParent 
-11.7.4 Callback接口 
-11.8 “作画“工具集——Canvas 
-11.8.1 “绘制UI”——Skia 
-11.8.2 数据中介——Surface.lockCanvas 
-11.8.3 解锁并提交结果——unlockCanvasAndPost 
-11.9 draw和onDraw 
-11.10 View中的消息传递 
-11.10.1 View中TouchEvent的投递流程 
-11.10.2 ViewGoup中TouchEvent的投递流程 
-11.11 View动画 
-第12章 “问渠哪得清如许，为有源头活水来”——InputManagerService与输入事件 
-12.1 事件的分类 
-12.2 事件的投递流程 
-12.2.1 InputManagerService 
-12.2.2 InputReaderThread 
-12.2.3 InputDispatcherThread 
-12.2.4 ViewRootImpl对事件的派发 
-第13章 应用不再同质化——音频系统 
-13.1 音频基础 
-13.1.1 声波 
-13.1.2 音频的录制、存储与回放 
-13.1.3 音频采样 
-13.1.4 Nyquist–Shannon采样定律 
-13.1.5 声道和立体声 
-13.1.6 声音定级——Weber–Fechner law 
-13.1.7 音频文件格式 
-13.2 音频框架 
-13.2.1 Linux中的音频框架 
-13.2.2 TinyAlsa 
-13.2.3 Android系统中的音频框架 
-13.3 音频系统的核心——AudioFlinger 
-13.3.1 AudioFlinger服务的启动和运行 
-13.3.2 AudioFlinger对音频设备的管理 
-13.3.3 PlaybackThread的循环主体 
-13.3.4 AudioMixer 
-13.4 策略的制定者——AudioPolicyService 
-13.4.1 AudioPolicyService概述 
-13.4.2 AudioPolicyService的启动过程 
-13.4.3 AudioPolicyService与音频设备 
-13.5 音频流的回放——AudioTrack 
-13.5.1 AudioTrack应用实例 
-13.5.2 AudioPolicyService的路由实现 
-13.6 音频数据流 
-13.6.1 AudioTrack中的音频流 
-13.6.2 AudioTrack和AudioFlinger间的数据交互 
-13.6.3 AudioMixer中的音频流 
-13.7 音量控制 
-13.8 音频系统的上层建筑 
-13.8.1 从功能入手 
-13.8.2 MediaPlayer 
-13.8.3 MediaRecorder 
-13.8.4 一个典型的多媒体录制程序 
-13.8.5 MediaRecorder源码解析 
-13.8.6 MediaPlayerService简析 
-13.9 Android支持的媒体格式 
-13.9.1 音频格式 
-13.9.2 视频格式 
-13.9.3 图片格式 
-13.9.4 网络流媒体 
-13.10 ID3信息简述 
-13.11 Android多媒体文件管理 
-13.11.1 MediaStore 
-13.11.2 多媒体文件信息的存储“仓库”——MediaProvider 
-13.11.3 多媒体文件管理中的“生产者”——MediaScanner 
-…… 
-第3篇 应用原理篇 
-第4篇 Android系统工具
+## 第1篇 Android编译篇 
+## 第1章 Android系统简介 
+- 1.1 Android系统发展历程 
+- 1.2 Android系统特点 
+- 1.3 Android系统框架 
+## 第2章 Android源码下载及编译 
+- 2.1 Android源码下载指南 
+- 2.1.1 基于Repo和Git的版本管理 
+- 2.1.2 Android源码下载流程 
+- 2.2 原生态系统编译指南 
+- 2.2.1 建立编译环境 
+- 2.2.2 编译流程 
+- 2.3 定制产品的编译与烧录 
+- 2.3.1 定制新产品 
+- 2.3.2 Linux内核编译 
+- 2.3.3 烧录 
+- 2.4 Android系统映像文件 
+- 2.4.1 boot.img 
+- 2.4.2 ramdisk.img 
+- 2.4.3 system.img 
+- 2.5 OTA系统升级 
+- 2.5.1 生成升级包 
+- 2.5.2 获取升级包 
+- 2.5.3 OTA升级—RecoveryMode 
+- 2.6 Android反编译 
+## 第3章 Android编译系统 
+- 3.1 Makefile入门 
+- 3.2 Android编译系统 
+- 3.2.1 Makefile依赖树的概念 
+- 3.2.2 树根节点droid 
+- 3.2.3 main.mk解析 
+- 3.2.4 droidcore节点 
+- 3.2.5 dist_files 
+- 3.2.6 Android.mk的编写规则 
+## 第2篇 Android原理篇 
+## 第4章 操作系统基础 
+- 4.1 计算机体系结构（Computer Architecture） 
+- 4.1.1 冯·诺依曼结构 
+- 4.1.2 哈佛结构 
+- 4.2 什么是操作系统 
+- 4.3 进程间通信的经典实现 
+- 4.3.1 共享内存（Shared Memory） 
+- 4.3.2 管道（Pipe） 
+- 4.3.3 Unix Domain Socket 
+- 4.3.4 RPC（RemoteProcedure Calls） 
+- 4.4 同步机制的经典实现 
+- 4.4.1 信号量（Semaphore） 
+- 4.4.2 Mutex 
+- 4.4.3 管程（Monitor） 
+- 4.4.4 同步范例 
+- 4.5 Android中的同步机制 
+- 4.5.1 进程间同步——Mutex 
+- 4.5.2 条件判断——Condition 
+- 4.5.3 “栅栏、障碍”——Barrier 
+- 4.5.4 加解锁的自动化操作——Autolock 
+- 4.6 操作系统内存管理基础 
+- 4.6.1 虚拟内存（Virtual Memory） 
+- 4.6.2 内存保护（Memory Protection） 
+- 4.6.3 内存分配与回收 
+- 4.6.4 进程间通信——mmap 
+- 4.7 Android中的Low Memory Killer 
+- 4.8 Android匿名共享内存（Anonymous Shared Memory） 
+- 4.8.1 Ashmem设备 
+- 4.8.2 Ashmem应用实例 
+- 4.9 JNI 
+- 4.9.1 Java函数的本地实现 
+- 4.9.2 本地代码访问JVM 
+- 4.10 学习Android系统的两条线索 
+## 第5章 Android进程／线程管理 
+- 5.1 Android进程和线程 
+- 5.2 Handler， MessageQueue，Runnable与Looper 
+- 5.3 UI主线程——ActivityThread 
+- 5.4 Thread类 
+- 5.4.1 Thread类的内部原理 
+- 5.4.2 Thread休眠和唤醒 
+- 5.4.3 Thread实例 
+- 5.5 Android应用程序的典型启动流程 
+## 第6章 进程间通信——Binder 
+- 6.1 智能指针 
+- 6.1.1 智能指针的设计理念 
+- 6.1.2 强指针sp 
+- 6.1.3 弱指针wp 
+- 6.2 进程间的数据传递载体——Parcel 
+- 6.3 Binder驱动与协议 
+- 6.3.1 打开Binder驱动——binder_open 
+- 6.3.2 binder_mmap 
+- 6.3.3 binder_ioctl 
+- 6.4 “DNS”服务器——ServiceManager（Binder Server） 
+- 6.4.1 ServiceManager的启动 
+- 6.4.2 ServiceManager的构建 
+- 6.4.3 获取ServiceManager服务——设计思考 
+- 6.4.4 ServiceManagerProxy 
+- 6.4.5 IBinder和BpBinder 
+- 6.4.6 ProcessState和IPCThreadState 
+- 6.5 Binder客户端——Binder Client 
+- 6.6 Android接口描述语言——AIDL 
+- 6.7 匿名Binder Server 
+## 第7章 Android启动过程简析 
+- 7.1 第一个系统进程（init） 
+- 7.1.1 init.rc语法 
+- 7.1.2 init.rc实例分析 
+- 7.2 系统关键服务的启动简析 
+- 7.2.1 Android的“DNS服务器”——ServiceManager 
+- 7.2.2 “孕育”新的线程和进程——Zygote 
+- 7.2.3 Android的“系统服务”——SystemServer 
+## 第8章 管理Activity和组件运行状态的系统进程——Activity ManagerService （AMS） 
+- 8.1 AMS功能概述 
+- 8.2 管理当前系统中Activity状态——Activity Stack 
+- 8.3 startActivity流程 
+- 8.4 完成同一任务的“集合”——Activity Task 
+- 8.4.1 “后进先出”——Last In，First Out 
+- 8.4.2 管理Activity Task 
+## 第9章 GUI系统之SurfaceFlinger 
+- 9.1 OpenGL ES与EGL 
+- 9.2 Android的硬件接口——HAL 
+- 9.3 Android终端显示设备的“化身”——Gralloc与Framebuffer 
+- 9.4 Android中的本地窗口 
+- 9.4.1 FramebufferNativeWindow 
+- 9.4.2 应用程序端的本地窗口——Surface 
+- 9.5 BufferQueue详解 
+- 9.5.1 BufferQueue的内部原理 
+- 9.5.2 BufferQueue中的缓冲区分配 
+- 9.5.3 应用程序的典型绘图流程 
+- 9.5.4 应用程序与BufferQueue的关系 
+- 9.6 SurfaceFlinger 
+- 9.6.1 “黄油计划”——Project Butter 
+- 9.6.2 SurfaceFlinger的启动 
+- 9.6.3 接口的服务端——Client 
+- 9.7 VSync的产生和处理 
+- 9.7.1 VSync信号的产生和分发 
+- 9.7.2 VSync信号的处理 
+- 9.7.3 handleMessageTransaction 
+- 9.7.4 “界面已经过时／无效，需要重新绘制”——handleMessageInvalidate 
+- 9.7.5 合成前的准备工作——precomposition 
+- 9.7.6 可见区域——rebuildLayerStacks 
+- 9.7.7 为“Composition”搭建环境——setupHWComposer 
+- 9.7.8 doDebugFlashRegions 
+- 9.7.9 docomposition 
+## 第10章 GUI系统之“窗口管理员”——WMS 
+- 10.1 “窗口管理员”——WMS综述 
+- 10.1.1 WMS的启动 
+- 10.1.2 WMS的基础功能 
+- 10.1.3 WMS的工作方式 
+- 10.1.4 WMS，AMS与Activity间的联系 
+- 10.2 窗口属性 
+- 10.2.1 窗口类型与层级 
+- 10.2.2 窗口策略（Window Policy） 
+- 10.2.3 窗口属性（LayoutParams） 
+- 10.3 窗口的添加过程 
+- 10.3.1 系统窗口的添加过程 
+- 10.3.2 Activity窗口的添加过程 
+- 10.3.3 窗口添加实例 
+- 10.4 Surface管理 
+- 10.4.1 Surface申请流程（relayout） 
+- 10.4.2 Surface的跨进程传递 
+- 10.4.3 Surface的业务操作 
+- 10.5 performLayoutAndPlaceSurfacesLockedInner 
+- 10.6 窗口大小的计算过程 
+- 10.7 启动窗口的添加与销毁 
+- 10.7.1 启动窗口的添加 
+- 10.7.2 启动窗口的销毁 
+- 10.8 窗口动画 
+- 10.8.1 窗口动画类型 
+- 10.8.2 动画流程跟踪——WindowStateAnimator 
+- 10.8.3 AppWindowAnimator 
+- 10.8.4 动画的执行过程 
+## 第11章 让你的界面炫彩起来的GUI系统之View体系 
+- 11.1 应用程序中的View框架 
+- 11.2 Activity中View Tree的创建过程 
+- 11.3 在WMS中注册窗口 
+- 11.4 ViewRoot的基本工作方式 
+- 11.5 View Tree的遍历时机 
+- 11.6 View Tree的遍历流程 
+- 11.7 View和ViewGroup属性 
+- 11.7.1 View的基本属性 
+- 11.7.2 ViewGroup的属性 
+- 11.7.3 View，ViewGroup和ViewParent 
+- 11.7.4 Callback接口 
+- 11.8 “作画“工具集——Canvas 
+- 11.8.1 “绘制UI”——Skia 
+- 11.8.2 数据中介——Surface.lockCanvas 
+- 11.8.3 解锁并提交结果——unlockCanvasAndPost 
+- 11.9 draw和onDraw 
+- 11.10 View中的消息传递 
+- 11.10.1 View中TouchEvent的投递流程 
+- 11.10.2 ViewGoup中TouchEvent的投递流程 
+- 11.11 View动画 
+## 第12章 “问渠哪得清如许，为有源头活水来”——InputManagerService与输入事件 
+- 12.1 事件的分类 
+- 12.2 事件的投递流程 
+- 12.2.1 InputManagerService 
+- 12.2.2 InputReaderThread 
+- 12.2.3 InputDispatcherThread 
+- 12.2.4 ViewRootImpl对事件的派发 
+## 第13章 应用不再同质化——音频系统 
+- 13.1 音频基础 
+- 13.1.1 声波 
+- 13.1.2 音频的录制、存储与回放 
+- 13.1.3 音频采样 
+- 13.1.4 Nyquist–Shannon采样定律 
+- 13.1.5 声道和立体声 
+- 13.1.6 声音定级——Weber–Fechner law 
+- 13.1.7 音频文件格式 
+- 13.2 音频框架 
+- 13.2.1 Linux中的音频框架 
+- 13.2.2 TinyAlsa 
+- 13.2.3 Android系统中的音频框架 
+- 13.3 音频系统的核心——AudioFlinger 
+- 13.3.1 AudioFlinger服务的启动和运行 
+- 13.3.2 AudioFlinger对音频设备的管理 
+- 13.3.3 PlaybackThread的循环主体 
+- 13.3.4 AudioMixer 
+- 13.4 策略的制定者——AudioPolicyService 
+- 13.4.1 AudioPolicyService概述 
+- 13.4.2 AudioPolicyService的启动过程 
+- 13.4.3 AudioPolicyService与音频设备 
+- 13.5 音频流的回放——AudioTrack 
+- 13.5.1 AudioTrack应用实例 
+- 13.5.2 AudioPolicyService的路由实现 
+- 13.6 音频数据流 
+- 13.6.1 AudioTrack中的音频流 
+- 13.6.2 AudioTrack和AudioFlinger间的数据交互 
+- 13.6.3 AudioMixer中的音频流 
+- 13.7 音量控制 
+- 13.8 音频系统的上层建筑 
+- 13.8.1 从功能入手 
+- 13.8.2 MediaPlayer 
+- 13.8.3 MediaRecorder 
+- 13.8.4 一个典型的多媒体录制程序 
+- 13.8.5 MediaRecorder源码解析 
+- 13.8.6 MediaPlayerService简析 
+- 13.9 Android支持的媒体格式 
+- 13.9.1 音频格式 
+- 13.9.2 视频格式 
+- 13.9.3 图片格式 
+- 13.9.4 网络流媒体 
+- 13.10 ID3信息简述 
+- 13.11 Android多媒体文件管理 
+- 13.11.1 MediaStore 
+- 13.11.2 多媒体文件信息的存储“仓库”——MediaProvider 
+- 13.11.3 多媒体文件管理中的“生产者”——MediaScanner 
+- …… 
+## 第3篇 应用原理篇 
+## 第4篇 Android系统工具
 
 ----
 # 《深入理解BootLoader》
-第1章 BootLoader的概念 
-1.1 BootLoader的角色 
-1.2 BootLoader的来历 
-1.3 BootLoader的概念 
-1.3.1 MCU下的BootLoader 
-1.3.2嵌入式ARM和Linux下的 
-BootLoader 
-1.3.3 PC下的引导流程 
-1.4本章小结 
-第2章L．nux开发环境 
-2.1编辑器Vim 
-2.1.1 Vim介绍 
-2.1.2 Vim的两个基本模式 
-2.1.3 Vim的两个常用模式 
-2.1.4 Vim的启动与退出 
-2.1.5 Vim下光标的移动 
-2.1.6 Vim下的复制、粘贴和 
-删除 
-2.1.7 Vim下的撤销和重复 
-2.1.8 Vim下的查找和替换 
-2.1.9 Vim下的文件恢复 
-2.1.10 Vim下的插件 
-2.2编译器GCC和交叉编译器 
-2.2.1 GCC的编译流程 
-2.2.2 GCC的常用编译选项 
-2.2.3交叉编译器 
-2.3常用shell命令和脚本 
-2.3.1 find命令 
-2.3.2 grep命令 
-2.3.3管道与重定向 
-2.4 工程管理Make和Makefile 
-2.4.1 Make和Makefile 
-2.4.2 Makefile中的变量 
-2.4.3 自动推导规则 
-2.4.4嵌套的Makefile 
-2.4.5 Make伪目标 
-2.4.6自动化变量 
-2.4.7 Make的内嵌函数 
-2.5本章小结 
-第3章 ARM体系结构 
-3.1处理器模式 
-3.2异常 
-3.3 ARM寄存器 
-3.4通用寄存器 
-3.4.1未分组的寄存器： 
-R0～R7 
-3.4.2分组的寄存器： 
-R8～R14 
-3.4.3寄存器R15:程序计数器 
-3.5程序状态寄存器 
-3.5.1 PSR位的类型 
-3.5.2条件标志位 
-3.5.3中断禁止位 
-3.5.4模式位 
-3.6本章小结 
-第4章ARM指令集 
-4.1数据处理指令 
-4.2分支指令 
-4.3软中断指令 
-4.4程序状态寄存器指令 
-4.5协处理器指令 
-4.6加载常量的伪指令 
-4.7本章小结 
-第5章ARM寻址模式 
-5.1寻址模式1-数据处理指令的 
-寻址模式 
-5.1.1编码格式 
-5.1.2移位器操作数 
-5.1.3数据处理操作——立即数 
-5.1.4数据处理操作——寄存器 
-5.1.5数据处理操作——立即数 
-的逻辑左移 
-5.1.6数据处理操作——寄存器 
-的逻辑左移 
-5.1.7数据处理操作——立即数 
-的逻辑右移 
-5.1.8数据处理操作——寄存器 
-的逻辑右移 
-5.1.9数据处理操作——立即数 
-的算术右移 
-5.1.10数据处理操作——寄存器 
-的算术右移 一 
-5 .1.11数据处理操作——立即数 
-的循环右移 一 
-5.1.12数据处理操作——寄存器 
-的循环右移 一 
-5.1.13数据处理操作——扩展的 
-循环右移 
-5.2寻址模式2-字或无符号 
-字节的load/store指令 
-5.2.1编码格式 
-5.2.2立即数偏移 
-5.2.3寄存器偏移 
-5.2.4比例寄存器偏移 
-5.2.5立即数的前变址寻址 
-5.2.6寄存器的前变址寻址 
-5.2.7 比例寄存器的前变址寻址 
-5.2.8立即数的后变址寻址 
-5.2.9寄存器的后变址寻址 
-5.2.10比例寄存器的 
-后变址寻址 
-5.3 寻址模式3-杂类load/store 
-指令的寻址方式 
-5.3.1编码格式 
-5.3.2杂类load/store-立即数 
-偏移 
-第6章编译和链接 
-第7章链接脚本 
-第8章Linux下开发流水灯 
-第9章U-Boot代码的分析 
-第10章实现简单的BootLoader
+## 第1章 BootLoader的概念 
+- 1.1 BootLoader的角色 
+- 1.2 BootLoader的来历 
+- 1.3 BootLoader的概念 
+- 1.3.1 MCU下的BootLoader 
+- 1.3.2嵌入式ARM和Linux下的BootLoader 
+- 1.3.3 PC下的引导流程 
+- 1.4本章小结 
+## 第2章L．nux开发环境 
+- 2.1编辑器Vim 
+- 2.1.1 Vim介绍 
+- 2.1.2 Vim的两个基本模式 
+- 2.1.3 Vim的两个常用模式 
+- 2.1.4 Vim的启动与退出 
+- 2.1.5 Vim下光标的移动 
+- 2.1.6 Vim下的复制、粘贴和删除 
+- 2.1.7 Vim下的撤销和重复 
+- 2.1.8 Vim下的查找和替换 
+- 2.1.9 Vim下的文件恢复 
+- 2.1.10 Vim下的插件 
+- 2.2编译器GCC和交叉编译器 
+- 2.2.1 GCC的编译流程 
+- 2.2.2 GCC的常用编译选项 
+- 2.2.3交叉编译器 
+- 2.3常用shell命令和脚本 
+- 2.3.1 find命令 
+- 2.3.2 grep命令 
+- 2.3.3管道与重定向 
+- 2.4 工程管理Make和Makefile 
+- 2.4.1 Make和Makefile 
+- 2.4.2 Makefile中的变量 
+- 2.4.3 自动推导规则 
+- 2.4.4嵌套的Makefile 
+- 2.4.5 Make伪目标 
+- 2.4.6自动化变量 
+- 2.4.7 Make的内嵌函数 
+- 2.5本章小结 
+## 第3章 ARM体系结构 
+- 3.1处理器模式 
+- 3.2异常 
+- 3.3 ARM寄存器 
+- 3.4通用寄存器 
+- 3.4.1未分组的寄存器：R0～R7 
+- 3.4.2分组的寄存器：R8～R14 
+- 3.4.3寄存器R15:程序计数器 
+- 3.5程序状态寄存器 
+- 3.5.1 PSR位的类型 
+- 3.5.2条件标志位 
+- 3.5.3中断禁止位 
+- 3.5.4模式位 
+- 3.6本章小结 
+- 第4章ARM指令集 
+- 4.1数据处理指令 
+- 4.2分支指令 
+- 4.3软中断指令 
+- 4.4程序状态寄存器指令 
+- 4.5协处理器指令 
+- 4.6加载常量的伪指令 
+- 4.7本章小结 
+## 第5章ARM寻址模式 
+- 5.1寻址模式1-数据处理指令的寻址模式 
+- 5.1.1编码格式 
+- 5.1.2移位器操作数 
+- 5.1.3数据处理操作——立即数 
+- 5.1.4数据处理操作——寄存器 
+- 5.1.5数据处理操作——立即数的逻辑左移 
+- 5.1.6数据处理操作——寄存器的逻辑左移 
+- 5.1.7数据处理操作——立即数的逻辑右移 
+- 5.1.8数据处理操作——寄存器的逻辑右移 
+- 5.1.9数据处理操作——立即数的算术右移 
+- 5.1.10数据处理操作——寄存器的算术右移 一 
+- 5 .1.11数据处理操作——立即数的循环右移 一 
+- 5.1.12数据处理操作——寄存器的循环右移 一 
+- 5.1.13数据处理操作——扩展的循环右移 
+- 5.2寻址模式2-字或无符号字节的load/store指令 
+- 5.2.1编码格式 
+- 5.2.2立即数偏移 
+- 5.2.3寄存器偏移 
+- 5.2.4比例寄存器偏移 
+- 5.2.5立即数的前变址寻址 
+- 5.2.6寄存器的前变址寻址 
+- 5.2.7 比例寄存器的前变址寻址 
+- 5.2.8立即数的后变址寻址 
+- 5.2.9寄存器的后变址寻址 
+- 5.2.10比例寄存器的后变址寻址 
+- 5.3 寻址模式3-杂类load/store指令的寻址方式 
+- 5.3.1编码格式 
+- 5.3.2杂类load/store-立即数偏移 
+## 第6章编译和链接 
+## 第7章链接脚本 
+## 第8章Linux下开发流水灯 
+## 第9章U-Boot代码的分析 
+## 第10章实现简单的BootLoader
 
 -------
 # 《Linux C编程从入门到精通》
