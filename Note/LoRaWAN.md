@@ -8,10 +8,11 @@
     - Class C：节点接收功能持续开启，功耗较高。
 
 ### 网络架构
-- 结点
-- 网关
-- 网络服务器
-- 应用服务器
+- 结点 Sensor/node
+- 网关 Gateway
+- 网络服务器 Network server
+- 应用服务器 Application server
+- 用户服务器 User server
 
 未完待续。。。。
 
