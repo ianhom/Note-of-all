@@ -110,3 +110,6 @@ No. | Name | Description
 106 | 《ARM Cotrex-M3与Cortex-M4权威指南》 |
 107 | 《ARM Cortex-M0与Cortex-M0+权威指南》 |
 108 | 《贝叶斯思维python学习法》 | 
+109 | 《一本书读懂TCP/IP》 |
+110 | 《程序员的英语》  |
+111 | 《21个项目玩转深度学习：基于TensorFlow的实践详解》 | 
