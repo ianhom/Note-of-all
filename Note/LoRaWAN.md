@@ -8,11 +8,11 @@
     - Class C：节点接收功能持续开启，功耗较高。
 
 ### 网络架构
-- 结点 Sensor/node
-- 网关 Gateway
-- 网络服务器 Network server
-- 应用服务器 Application server
-- 用户服务器 User server
+- 结点 Sensor/node：负责终端数据采集或控制，通过LoRa进行数据传输
+- 网关 Gateway：负责LoR介质到Eth介质的转换
+- 网络服务器 Network server：负责管理网络
+- 应用服务器 Application server：负责入网、加解密
+- 用户服务器 User server：用户应用要求
 
 未完待续。。。。
 
