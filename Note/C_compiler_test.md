@@ -1,5 +1,6 @@
 # 深入浅出C编译
 ## #include
+- 包含语句，一般用在.c源文件的开头，将被包含的文件原封不动地替换该语句。
 ## #define
 ## #if/#else/#endif
 ## static
