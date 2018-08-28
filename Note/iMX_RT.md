@@ -48,11 +48,15 @@ SRAM |  256kB  |   512kB  |   1MB   |    2MB
 
 <img src="../Pic/imxrt/zlg1050.png" width="500">
 
-- MIMXRT1052开发板：[野火](https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-10310241583.17.68856b46etnS2A&id=565533049348)                     
+- RT1052 Mini：[野火](https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-10310241583.17.68856b46etnS2A&id=565533049348)                     
 <img src="../Pic/imxrt/fire1050.png" width="500">
 
 
-- MIMXRT1052开发板：[正点原子](https://item.taobao.com/item.htm?spm=a1z10.3-c-s.w4002-17232804691.33.33b6f03c7jWZU6&id=567308850594)         
+- RT1052号令者：[正点原子](https://item.taobao.com/item.htm?spm=a1z10.3-c-s.w4002-17232804691.33.33b6f03c7jWZU6&id=567308850594)         
+
+<img src="https://github.com/ianhom/ShareBoard/blob/master/pic/ATK1050.png" width="500">
+
+- OK1052-C：[飞凌](https://item.taobao.com/item.htm?spm=a1z10.3-c-s.w4002-17232804691.33.33b6f03c7jWZU6&id=567308850594)         
 
 <img src="https://github.com/ianhom/ShareBoard/blob/master/pic/ATK1050.png" width="500">
 
