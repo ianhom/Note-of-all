@@ -56,7 +56,7 @@ SRAM |  256kB  |   512kB  |   1MB   |    2MB
 
 <img src="https://github.com/ianhom/ShareBoard/blob/master/pic/ATK1050.png" width="500">
 
-- OK1052-C：[飞凌](https://item.taobao.com/item.htm?spm=a1z10.3-c-s.w4002-17232804691.33.33b6f03c7jWZU6&id=567308850594)         
+- OK1052-C：[飞凌](https://item.taobao.com/item.htm?spm=2013.1.20141003.8.215e37f7VseVBR&scm=1007.10011.70203.100200300000001&id=576064187180&pvid=0525aa13-5bc8-483f-b25c-1ee137ce31d4)         
 
-<img src="https://github.com/ianhom/ShareBoard/blob/master/pic/ATK1050.png" width="500">
+<img src="https://github.com/ianhom/ShareBoard/blob/master/pic/ok1052.png" width="500">
 
