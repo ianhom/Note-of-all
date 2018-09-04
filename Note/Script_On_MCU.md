@@ -219,6 +219,9 @@ r, g, b, brightness = apa[0] # get first pixel colour
  
 - 从上述表格可以看出，Python可以应用于嵌入式开发，且对应用开发有很好的优势：开发难度低，学习门槛低。
 
+# 使用js在嵌入式平台上进行GUI开发
+- 采用RT-Thread的柿饼GUI，可以轻松实现js开发界面效果
+
 未完待续。。。。    
 ---
 
