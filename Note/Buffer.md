@@ -14,14 +14,20 @@
 
 ```c
 /* Define of Queue structure */
-typedef struct _Q_T
+typedef struct _T_Q
 {
     unsigned int u32Head;
     unsigned int u32Tail;
     unsigned int u32Cnt;
     unsigned int u32Max;
-    unsigned int
-}Q_T;
+    unsigned int *pu32Data;
+}T_Q;
+
+typedef struct _T_NODE
+{
+    struct _T_NODE *ptNext;
+    unsigned int pu32Data;
+}T_NODE;
 ```
 
 ## 实现方式2
