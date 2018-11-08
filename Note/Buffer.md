@@ -28,6 +28,9 @@ typedef struct _T_NODE
     struct _T_NODE *ptNext;
     unsigned int pu32Data;
 }T_NODE;
+
+static T_Q sg_tQA，sg_tQB;
+static T_NODE sg_tLinklistUsed,sg_LinkListEmpty;
 ```
 
 ## 实现方式2
@@ -39,3 +42,7 @@ typedef struct _T_NODE
 - 采用这样的方式可以解决方式2中的使用相同size的内存而造成的内存浪费问题。
 - 但这样malloc和free容易产生碎片，动态分配的过程也会花费时间。
 - 这里要特别注意数据长度，其实上述几种方法中数据都要求保存长度，否则访问信息不足，尤其是malloc的方式，越界方位会破坏malloc空间的下一个头部信息，不仅仅破坏了内存块，堆空间的使用也会遭到严重的破坏。
+
+
+## 实现方式4
+- to be done
