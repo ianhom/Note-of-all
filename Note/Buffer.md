@@ -29,6 +29,13 @@ typedef struct _T_NODE
     unsigned int pu32Data;
 }T_NODE;
 
+typedef struct _T_HEAD
+{
+    unsigned char      u8Used;
+    unsigned char      u8No;
+    unsigned short int u16Len; 
+}
+
 static T_Q sg_tQA，sg_tQB;
 static T_NODE sg_tLinklistUsed,sg_LinkListEmpty;
 ```
