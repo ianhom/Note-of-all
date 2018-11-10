@@ -31,9 +31,9 @@ typedef struct _T_NODE
 
 typedef struct _T_HEAD
 {
-    unsigned char      u8Used;
-    unsigned char      u8No;
-    unsigned short int u16Len; 
+    unsigned char      u8Used;  /* Used or available   */
+    unsigned char      u8No;    /* Belong to which one */
+    unsigned short int u16Len;  /* Length of used data */
 }
 
 static T_Q sg_tQA，sg_tQB;
