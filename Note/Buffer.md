@@ -34,7 +34,12 @@ typedef struct _T_HEAD
     unsigned char      u8Used;  /* Used or available   */
     unsigned char      u8No;    /* Belong to which one */
     unsigned short int u16Len;  /* Length of used data */
-}
+}T_HEAD;
+
+typedef struct _T_EASY_HEAD
+{
+    unsigned short int u16Len;  /* Length of used data. 0 means NOT used */
+}T_EASY_HEAD;
 
 static T_Q sg_tQA，sg_tQB;
 static T_NODE sg_tLinklistUsed,sg_LinkListEmpty;
