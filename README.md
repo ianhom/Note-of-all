@@ -1,5 +1,6 @@
 # Note-of-all
 - Note of everything
+   * Algorithm: you know,algorithm stuff....
    * Book: Book list, index, notes
    * Dev_Board: My Develop boards collections
    * Language: Programming language learning note
