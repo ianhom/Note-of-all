@@ -40,9 +40,9 @@ int bubble_sort(int *a, int n)
     {
         return -1;
     }
-    for(i = 0; j < n; i++)
+    for(i = 0; j < n - 1; i++)
     {
-        for(j = 0; j < n-i; j++)
+        for(j = 0; j < n - 1 - i; j++)
         {
             if(a[j]>a[j+1])
             {
