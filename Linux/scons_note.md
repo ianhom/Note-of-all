@@ -4,3 +4,4 @@
 - 通过Environment（）函数可以生成环境对象，设置不同的环境参数。
     - 例如env1 = Environment(LINKFLAGS='-static')创建了环境对象，就可以通过env1.Program('hello.c')就可以静态编译hello了。    
     - 而env2 = Environment()创建了一个默认环境，则env2.Program('hello.c')则是一个动态链接的hello
+-  sconscript相当于include，将会把sconscript脚本“调用”执行。
