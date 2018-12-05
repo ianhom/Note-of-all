@@ -6,3 +6,6 @@
 - curl: 从网络上获取资源，配合bash可以执行网络上的脚本资源。
 - chroot: 修改更目录路径，用于在子系统中编译
 - time：后跟其他指令后，可以获取该指令执行时间
+
+## Other
+- 查看温度：cat /dev/class/thermal/temp
