@@ -9,3 +9,5 @@
 
 ## Other
 - 查看温度：cat /dev/class/thermal/temp
+- 查看CPU信息：cat /proc/cpuinfo
+- 查看系统版本： cat /proc/version
