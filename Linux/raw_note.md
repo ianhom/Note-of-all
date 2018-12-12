@@ -7,8 +7,7 @@
 - chroot: 修改更目录路径，用于在子系统中编译
 - time：后跟其他指令后，可以获取该指令执行时间
 - ldd：查看应用所依赖的动态库信息
-
-## Other
-- 查看温度：cat /dev/class/thermal/temp
-- 查看CPU信息：cat /proc/cpuinfo
-- 查看系统版本： cat /proc/version
+- cat：查看文件内容
+    - 查看温度：cat /dev/class/thermal/temp
+    - 查看CPU信息：cat /proc/cpuinfo
+    - 查看系统版本： cat /proc/version
