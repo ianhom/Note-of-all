@@ -1,6 +1,6 @@
 # raw note
 ## cmd
-- sco: 远程拷贝，在没有ftp的条件下通过网络拷贝文件到目标机器上。
+- scp: 远程拷贝，在没有ftp的条件下通过网络拷贝文件到目标机器上。
 - file: 解释查看应用文件类型，是否可执行，动态链接还是静态连接，依赖库，版本等
 - readelf：读取文件的elf信息
 - curl: 从网络上获取资源，配合bash可以执行网络上的脚本资源。
@@ -11,3 +11,6 @@
     - 查看温度：cat /dev/class/thermal/temp
     - 查看CPU信息：cat /proc/cpuinfo
     - 查看系统版本： cat /proc/version
+    
+## other
+- 交叉编译居然比本地编译要慢，即使本地机器性能较弱。
