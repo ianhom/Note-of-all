@@ -5,6 +5,7 @@
 - RaspberryPi B
 - RaspberryPi B+
 - RaspberryPi 2B
+- RsapberryPi 3A+
 - RaspberryPi 3B
 - RaspberryPi 3B+
 - RaspberryPi 0
