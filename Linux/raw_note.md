@@ -23,3 +23,15 @@
     - sudo apt-get install apache2
     - 重启后在主机的浏览器中输出linux机器的ip地址，即可登录主页。
     - 修改\var\www\html\index.html来更改主页内容。
+
+### iotivity
+- 增加必要的源码和库：
+    - git clone https://github.com/iotivity/iotivity.git
+    - git clone https://github.com/intel/tinycbor.git extlibs/tinycbor/tinycbor -b v0.5.1
+    - git clone https://github.com/ARMmbed/mbedtls.git extlibs/mbedtls/mbedtls -b mbedtls-2.4.2
+    - sudo apt-get install libglib2.0-dev
+    - sudo apt-get install sqlite3
+    - sudo apt-get install libsqlite3-dev
+    - sudo apt-get install autoconf automake libtool
+    - sudo apt-get install libffi-dev
+    - sudo apt-get install curl libcurl3 libcurl3-dev php5-curl
