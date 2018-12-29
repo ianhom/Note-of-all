@@ -11,3 +11,4 @@ object ： requirement
 main : main.c
   cc -o main main.c
 ```
+- main是我们要生成的目标可执行文件，需要使用main.c这个源文件，我们通过cc指令（gcc）来将main.c源码编译成main可执行文件。
