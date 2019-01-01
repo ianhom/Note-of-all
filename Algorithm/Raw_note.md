@@ -55,3 +55,7 @@ int bubble_sort(int *a, int n)
     return 0;
 }
 ```
+
+## DFS(Deep First Search)
+-  基本原则：判断边界，若达边界则退出，若不达边界则递归尝试每一种可能。
+
