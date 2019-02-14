@@ -1,1 +1,3 @@
-#sorting
+# Sorting
+- bubble
+- quick
