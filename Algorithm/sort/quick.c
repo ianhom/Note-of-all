@@ -18,3 +18,12 @@ void qsort(int *a, int l, int r)
     qsort(a,l,i-1);
     qsort(a,i+1,r);
 }
+
+void main(int argc, char **argv)
+{
+    int a[]={2,1,3,4,5,646,34,3,4,2,6,7,8,9,6,3,45,345};
+    qsort(a,0,sizeof(a)-1);
+    for(int i=0;i<sizeof(a);i++)
+        printf("%d,"a[i]);
+    return;
+}
