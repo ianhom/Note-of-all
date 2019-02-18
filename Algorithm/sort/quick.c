@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "my_lib.h"
 
 void qsort(int *a, int l, int r)
 {
@@ -21,7 +22,8 @@ void qsort(int *a, int l, int r)
 
 void main(int argc, char **argv)
 {
-    int a[]={2,1,3,4,5,646,34,3,4,2,6,7,8,9,6,3,45,345};
+    int a[100];
+    MY_ATOI_ARGV(a);
     qsort(a,0,sizeof(a)-1);
     for(int i=0;i<sizeof(a);i++)
         printf("%d,"a[i]);
