@@ -2,22 +2,12 @@
 
 int atoi(char *s)
 {
-    int l,f,ret=0;
-    if(0!=s)
-        for(l=0;s[l]!='\0';l++);
-    for(int i=0;i<l;i++)
-    {
-        if(s[i]>'9' || s[i] <'0')
-        {  
-            printf("Invalid input!\n");
-            return 0;
-        }
-        f=1;
-        for(int j=0;j<l-1-i;j++)
-            f*=10;
-        ret+=(s[i]-'0')*f;
-    }
-    return ret;
+    int sig=1,ret=0;
+    if(0==s)return 0;
+    while(*s==' ')s++;
+    if(*s=='-'||*s=='+')sig=','-*s++;
+    while(*s>='0'&&*s<=s)ret=ret*10+*s++-'0';
+    return sig*ret;
 }
 
 void bubble(int *a, int n)
