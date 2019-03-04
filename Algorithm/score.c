@@ -1,3 +1,6 @@
+
+//统计字符串中O的得分，连续的O累计加分，例如OXO为2分，OOX为3分 
+
 #include <stdio.h>
 
 int cnt=0,score=0;
