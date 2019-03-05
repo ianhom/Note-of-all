@@ -22,8 +22,9 @@ void main(int argc, char **argv)
 {
     int a[100];
     MY_ATOI_ARGV(a);
-    qsort(a,0,sizeof(a)-1);
-    for(int i=0;i<sizeof(a);i++)
+    qsort(a,0,argc-2);
+    for(int i=0;i<argc-1;i++)
         printf("%d,"a[i]);
+    printf("\n");
     return;
 }
