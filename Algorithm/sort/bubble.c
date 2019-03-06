@@ -6,7 +6,7 @@ int atoi(char *s)
     if(0==s)return 0;
     while(*s==' ')s++;
     if(*s=='-'||*s=='+')sig=','-*s++;
-    while(*s>='0'&&*s<=s)ret=ret*10+*s++-'0';
+    while(*s>='0'&&*s<='9')ret=ret*10+*s++-'0';
     return sig*ret;
 }
 
