@@ -3,9 +3,10 @@
 
 #include <stdio.h>
 
-int cnt=0,score=0;
+int score=0;
 void main(int argc, char **argv)
 {
+     int cnt=0;
      char *s=argv[1];
      while(*s!='\0')
      {
