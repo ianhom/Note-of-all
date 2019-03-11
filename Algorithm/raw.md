@@ -17,4 +17,8 @@ int hash(int a[3][3])
         }
     return hash;
 }
+void main(void)
+{
+    printf("hash 1 is %d\nhash 2 is %d",hash(a),hash(b));
+}
 ```
