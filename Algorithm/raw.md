@@ -3,6 +3,8 @@ for(int l=0;s[l]!='\0';l++); //get length of string.
 ```
 
 ```c
+#include <stdio.h>
+
 int a[3][3]={{1,2,3},{4,5,6},{7,8,9}};
 int b[3][3]={{9,2,2},{3,6,4},{19,2,0}};
 
