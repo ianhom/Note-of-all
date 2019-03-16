@@ -2,7 +2,7 @@
 void cal(int a)
 {
     n[a%10]++;
-    cal(a/10)
+    cal(a/10)；
 }
 
 
