@@ -1,3 +1,5 @@
+//题目：从1到N自然数，将所有数字练起来，统计数字0~9出现的次数。
+
 #include <stdio.h>
 void cal(int a)
 {
@@ -15,7 +17,7 @@ void main(int argc, char **argv)
     for(int i=1; i<=ret;i++)
     {
      #if(1)
-        cal(i);
+        cal(i);    //same way with while, but slower;
      #else
         int j=i;      
         do
