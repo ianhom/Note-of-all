@@ -6,7 +6,7 @@ void main(int argc, char **argv)
     int *s=argv[1];
     while(*s != '\0')
     {
-        if(*s=='O')score+=(++cnt);
+        if(*s++=='O')score+=(++cnt);
         else cnt=0;
     }
     printf("The score is %d\n",score);
