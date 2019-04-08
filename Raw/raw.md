@@ -1,4 +1,5 @@
 ```c
+static int sa=234;
 void main(void)
 {
     int a=123;
@@ -14,3 +15,4 @@ void test(void)
             *(p+i)=456;
 }
 ```
+-
