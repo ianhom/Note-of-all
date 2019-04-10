@@ -4,7 +4,8 @@ void main(void)
 {
     int a=123;
     test();
-    printf("a is %d\n",a);
+    printf("a is %d\n",a);   // you get 456
+    printf("sa is %d\n",sa); // you get 789
 }
 
 void test(void)
@@ -14,7 +15,7 @@ void test(void)
     for(int i=0;i<20;i++)
         if(*(p+i)==123)
             *(p+i)=456;
-    p=&sb;
+    p=&sa;
     for(int i=-20;i<20;i++)
         if(*(p+i)==234)
             *(p+i)=789;
