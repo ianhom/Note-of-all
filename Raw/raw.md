@@ -1,3 +1,4 @@
+- 通过指针寻找函数内不可见的全局变量及上层函数的局部变量
 ```c
 static int sa=234;
 void main(void)
