@@ -20,7 +20,7 @@ void test(void)
     for(int i=0;i<20;i++)
         if(*(p+i)==123)
             *(p+i)=456;
-    p=&sb;
+    p=&sb;           // Get address of static sb
     for(int i=-20;i<20;i++)
         if(*(p+i)==234)
             *(p+i)=789;
