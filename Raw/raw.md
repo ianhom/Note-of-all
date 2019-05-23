@@ -40,6 +40,7 @@ void test(void)
 - mesh了属于网络层规范。
 - mesh规范中provisioner作为网络管理者负责将设备变成网络中的节点。
 - Proxy作为代理可以将手机接入到mesh网络中
+- Friend node作为低功耗节点的缓存。
 
 ## Java
 - Java的class的构造函数与类名同名，可以有多个构造函数，通过不同的参数来识别不同的构造入口。
