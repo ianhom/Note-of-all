@@ -45,7 +45,7 @@ void test(void)
 - mesh规范中provisioner作为网络管理者负责将设备变成网络中的节点。
 - Proxy作为代理可以将手机接入到mesh网络中
 - Friend node作为低功耗节点的缓存。friend和低功耗节点链接建立的大致流程为，低功耗节点寻找附近friend，friend回应请求，建立连接。
-- DFU基于GATT进行数据交换。
+- DFU基于GATT进行数据交换，利用通知和写入来传递固件。。
 
 ## Java
 - Java的class的构造函数与类名同名，可以有多个构造函数，通过不同的参数来识别不同的构造入口。
@@ -70,5 +70,4 @@ void test(void)
 - 更多新框架，面向开发者的过往经历。
 - 支持可抢占式调度内核，与协程。
 - 
-
 
