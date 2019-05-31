@@ -47,6 +47,9 @@ void test(void)
 - Friend node作为低功耗节点的缓存。friend和低功耗节点链接建立的大致流程为，低功耗节点寻找附近friend，friend回应请求，建立连接。
 - DFU基于GATT进行数据交换，利用通知和写入来传递固件。。
 
+# Python
+- Python是一种易学强大的脚本语言。
+
 ## Java
 - Java的class的构造函数与类名同名，可以有多个构造函数，通过不同的参数来识别不同的构造入口。
 - Java是强类型的编程语言，使用变量前要申明变量类型。
