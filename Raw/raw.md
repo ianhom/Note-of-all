@@ -67,7 +67,7 @@ void test(void)
 - RT1052是nxp推出的一款跨界mcu，600mhz主频的m7架构。
 
 
-# moe
+# MOE(Minds Of Embedded system)
 - 决定重写moe，重点在于各种组件的支持，服务编程者。
 - 新版moe将支持各种云平台，从底层到安全到应用。
 - 新版moe将支持各种编程语言。
