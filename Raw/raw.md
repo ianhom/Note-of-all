@@ -1,4 +1,4 @@
-# unclassified
+# Unclassified
 
 ## C
 - c语言是我的编程基础，如果说我能对编程理解更为深入，很可能是在c语言的基础上有的精进。
@@ -43,6 +43,7 @@ void test(void)
 - att是基础，上层为gatt定义了访问规范，在这层有服务器和客户端这两个角色，gap使用了gatt实现设备access的规则，在这层定义了广播者，观察者，中心设备（一般为手机）和外围设备（一般为sensor）。
 - att是属性协议，定义了数据存放的形式，att中包含了uuid，handle，value和permission。。
 - uuid是属性的类型 通过类型可知道数据的含义。
+- handle是数据在服务器的唯一地址，类似于指针。
 - mesh了属于网络层规范。
 - mesh规范中provisioner作为网络管理者负责将设备变成网络中的节点。
 - Proxy作为代理可以将手机接入到mesh网络中
