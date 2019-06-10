@@ -44,7 +44,7 @@ void test(void)
 - att是属性协议，定义了数据存放的形式，att中包含了uuid，handle，value和permission。。
 - uuid是属性的类型 通过类型可知道数据的含义。
 - handle是数据在服务器的唯一地址，类似于指针。
-- value就是属性中的数值，比如温度值，电流值等。
+- value就是属性中的数值，比如温度值，电流值或者是字符，亦可以是另一个uuid的值，这需要看本att的uuid含义是什么。等。
 - permission收数值的可读可写权限，向外展示如何操作。
 - mesh了属于网络层规范。
 - mesh规范中provisioner作为网络管理者负责将设备变成网络中的节点。
