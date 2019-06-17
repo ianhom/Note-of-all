@@ -48,6 +48,7 @@ void test(void)
 - permission收数值的可读可写权限，向外展示如何操作。
 - 多条att组合成service，完成一个具体功能。
 - 一个service的开端是一个值uuid为0x2800的att来表示的，其att的值就为服务类型值；uuid为0x2803就表示一个特性声明。
+- 用户可以定义自己的service和特性，但这样就没有互操作性，除非向外告知service细节。
 - 一个或多个service组成一个profile，表明一个产品提供的能力。
 - mesh了属于网络层规范。
 - mesh规范中provisioner作为网络管理者负责将设备变成网络中的节点。
