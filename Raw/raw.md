@@ -35,7 +35,8 @@ void test(void)
 - dfs和bfs都是查询状态的方法，不同于bfs的步步为营，dfs偏向于不撞南墙不回头。
 
 ### heap
-堆是一块固定的静态数据区，一般通过malloc，realloc，free来管理。
+- 堆是一块固定的静态数据区，一般通过malloc，realloc，free来管理。
+- 堆可以是完整的一块空间，也可以是多块不连续空间，具体是否支持要看malloc和free到位实现。
 
 
 ## BLE
