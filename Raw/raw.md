@@ -39,6 +39,9 @@ void test(void)
 - 堆是一块固定的静态数据区，一般通过malloc，realloc，free来管理。
 - 堆可以是完整的一块空间，也可以是多块不连续空间，具体是否支持要看malloc和free到位实现。
 
+###
+- 指针是个好东西，也很危险
+- 指针有两个概念，地址和类型。
 
 ## BLE
 - Bluetooth Low Energy是蓝牙4.0之后的低功耗蓝牙版本，极大扩展了iot应用。
