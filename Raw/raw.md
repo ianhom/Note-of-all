@@ -55,12 +55,12 @@ void test(void)
 - 多条att组合成service，完成一个具体功能。
 - 一个service的开端是一个值uuid为0x2800的att来表示的，其att的值就为服务类型值；uuid为0x2803就表示一个特性声明。
 - 用户可以定义自己的service和特性，但这样就没有互操作性，除非向外告知service细节。
-- 一个或多个service组成一个profile，表明一个产品提供的能力。
+- 一个或多个service组成一个profile，表明一个产品提供的能力，定义了角色，发现流程，详细服务等。
 - mesh了属于网络层规范。
 - mesh规范中provisioner作为网络管理者负责将设备变成网络中的节点。
 - Proxy作为代理可以将手机接入到mesh网络中
 - Friend node作为低功耗节点的缓存。friend和低功耗节点链接建立的大致流程为，低功耗节点寻找附近friend，friend回应请求，建立连接。
-- DFU基于GATT进行数据交换，利用通知和写入来传递固件。。
+- DFU基于GATT进行数据交换，利用通知和写入来传递固件。
 
 # Python
 - Python是一种易学强大的脚本语言。
