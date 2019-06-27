@@ -45,7 +45,8 @@ void test(void)
 - 刚开始学指针的时候很多人会说指针就是地址，确实指针的值是一个地址。
 
 ## JavaScript
-- JS是一种类似c和Java的脚步语言 在前端web开发非常流行，也有用于后端服务器开发的nodejs。。
+- JS是一种类似c和Java的脚步语言 在前端web开发非常流行，也有用于后端服务器开发的nodejs。
+- 其实JavaScript和Java关系不大，Java是编译型语言，而JavaScript是脚本语言。
 
 ## BLE
 - Bluetooth Low Energy是蓝牙4.0之后的低功耗蓝牙版本，极大扩展了iot应用。
