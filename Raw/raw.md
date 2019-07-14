@@ -49,6 +49,9 @@ void test(void)
 - JS是一种类似c和Java的脚步语言 在前端web开发非常流行，也有用于后端服务器开发的nodejs。
 - 其实JavaScript和Java关系不大，Java是编译型语言，而JavaScript是脚本语言。
 
+## Groovy   
+- Groovy 是 用于Java虚拟机的一种敏捷的动态语言，它是一种成熟的面向对象编程语言，既可以用于面向对象编程，又可以用作纯粹的脚本语言。使用该种语言不必编写过多的代码，同时又具有闭包和动态语言中的其他特性。Groovy是JVM的一个替代语言（替代是指可以用 Groovy 在Java平台上进行 Java 编程），使用方式基本与使用 Java代码的方式相同，该语言特别适合与Spring的动态语言支持一起使用，设计时充分考虑了Java集成，这使 Groovy 与 Java 代码的互操作很容易。（注意：不是指Groovy替代java，而是指Groovy和java很好的结合编程  ---- by 百度百科
+
 ## BLE
 - Bluetooth Low Energy是蓝牙4.0之后的低功耗蓝牙版本，极大扩展了iot应用。
 - att是基础，上层为gatt定义了访问规范，在这层有服务器和客户端这两个角色，gap使用了gatt实现设备access的规则，在这层定义了广播者，观察者，中心设备（一般为手机）和外围设备（一般为sensor）。
