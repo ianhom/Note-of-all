@@ -109,3 +109,5 @@ void test(void)
 - 支持可抢占式调度内核，与协程。
 - moe的设计要包含每个模块的test case，助学型os的feature不能少。
 
+## socket编程
+- socket可以实现进程间通讯。
