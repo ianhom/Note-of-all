@@ -111,3 +111,4 @@ void test(void)
 
 ## socket编程
 - socket可以实现进程间通讯。
+- 一个socket绑定一个ip＋port号，多个socket不能绑定同一个地址。
