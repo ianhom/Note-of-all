@@ -111,4 +111,4 @@ void test(void)
 
 ## socket编程
 - socket可以实现进程间通讯。
-- 一个socket绑定一个ip＋port号，多个socket不能绑定同一个地址。
+- 一个socket绑定一个ip＋port号，多个socket不能绑定同一个地址，所以socket有时会作为贡献资源，而无法再进程间同时使用。。
