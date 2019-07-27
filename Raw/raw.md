@@ -84,7 +84,7 @@ void test(void)
 - Python的强大有两点∶容易学，应用范围广。
 - Python对格式有非常严格的要求，错误的空格缩进也会导致程序无法运行；程序的层级关系也是通过代码缩进来实现的。
 - 代码的层级是通过“:”号和代码缩进来表示
-- 同c语言的include，Python有强大的import，例如curl就有对应的pyurl模块。
+- 同c语言的include，Python有强大的import，例如curl就有对应的pycurl模块，具有高开发效率和执行效率。
 - Python同样有高级语言的很多特性，如面向对象等。
 
 ## Java
