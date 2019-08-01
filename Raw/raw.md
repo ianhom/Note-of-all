@@ -120,6 +120,7 @@ void test(void)
 
 ## CoAP
 - 简化版，二进制版的http
+- 具有get，put，post等方法
 
 ## 框架
 - 底层到顶层，统一标准的成本越来越高。
