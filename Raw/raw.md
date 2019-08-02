@@ -107,11 +107,12 @@ void test(void)
 # MOE(Minds Of Embedded system)
 - 决定重写moe，重点在于各种组件的支持，服务编程者。
 - 新版moe将支持各种云平台，从底层到安全到应用。
-- 新版moe将支持ocf标准
+- 新版moe将支持ocf，hilink，阿里标准
 - 新版moe将支持各种编程语言。
 - 更多新框架，面向开发者的过往经历。
 - 支持可抢占式调度内核，与协程。
 - moe的设计要包含每个模块的test case，助学型os的feature不能少。
+
 
 ## socket编程
 - socket可以实现进程间通讯。
