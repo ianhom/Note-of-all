@@ -52,7 +52,7 @@ void test(void)
 - 其实JavaScript和Java关系不大，Java是编译型语言，而JavaScript是脚本语言。
 
 ## Groovy   
-- Groovy 是 用于Java虚拟机的一种敏捷的动态语言，它是一种成熟的面向对象编程语言，既可以用于面向对象编程，又可以用作纯粹的脚本语言。使用该种语言不必编写过多的代码，同时又具有闭包和动态语言中的其他特性。Groovy是JVM的一个替代语言（替代是指可以用 Groovy 在Java平台上进行 Java 编程），使用方式基本与使用 Java代码的方式相同，该语言特别适合与Spring的动态语言支持一起使用，设计时充分考虑了Java集成，这使 Groovy 与 Java 代码的互操作很容易。（注意：不是指Groovy替代java，而是指Groovy和java很好的结合编程  ---- by 百度百科
+- Groovy 是用于Java虚拟机的一种敏捷的动态语言，它是一种成熟的面向对象编程语言，既可以用于面向对象编程，又可以用作纯粹的脚本语言。使用该种语言不必编写过多的代码，同时又具有闭包和动态语言中的其他特性。Groovy是JVM的一个替代语言（替代是指可以用 Groovy 在Java平台上进行 Java 编程），使用方式基本与使用 Java代码的方式相同，该语言特别适合与Spring的动态语言支持一起使用，设计时充分考虑了Java集成，这使 Groovy 与 Java 代码的互操作很容易。（注意：不是指Groovy替代java，而是指Groovy和java很好的结合编程  ---- by 百度百科
 
 ## BLE
 - Bluetooth Low Energy是蓝牙4.0之后的低功耗蓝牙版本，极大扩展了iot应用。
@@ -67,6 +67,7 @@ void test(void)
 - 用户可以定义自己的service和特性，但这样就没有互操作性，除非向外告知service细节。
 - 一个或多个service组成一个profile，表明一个产品提供的能力，定义了角色，发现流程，详细服务等。
 - mesh了属于网络层规范。
+- mesh的一大特点是报文通过节点中继来扩大通讯范围。
 - mesh规范中provisioner作为网络管理者负责将设备变成网络中的节点。
 - Proxy作为代理可以将手机接入到mesh网络中
 - Friend node作为低功耗节点的缓存。friend和低功耗节点链接建立的大致流程为，低功耗节点寻找附近friend，friend回应请求，建立连接。
