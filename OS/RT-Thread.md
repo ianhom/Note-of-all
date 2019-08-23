@@ -5,3 +5,4 @@
 - env是RTT的配置工具，可以模拟Linux的shell环境，使用menucofnig，scons，pkgs等cmd来配置需要的RTT工程
 - MicroPython可以作为RTT的一个软件包运行在RTT系统上，原则上只有硬件上移植了RTT，就可以运行MicroPython
 - RTT有两个版本：RTT IoT和RTT nano。nano更接近于典型的RTOS，IoT更全面。
+- RTT有任务自动初始化功能，原理是通过制定函数指针保存在一个特别的段中，rtt启动时会检测这个段中是否有函数，如果有就全部初始化
