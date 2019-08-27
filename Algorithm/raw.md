@@ -24,3 +24,4 @@ void main(void)
     printf("hash 1 is %d\nhash 2 is %d",hash(a),hash(b));
 }
 ```
+- 通过hash表将链表优化，分散链表的起点，使在链表结构中查找更为快捷
