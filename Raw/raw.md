@@ -56,6 +56,7 @@ void test(void)
 
 ## BLE
 - Bluetooth Low Energy是蓝牙4.0之后的低功耗蓝牙版本，极大扩展了iot应用。
+- 因为其低功耗特性，再加上手机到位支持，非常适合可穿戴产品。
 - att是基础，上层为gatt定义了访问规范，在这层有服务器和客户端这两个角色，gap使用了gatt实现设备access的规则，在这层定义了广播者，观察者，中心设备（一般为手机）和外围设备（一般为sensor）。
 - att是属性协议，定义了数据存放的形式，att中包含了uuid，handle，value和permission。。
 - uuid是属性的类型 通过类型可知道数据的含义。
