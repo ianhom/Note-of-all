@@ -111,6 +111,10 @@ void test(void)
 - 简化版，二进制版的http
 - 具有get，put，post，delete等方法
 
+### MQTT
+- MQTT是基于订阅发布机制的适用于物联网的通讯协议
+- 报文结构包括固定头，可变头和payload
+
 ### socket编程
 - socket可以实现进程间通讯。
 - 一个socket绑定一个ip＋port号，多个socket不能绑定同一个地址，所以socket有时会作为共享资源，而无法再进程间同时使用。因此socket属于全局资源，在进程间可以做同步使用。
