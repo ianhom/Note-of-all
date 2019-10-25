@@ -82,7 +82,9 @@ void test(void)
 - Groovy很多语法源自各种语言，可以使用强类型，也可以使用def关键字动态定义。
 
 ### shell
-- shell是linux开发基础，只有基于linux开发基本都绕不开shell命令或脚本
+- shell是linux开发基础，只有基于linux开发基本都绕不开shell命令或脚本。
+- shift命令是用于切换参数位置，例如原参数为 1 2 3，shift命令后就是2 3。
+
 
 ------------------------------
 
