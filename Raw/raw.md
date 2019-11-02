@@ -87,12 +87,14 @@ void test(void)
 - grep命令是常用的搜索命令，可以过滤出log中的关键信息。
 - find命令同样也是搜索命令，可以以文件名来全局查找。
 - diff命令可以对比两个文件的不同，注意这里是逐行对比。
+
 #### git
 - git clone 克隆仓库
 - git status 检查状态
 - git add 增加修改记录
 - git commit 在本地提交修改
 - git push 提交到远端服务器
+- git pull 将远端服务器同步到本地
 
 ------------------------------
 
