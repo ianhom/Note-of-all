@@ -95,6 +95,8 @@ void test(void)
 - git commit 在本地提交修改
 - git push 提交到远端服务器
 - git pull 将远端服务器同步到本地
+- git branch 检查分支
+- git checkout 切换分支
 
 ------------------------------
 
