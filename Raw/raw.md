@@ -96,7 +96,8 @@ void test(void)
 - git push 提交到远端服务器
 - git pull 将远端服务器同步到本地
 - git branch 检查分支
-- git checkout 切换分支
+- git checkout 切换分支，也可以用于撤销某个文件的修改
+- git log 输出修改记录
 
 ------------------------------
 
