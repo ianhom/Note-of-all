@@ -100,7 +100,7 @@ void test(void)
 - git log 输出修改记录
 - git merge 合并分支
 - git reset 版本回退
-
+- git diff 比较修改内容
 
 ------------------------------
 
