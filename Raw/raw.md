@@ -103,6 +103,7 @@ void test(void)
 - git diff 比较修改内容
 - git config 配置git仓库
 - git am 打patch
+- git init 初始化git仓库
 
 ------------------------------
 
