@@ -104,6 +104,7 @@ void test(void)
 - git config 配置git仓库
 - git am 打patch
 - git init 初始化git仓库
+- git submodule 子模块操作
 
 ------------------------------
 
