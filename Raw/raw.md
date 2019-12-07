@@ -62,6 +62,7 @@ void test(void)
 
 #### 豆知识
 - vprintf是用于在变参函数中传递变参时所使用的printf。
+- sprintf是讲printf的内容输出指定的内存空间中。
 
 ### C++
 - Cpp是在C语言基础之上发展出来的面向对象的编程语言。
