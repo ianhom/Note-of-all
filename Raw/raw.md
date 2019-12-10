@@ -126,6 +126,7 @@ void test(void)
 - git am 打patch
 - git init 初始化git仓库
 - git submodule 子模块操作
+- git show 显示已经commit后的修改内容
 
 ------------------------------
 
