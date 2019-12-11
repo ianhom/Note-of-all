@@ -123,6 +123,7 @@ void test(void)
 - git reset 版本回退
 - git diff 比较修改内容
 - git config 配置git仓库
+- git apply 应用patch
 - git am 打patch
 - git init 初始化git仓库
 - git submodule 子模块操作
