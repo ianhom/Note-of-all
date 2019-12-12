@@ -128,6 +128,7 @@ void test(void)
 - git init 初始化git仓库
 - git submodule 子模块操作
 - git show 显示已经commit后的修改内容
+- git blame 显示文件的修改记录。
 
 ------------------------------
 
