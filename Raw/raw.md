@@ -90,6 +90,8 @@ void test(void)
 - Python同样有高级语言的很多特性，如面向对象等。
 - Python更像是编程的本质提炼，用简洁的语言重新组织了一下，专注实现本身，而非语法。
 - Python的多线程也非常方便，同时一个线程的意外crash不会影响其他线程。
+#### micropython
+- micropython是运行在mcu上Python，具有丰富的库和良好的实时性。
 
 ### Java
 - Java的class的构造函数与类名同名，可以有多个构造函数，通过不同的参数来识别不同的构造入口。
