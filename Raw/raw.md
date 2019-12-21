@@ -92,6 +92,7 @@ void test(void)
 - Python的多线程也非常方便，同时一个线程的意外crash不会影响其他线程。
 #### micropython
 - micropython是运行在mcu上Python，具有丰富的库和良好的实时性。
+- 特色库为machine，操作底层的硬件模块。
 
 ### Java
 - Java的class的构造函数与类名同名，可以有多个构造函数，通过不同的参数来识别不同的构造入口。
