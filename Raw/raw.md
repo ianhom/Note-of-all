@@ -237,7 +237,9 @@ void test(void)
 - 安全服务，网络安全组件，数据加密。
 - 文件系统，fatfs等
 - 各大云平台接口，安全认证，注册登录，设备管理，控制及反馈接口。
-### rtt
+### RT-Thtead
+- 分为rtt和rtt nano（简化版）
+- rtt具有丰富的组建网络文件系统，支持众多平台，脚本引擎做的很不错。
 ### alios thing
 ### liteos
 ### Tencentos tiny
