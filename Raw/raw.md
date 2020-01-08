@@ -156,7 +156,7 @@ void test(void)
 - 一个或多个service组成一个profile，表明一个产品提供的能力，定义了角色，发现流程，详细服务等。
 - mesh了属于网络层规范。
 - mesh的一大特点是报文通过节点中继来扩大通讯范围。
-- mesh中有两种承载层，广播承载层和GATT承载层。
+- mesh中有两种承载层，广播承载层和GATT承载层，GATT承载层主要用于proxy应用，广播承载层怎为数据收发应用。。
 - mesh规范中provisioner作为网络管理者负责将设备变成网络中的节点。
 - Proxy作为代理可以将手机接入到mesh网络中
 - Friend node作为低功耗节点的缓存。friend和低功耗节点链接建立的大致流程为，低功耗节点寻找附近friend，friend回应请求，建立连接。
