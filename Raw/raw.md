@@ -59,10 +59,21 @@ void test(void)
 
 #### Queue实现
 ```c
+#include <stdio.h>
+#include <stdlib.h>
 typedef struct _q
 {
     int head,tail,cnt,size,data[0];
 }Q_T;
+
+Q_T* q_inti(int n)
+{
+    Q_T *q=(Q_T*)malloc(sizeof(Q_T)+sizeof(int)*size);
+    if(NULL == q)return NULL;
+    q->head=q->tail=q->cnt=0;
+    q->size=size;
+    return q;
+}
 ```
 
 #### printf格式
