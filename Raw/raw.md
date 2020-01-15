@@ -57,6 +57,14 @@ void test(void)
 - 指针数组是一个数组，里面全是指针，int *a[10];a[0]是个指针。a＋1偏移量是一个int类型的长度。
 - 数组指针是个指针，指向一个数组。int (*a)[10];a是个指向int *[10]数组的指针。a＋1偏移量是十个int类型的长度
 
+#### Queue实现
+```c
+typedef struct _q
+{
+    int head,tail,cnt,size,data[0];
+}Q_T;
+```
+
 #### printf格式
 - %d 十进制整型
 - %x 十六进制整型
