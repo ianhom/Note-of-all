@@ -74,6 +74,13 @@ Q_T* q_inti(int n)
     q->size=size;
     return q;
 }
+
+int q_add(Q_T *q, int n)
+{
+    if(q->cnt == q->size)
+        return -1;
+    q->data[q–>tail]=n;
+}
 ```
 
 #### printf格式
