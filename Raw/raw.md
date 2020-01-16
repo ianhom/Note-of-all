@@ -80,7 +80,12 @@ int q_add(Q_T *q, int n)
     if(q->cnt == q->size)
         return -1;
     q->data[q–>tail]=n;
+    q->tail=(++q->tail)%q->size;
+    q->cnt++;
+    return 0;
 }
+
+
 ```
 
 #### printf格式
