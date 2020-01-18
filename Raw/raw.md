@@ -85,15 +85,20 @@ int q_add(Q_T *q, int n)
     return 0;
 }
 
-int q_add(Q_T *q)
+int q_get(Q_T *q)
 {
-    int t = -1
+    int t = -1;
     if(q->cnt == 0)
         return t;
     t = q->data[q–>head];
     q->head=(++q->head)%q->size;
     q->cnt--;
     return t;
+}
+
+int q_cnt(Q_T *q)
+{
+    return q->cnt;
 }
 
 ```
