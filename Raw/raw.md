@@ -63,19 +63,19 @@ void test(void)
 #include <stdlib.h>
 typedef struct _q
 {
-    int head,tail,cnt,size,data[0];
+    int head,tail,cnt,size,*data[0];
 }Q_T;
 
 Q_T* q_inti(int n)
 {
-    Q_T *q=(Q_T*)malloc(sizeof(Q_T)+sizeof(int)*size);
+    Q_T *q=(Q_T*)malloc(sizeof(Q_T)+sizeof(int*)*size);
     if(NULL == q)return NULL;
     q->head=q->tail=q->cnt=0;
     q->size=size;
     return q;
 }
 
-int q_add(Q_T *q, int n)
+int q_add(Q_T *q, int* n)
 {
     if(q->cnt == q->size)
         return -1;
@@ -85,9 +85,9 @@ int q_add(Q_T *q, int n)
     return 0;
 }
 
-int q_get(Q_T *q)
+int* q_get(Q_T *q)
 {
-    int t = -1;
+    int *t = NULL;
     if(q->cnt == 0)
         return t;
     t = q->data[q–>head];
