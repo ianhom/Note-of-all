@@ -101,6 +101,10 @@ int q_cnt(Q_T *q)
     return q->cnt;
 }
 
+int q_deinit(Q_T *q)
+{
+    free(q);
+}
 ```
 
 #### printf格式
