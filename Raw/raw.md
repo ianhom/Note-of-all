@@ -66,12 +66,12 @@ typedef struct _q
     int head,tail,cnt,size,*data[0];
 }Q_T;
 
-Q_T* q_inti(int n)
+Q_T* q_init(int n)
 {
     Q_T *q=(Q_T*)malloc(sizeof(Q_T)+sizeof(int*)*size);
     if(NULL == q)return NULL;
     q->head=q->tail=q->cnt=0;
-    q->size=size;
+    q->size=n;
     return q;
 }
 
@@ -212,6 +212,8 @@ int q_deinit(Q_T *q)
 - Friend node作为低功耗节点的缓存。friend和低功耗节点链接建立的大致流程为，低功耗节点寻找附近friend，friend回应请求，建立连接。
 - DFU基于GATT进行数据交换，利用通知和写入来传递固件，暂时没有官方profile，各芯片厂家有自己的方案。
 - supervision_timeout是在数据链路层上决定了两个设备最小需要有成功连接的超时时间，若在这个时间内没有有效的数据交互，则会断开连接。
+#### le audio
+- 助听器，音频广播，真无线耳机等应用。
 
 ### CoAP
 - 简化版，二进制版的http
@@ -369,7 +371,7 @@ int q_deinit(Q_T *q)
 - 我把每个闹钟按剩余计时由小到大顺序拍好 这样我每次检查第一个闹钟有没有到点就可以了。
 - 安排闹钟的时候我会进行分组，小于1秒的，小于1分钟的和其他的，因为大多旅客喜欢这三类时间。
 #### 工作室安排篇
--
+- 
 #### 旅客协作篇
 #### 旅客留言篇
 
