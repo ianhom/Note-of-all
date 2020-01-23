@@ -63,45 +63,45 @@ void test(void)
 #include <stdlib.h>
 typedef struct _q
 {
-    int head,tail,cnt,size,*data[0];
-}Q_T;
+    int h,t,c,s,*d[0];
+}Q;
 
-Q_T* q_init(int n)
+Q* q_init(int n)
 {
-    Q_T *q=(Q_T*)malloc(sizeof(Q_T)+sizeof(int*)*size);
+    Q *q=(Q*)malloc(sizeof(Q)+sizeof(int*)*n);
     if(NULL == q)return NULL;
-    q->head=q->tail=q->cnt=0;
-    q->size=n;
+    q->h=q->t=q->c=0;
+    q->s=n;
     return q;
 }
 
-int q_add(Q_T *q, int* n)
+int q_add(Q *q, int* n)
 {
-    if(q->cnt == q->size)
+    if(q->c == q->s)
         return -1;
-    q->data[q–>tail]=n;
-    q->tail=(++q->tail)%q->size;
-    q->cnt++;
+    q->d[q–>t]=n;
+    q->t=(++q->t)%q->s;
+    q->c++;
     return 0;
 }
 
-int* q_get(Q_T *q)
+int* q_get(Q *q)
 {
     int *t = NULL;
-    if(q->cnt == 0)
+    if(q->c == 0)
         return t;
-    t = q->data[q–>head];
-    q->head=(++q->head)%q->size;
-    q->cnt--;
+    t = q->d[q–>h];
+    q->h=(++q->h)%q->s;
+    q->c--;
     return t;
 }
 
-int q_cnt(Q_T *q)
+int q_cnt(Q *q)
 {
-    return q->cnt;
+    return q->c;
 }
 
-int q_deinit(Q_T *q)
+int q_deinit(Q *q)
 {
     free(q);
 }
