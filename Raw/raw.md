@@ -96,7 +96,7 @@ int* q_get(Q *q)
     return t;
 }
 
-int q_cnt(Q *q)
+void q_cnt(Q *q)
 {
     return q->c;
 }
@@ -373,5 +373,6 @@ int q_deinit(Q *q)
 #### 工作室安排篇
 - 
 #### 旅客协作篇
+- 旅客虽然只管自己的旅程，但他们直接往往需要一些信息和信号来完成一个完整的事业。
 #### 旅客留言篇
 
