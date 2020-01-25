@@ -292,6 +292,7 @@ int q_deinit(Q *q)
 ### RT-Thtead
 - 分为rtt和rtt nano（简化版）
 - rtt具有丰富的组建网络文件系统，支持众多平台，脚本引擎做的很不错。
+- 基于scons编译系统，同时支持keil，IAR和自产的rtt studio。
 ### AliOS Thing
 - 链接阿里云平台，包含定义的数据模型
 ### liteos
