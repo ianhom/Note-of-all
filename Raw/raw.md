@@ -68,6 +68,7 @@ typedef struct _q
 
 Q* q_init(int n)
 {
+    if(!n)return NULL;
     Q *q=(Q*)malloc(sizeof(Q)+sizeof(int*)*n);
     if(NULL == q)return NULL;
     q->h=q->t=q->c=0;
@@ -77,7 +78,7 @@ Q* q_init(int n)
 
 int q_add(Q *q, int* n)
 {
-    if(q->c == q->s)
+    if((!q)||(q->c == q->s))
         return -1;
     q->d[q–>t]=n;
     q->t=(++q->t)%q->s;
@@ -88,7 +89,7 @@ int q_add(Q *q, int* n)
 int* q_get(Q *q)
 {
     int *t = NULL;
-    if(q->c == 0)
+    if((!q)||(q->c == 0))
         return t;
     t = q->d[q–>h];
     q->h=(++q->h)%q->s;
@@ -98,11 +99,13 @@ int* q_get(Q *q)
 
 void q_cnt(Q *q)
 {
+    if(!q)return NULL;
     return q->c;
 }
 
 int q_deinit(Q *q)
 {
+    if(!q)return NULL;
     free(q);
 }
 ```
