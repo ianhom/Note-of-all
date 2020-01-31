@@ -108,6 +108,11 @@ int q_deinit(Q *q)
     if(!q)return NULL;
     free(q);
 }
+
+int q_full(Q *q)
+{
+    return (q->c == q->s);
+}
 ```
 
 #### printf格式
