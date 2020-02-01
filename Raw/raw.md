@@ -113,6 +113,11 @@ int q_full(Q *q)
 {
     return (q->c == q->s);
 }
+
+int q_empty(Q *q)
+{
+    return (q->c == 0);
+}
 ```
 
 #### printf格式
