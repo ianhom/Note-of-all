@@ -118,6 +118,10 @@ int q_empty(Q *q)
 {
     return (q->c == 0);
 }
+
+#define Q_FULL(q)   ((Q*)q->c == (Q*)q->s)
+#define Q_EMPTY(q)  ((Q*)q->c == 0)
+
 ```
 
 #### printf格式
