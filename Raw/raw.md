@@ -97,7 +97,7 @@ int* q_get(Q *q)
     return t;
 }
 
-void q_cnt(Q *q)
+int q_cnt(Q *q)
 {
     if(!q)return NULL;
     return q->c;
@@ -105,17 +105,20 @@ void q_cnt(Q *q)
 
 int q_deinit(Q *q)
 {
-    if(!q)return NULL;
+    if(!q)return 0;
     free(q);
+    return 1;
 }
 
 int q_full(Q *q)
 {
+    if(!q)return 0;
     return (q->c == q->s);
 }
 
 int q_empty(Q *q)
 {
+    if(!q)return 0;
     return (q->c == 0);
 }
 
