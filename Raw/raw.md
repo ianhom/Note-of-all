@@ -11,6 +11,21 @@
 
 #include<stdio.h>
 static int sa=234;
+
+void test(void)
+{
+    static int sb;
+    int *p=(int*)&p; // Get SP value
+    int i;
+    for(i=0;i<20;i++)
+        if(*(p+i)==123)
+            *(p+i)=456;
+    p=&sb;           // Get address of static sb
+    for(i=-20;i<20;i++)
+        if(*(p+i)==234)
+            *(p+i)=789;
+}
+
 void main(void)
 {
     int a=123;
@@ -19,18 +34,7 @@ void main(void)
     printf("sa is %d\n",sa); // you get 789
 }
 
-void test(void)
-{
-    static int sb;
-    int *p=(int*)&p; // Get SP value
-    for(int i=0;i<20;i++)
-        if(*(p+i)==123)
-            *(p+i)=456;
-    p=&sb;           // Get address of static sb
-    for(int i=-20;i<20;i++)
-        if(*(p+i)==234)
-            *(p+i)=789;
-}
+
 ```
 
 - 设计数据结构的时候，可以从每个个体的视角将数据组织起来，然后充分利用这些数据进行处理，然后再除去无用到位视角。
