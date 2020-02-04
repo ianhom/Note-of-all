@@ -126,8 +126,10 @@ int q_empty(Q *q)
     return (q->c == 0);
 }
 
-#define Q_FULL(q)   ((Q*)q->c == (Q*)q->s)
-#define Q_EMPTY(q)  ((Q*)q->c == 0)
+#define Q_FULL(q)      ((Q*)q->c == (Q*)q->s)
+#define Q_EMPTY(q)     ((Q*)q->c == 0)
+#define Q_INIT(q,n)    do{if(q=(Q*)malloc(sizeof(Q)+sizeof(int*)*n){q->h=q->t=q->c=0;q->s=n;}}while(0)
+
 
 ```
 
