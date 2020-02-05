@@ -129,8 +129,8 @@ int q_empty(Q *q)
 #define Q_FULL(q)      ((Q*)q->c == (Q*)q->s)
 #define Q_EMPTY(q)     ((Q*)q->c == 0)
 #define Q_INIT(q,n)    do{if(q=(Q*)malloc(sizeof(Q)+sizeof(int*)*n){q->h=q->t=q->c=0;q->s=n;}}while(0)
-
-
+#define Q_ADD(q,n)     do{if(q->c!=q->s){q->d[q->t]=n;q->t=(++q->t)%q->s;q->c++;}}while(0)
+#define Q_GET(q,t)     do{if(q->c!=0){t=q->d[q->h];q->h=(++q->h)%q->s;q->c--;}}while(0)
 ```
 
 #### printf格式
