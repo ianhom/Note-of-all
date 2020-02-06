@@ -58,13 +58,14 @@ void main(void)
 - 指针有两个概念，地址和所指向的地址的数据的类型。
 - 刚开始学指针的时候很多人会说指针就是地址，确实指针的值是一个地址，但指针变量同时表征了所指向空间的数据类型，这一点可以通过指针变量的加减运算可以看出。
 - 例如在32位系统中，int类型占4个字节，一个指向int类型的指针在＋1之后，其值就是增加4，这里的＋1指的是指向下一个int类型，所以偏移就是一个int类型的数据长度（32位机器上就是4个字节），如果是char类型，＋1操作则偏移一个字节的长度。
-- 指针数组是一个数组，里面全是指针，int *a[10];a[0]是个指针。a＋1偏移量是一个int类型的长度。
-- 数组指针是个指针，指向一个数组。int (*a)[10];a是个指向int *[10]数组的指针。a＋1偏移量是十个int类型的长度
+- 指针数组是一个数组，里面全是指针，`int *a[10]`;`a[0]`是个指针。a＋1偏移量是一个int类型的长度。
+- 数组指针是个指针，指向一个数组。`int (*a)[10]`;`a`是个指向`int *[10]`数组的指针。a＋1偏移量是十个int类型的长度
 
 #### Queue实现
 ```c
 #include <stdio.h>
 #include <stdlib.h>
+#if(!MARCO_QUEUE)
 typedef struct _q
 {
     int h,t,c,s,*d[0];
@@ -125,12 +126,15 @@ int q_empty(Q *q)
     if(!q)return 0;
     return (q->c == 0);
 }
-
-#define Q_FULL(q)      ((Q*)q->c == (Q*)q->s)
-#define Q_EMPTY(q)     ((Q*)q->c == 0)
+#else
+typedef struct _q{int h,t,c,s,*d[0];}Q;
 #define Q_INIT(q,n)    do{if(q=(Q*)malloc(sizeof(Q)+sizeof(int*)*n){q->h=q->t=q->c=0;q->s=n;}}while(0)
 #define Q_ADD(q,n)     do{if(q->c!=q->s){q->d[q->t]=n;q->t=(++q->t)%q->s;q->c++;}}while(0)
 #define Q_GET(q,t)     do{if(q->c!=0){t=q->d[q->h];q->h=(++q->h)%q->s;q->c--;}}while(0)
+#define Q_CNT(q)       (q->c)
+#define Q_FULL(q)      (q->c == q->s)
+#define Q_EMPTY(q)     (q->c == 0)
+#endif
 ```
 
 #### printf格式
