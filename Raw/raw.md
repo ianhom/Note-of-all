@@ -84,11 +84,11 @@ Q* q_init(int n)
 int q_add(Q *q, int* n)
 {
     if((!q)||(q->c == q->s))
-        return -1;
+        return 0;
     q->d[q–>t]=n;
     q->t=(++q->t)%q->s;
     q->c++;
-    return 0;
+    return 1;
 }
 
 int* q_get(Q *q)
@@ -104,7 +104,7 @@ int* q_get(Q *q)
 
 int q_cnt(Q *q)
 {
-    if(!q)return NULL;
+    if(!q)return -1;
     return q->c;
 }
 
