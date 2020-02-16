@@ -132,8 +132,8 @@ typedef struct _q{int h,t,c,s,*d[0];}Q;
 #define Q_IN(q,n,err)     do{if(q->c!=q->s){q->d[q->t]=(int*)n;q->t=(++q->t)%q->s;q->c++;}else{err;}}while(0)
 #define Q_OUT(q,n,err)    do{if(q->c!=0){n=q->d[q->h];q->h=(++q->h)%q->s;q->c--;}else{err;}}while(0)
 #define Q_CNT(q)          (q->c)
-#define Q_FULL(q)         (q->c == q->s)
-#define Q_EMPTY(q)        (q->c == 0)
+#define Q_FULL(q)         (q->c==q->s)
+#define Q_EMPTY(q)        (q->c==0)
 #endif
 ```
 
@@ -222,6 +222,8 @@ typedef struct _q{int h,t,c,s,*d[0];}Q;
 - Makefile是一种编译脚本，通过目标文件和依赖文件的关系来执行相对于操作，以实现构建完整应用的功能。
 - 基本原则是，指定目标，检查依赖文件，执行指定命令（shell命令）
 - 目标一半为要生成的文件，也可以是伪目标。
+- 目标可以是编译好的obj文件，也可以是最终的可执行文件；
+- 伪目标则不需要有实际的文件生成，但借助为目标可以执行一些特定的命令，如clean。
 ------------------------------
 
 ## 通讯协议
