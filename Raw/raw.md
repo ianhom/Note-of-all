@@ -135,7 +135,27 @@ typedef struct _q{int h,t,c,s,*d[0];}Q;
 #define Q_FULL(q)         (q->c==q->s)
 #define Q_EMPTY(q)        (q->c==0)
 #endif
+
+// Example
+void main(int argc, char **argv)
+{
+    char *a[10]= {"Aa","Bb","Cc","Dd","Ee","Ff","Gg","Hh","Ii","Jj"};
+    char *s=argv[1];
+    int i,*temp,max=0;
+    Q *q;
+    
+    while(*s>='0'&&*s<='9')max=max*10+*s++-'0';
+    Q_INIT(q,max,printf("Queue is full\n"););
+    for(i=0;i<max+1;i++) Q_IN(q,a[i],printf("Queue is full\n"););
+    for(i=0;i<max+1;i++)
+    {
+        Q_OUT(q,temp,temp=NULL);
+        if(temp)printf("%s\n",(char*)temp);
+    }
+}
 ```
+
+
 
 #### printf格式
 - %d 十进制整型
