@@ -269,7 +269,7 @@ void main(int argc, char **argv)
     - /xxx 搜索xxx内容，n键找下一个，N键找上一个
     - ：nnn 跳到nnn行
     - set number 显示行号
-    - 
+    - :%s/old/new 用new替换old
 ------------------------------
 
 ## 通讯协议
