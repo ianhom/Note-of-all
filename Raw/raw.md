@@ -260,6 +260,7 @@ void main(int argc, char **argv)
 - 规则推导是Makefile一个重要功能，`a.o : a.c ; cc -c a.c` 这样a.c会重复出现两次，且与a.o同名，所以可以简化为`a.o:` 
 - Makefile中可以使用变量，`SRC=main.c test.c`,通过`$(SRC)`来使用变量，效果类似于c语言中的宏定义。
 - Makefile中可以使用include来加载其他makefile文件，类似于c语言中的include
+- Makefile中可以使用foreach来变量列表中成员，取出每个成员做相同的操作。
 
 #### vim
 - vim是linux中的常用编辑工具
