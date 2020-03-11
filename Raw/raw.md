@@ -269,6 +269,10 @@ void main(int argc, char **argv)
     - ：nnn 跳到nnn行
     - set number 显示行号
     - :%s/old/new 用new替换old
+    - x/del 删除该字符
+    - home 跳到行首
+    - end 跳到行尾
+    
 ------------------------------
 ## 算法
 ### 基本
