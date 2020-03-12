@@ -272,6 +272,7 @@ void main(int argc, char **argv)
     - x/del 删除该字符
     - home 跳到行首
     - end 跳到行尾
+    - s 删除单字符
     
 ------------------------------
 ## 算法
