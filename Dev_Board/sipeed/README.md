@@ -7,4 +7,8 @@
 ## 参考资料
 - https://maixpy.sipeed.com/zh/
 - http://bbs.sipeed.com/
+## k210
+- 400mhz
+- 双核64位 risc-v
+- 8mb SRAM
    
