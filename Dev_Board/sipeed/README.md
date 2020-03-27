@@ -10,5 +10,5 @@
 ## k210
 - 400mhz
 - 双核64位 risc-v
-- 8mb SRAM
+- 8mb SRAM，6mb通用，分4mb和2mb两个bank，还有2mb为kpu专用。
    
