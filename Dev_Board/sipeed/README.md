@@ -18,5 +18,5 @@
 - Dvp接口可同时输出图像到kpu和显示屏。
 - 具备硬件AES加速器
 - 硬件sha-256加速器
-- 高速uart0 5mbps
+- uart分高速uart0（5mbps，不支持流控）和通用型uartx
    
