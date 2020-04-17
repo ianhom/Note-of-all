@@ -24,7 +24,7 @@
 - DMA 8通道，外设->内存，外设->外设，内存->内存，内存->外设。
 - I2C 3通道，普通模式0-100kb/s，高速模式可达400kb/s
 - I2S
-- SPI 4通道，spi0，spi1，spi3为master，spi2为slave
+- SPI 4通道，SPI0，SPI1，SPI3为master，SPI2为slave，SPI3支持XIP
 
 - TIMER
 
