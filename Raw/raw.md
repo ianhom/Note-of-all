@@ -244,6 +244,7 @@ void main(int argc, char **argv)
 - git show 显示已经commit后的修改内容
 - git blame 显示文件的修改记录。
 - git rm 删除文件在git中的管理。
+- git rebase 将其他分支内容作为基础拉进当前分支。
 - gitk 可视化管理。
 
 #### Makefile
