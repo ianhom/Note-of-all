@@ -259,6 +259,9 @@ void main(int argc, char **argv)
 - Makefile中可以使用include来加载其他makefile文件，类似于c语言中的include
 - Makefile中可以使用foreach来变量列表中成员，取出每个成员做相同的操作。
 
+#### scons
+- scons是一种基于Python的代码编译系统。
+
 #### vim
 - vim是linux中的常用编辑工具
 - vim分为编辑模式和命令模式，一般通过i进入编辑模式，通过ESC返回命令模式
