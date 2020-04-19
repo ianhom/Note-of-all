@@ -245,6 +245,7 @@ void main(int argc, char **argv)
 - git blame 显示文件的修改记录。
 - git rm 删除文件在git中的管理。
 - git rebase 将其他分支内容作为基础拉进当前分支。
+- git fetch 同步远程分支。
 - gitk 可视化管理。
 
 #### Makefile
