@@ -233,6 +233,7 @@ void main(int argc, char **argv)
 - git branch 检查分支
 - git checkout 切换分支，也可以用于撤销某个文件的修改
 - git log 输出修改记录
+- git shortlog 输出修改记录简要
 - git merge 合并分支
 - git reset 版本回退
 - git diff 比较修改内容
@@ -246,6 +247,7 @@ void main(int argc, char **argv)
 - git rm 删除文件在git中的管理。
 - git rebase 将其他分支内容作为基础拉进当前分支。
 - git fetch 同步远程分支。
+- git clean
 - gitk 可视化管理。
 
 #### Makefile
