@@ -247,7 +247,7 @@ void main(int argc, char **argv)
 - git rm 删除文件在git中的管理。
 - git rebase 将其他分支内容作为基础拉进当前分支。
 - git fetch 同步远程分支。
-- git clean
+- git clean 清除分支修改。
 - gitk 可视化管理。
 
 #### Makefile
