@@ -248,6 +248,7 @@ void main(int argc, char **argv)
 - git rebase 将其他分支内容作为基础拉进当前分支。
 - git fetch 同步远程分支。
 - git clean 清除分支修改。
+- git grep 搜索内容。
 - gitk 可视化管理。
 
 #### Makefile
