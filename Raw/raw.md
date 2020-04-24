@@ -249,6 +249,7 @@ void main(int argc, char **argv)
 - git fetch 同步远程分支。
 - git clean 清除分支修改。
 - git grep 搜索内容。
+- git mv git管理内的移动。
 - gitk 可视化管理。
 
 #### Makefile
