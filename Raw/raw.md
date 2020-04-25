@@ -250,6 +250,7 @@ void main(int argc, char **argv)
 - git clean 清除分支修改。
 - git grep 搜索内容。
 - git mv git管理内的移动。
+- git cherry-pick 选择一个commit合入。
 - gitk 可视化管理。
 
 #### Makefile
