@@ -246,7 +246,7 @@ void main(int argc, char **argv)
 - git blame 显示文件的修改记录。
 - git rm 删除文件在git中的管理。
 - git rebase 将其他分支内容作为基础拉进当前分支。
-- git fetch 同步远程分支。
+- git rebase -i 修改commit记录- git fetch 同步远程分支。
 - git clean 清除分支修改。
 - git grep 搜索内容。
 - git mv git管理内的移动。
