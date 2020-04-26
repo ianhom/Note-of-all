@@ -1,0 +1,29 @@
+#### git
+- git clone 克隆仓库
+- git status 检查状态
+- git add 增加修改记录
+- git commit 在本地提交修改
+- git push 提交到远端服务器
+- git pull 将远端服务器同步到本地
+- git branch 检查分支
+- git checkout 切换分支，也可以用于撤销某个文件的修改
+- git log 输出修改记录
+- git shortlog 输出修改记录简要
+- git merge 合并分支
+- git reset 版本回退
+- git diff 比较修改内容
+- git config 配置git仓库
+- git apply 应用patch
+- git am 打patch
+- git init 初始化git仓库
+- git submodule 子模块操作
+- git show 显示已经commit后的修改内容
+- git blame 显示文件的修改记录。
+- git rm 删除文件在git中的管理。
+- git rebase 将其他分支内容作为基础拉进当前分支。
+- git rebase -i 修改commit记录- git fetch 同步远程分支。
+- git clean 清除分支修改。
+- git grep 搜索内容。
+- git mv git管理内的移动。
+- git cherry-pick 选择一个commit合入。
+- gitk 可视化管理。
