@@ -251,6 +251,7 @@ void main(int argc, char **argv)
 - git grep 搜索内容。
 - git mv git管理内的移动。
 - git cherry-pick 选择一个commit合入。
+- git reflog git相关操作记录
 - gitk 可视化管理。
 
 #### Makefile
