@@ -249,6 +249,7 @@ void main(int argc, char **argv)
 - git rebase -i 修改commit记录。
    - drop 可删除commit。
    - reword 修改commit message
+   - edit 修改commit
    - pick 选择该commit
 
 - git fetch 同步远程分支。
