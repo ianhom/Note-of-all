@@ -222,6 +222,7 @@ void main(int argc, char **argv)
 - grep命令是常用的搜索命令，可以过滤出log中的关键信息。
 - find命令同样也是搜索命令，可以以文件名来全局查找。
 - diff命令可以对比两个文件的不同，注意这里是逐行对比。
+- pushd 将路径压栈方式保存起来和popd配合使用。
 
 #### git
 - git clone 克隆仓库
