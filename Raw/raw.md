@@ -210,7 +210,7 @@ void main(int argc, char **argv)
 - Java是完全面向对象，所以只有一个方法的函数也需要类进行封装。
 
 ### JavaScript
-- JS是一种类似c和Java的脚步语言 在前端web开发非常流行，也有用于后端服务器开发的nodejs。
+- JS是一种类似c和Java的脚本语言，在前端web开发非常流行，也有用于后端服务器开发的nodejs。
 - 其实JavaScript和Java关系不大，Java是编译型语言，而JavaScript是脚本语言。
 
 ### Groovy   
@@ -224,6 +224,7 @@ void main(int argc, char **argv)
 - find命令同样也是搜索命令，可以以文件名来全局查找。
 - diff命令可以对比两个文件的不同，注意这里是逐行对比。
 - pushd 将路径压栈方式保存起来和popd配合使用。
+- pwd 输出当前路劲。
 
 #### git
 - git clone 克隆仓库
