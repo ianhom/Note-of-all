@@ -224,7 +224,7 @@ void main(int argc, char **argv)
 - find命令同样也是搜索命令，可以以文件名来全局查找。
 - diff命令可以对比两个文件的不同，注意这里是逐行对比。
 - pushd 将路径压栈方式保存起来和popd配合使用。
-- pwd 输出当前路劲。
+- pwd 输出当前路径。
 
 #### git
 - git clone 克隆仓库
@@ -254,7 +254,6 @@ void main(int argc, char **argv)
    - reword 修改commit message
    - edit 修改commit
    - pick 选择该commit
-
 - git fetch 同步远程分支。
 - git clean 清除分支修改。
 - git grep 搜索内容。
