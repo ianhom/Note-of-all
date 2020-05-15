@@ -228,6 +228,7 @@ void main(int argc, char **argv)
 - diff命令可以对比两个文件的不同，注意这里是逐行对比。
 - pushd 将路径压栈方式保存起来和popd配合使用。
 - pwd 输出当前路径。
+- awk 文本处理
 
 #### git
 - git clone 克隆仓库
