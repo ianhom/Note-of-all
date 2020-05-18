@@ -191,6 +191,7 @@ void main(int argc, char **argv)
 - cpp支持模板以实现泛化编程，相同的操作，针对不同的类型或类。
 - 友远函数可以实现private成员的访问，但这将降低类的封装特性。
 - 对象的接口是开放出来用于外部访问。
+- 通过extern "C"使c调用cpp的函数
 
 
 ### Python
