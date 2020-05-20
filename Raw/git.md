@@ -1,6 +1,5 @@
 #### git
 - git clone 克隆仓库
-    - git clone clone https:https://github.com/ianhom/MOE.git
 - git status 检查状态
 - git add 增加修改记录
 - git commit 在本地提交修改
@@ -22,9 +21,15 @@
 - git blame 显示文件的修改记录。
 - git rm 删除文件在git中的管理。
 - git rebase 将其他分支内容作为基础拉进当前分支。
-- git rebase -i 修改commit记录- git fetch 同步远程分支。
+- git rebase -i 修改commit记录。
+   - drop 可删除commit。
+   - reword 修改commit message
+   - edit 修改commit
+   - pick 选择该commit
+- git fetch 同步远程分支。
 - git clean 清除分支修改。
 - git grep 搜索内容。
 - git mv git管理内的移动。
 - git cherry-pick 选择一个commit合入。
+- git reflog git相关操作记录
 - gitk 可视化管理。
