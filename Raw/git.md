@@ -1,4 +1,4 @@
-#### git
+# git
 - git clone 克隆仓库
 - git status 检查状态
 - git add 增加修改记录
@@ -32,4 +32,5 @@
 - git mv git管理内的移动。
 - git cherry-pick 选择一个commit合入。
 - git reflog git相关操作记录
+- git stash 暂缓未commit的修改。stash pop可将缓存数据恢复。
 - gitk 可视化管理。
