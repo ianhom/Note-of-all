@@ -233,6 +233,7 @@ void main(int argc, char **argv)
 - pushd 将路径压栈方式保存起来和popd配合使用。
 - pwd 输出当前路径。
 - awk 文本处理
+- xargs 讲前序命令的结果作为后续命令的输入。
 
 #### git
 - git clone 克隆仓库
