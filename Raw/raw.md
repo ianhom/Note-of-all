@@ -235,6 +235,9 @@ void main(int argc, char **argv)
 - pwd 输出当前路径。
 - awk 文本处理
 - xargs 讲前序命令的结果作为后续命令的输入。
+- vim 编辑文件
+- cat 查看文件
+- file 查看文件类型。
 
 #### git
 - git clone 克隆仓库
