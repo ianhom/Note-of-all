@@ -241,6 +241,7 @@ void main(int argc, char **argv)
 - vim 编辑文件
 - cat 查看文件
 - file 查看文件类型。
+- readelf 读出elf文件的相关信息。
 
 #### git
 - git clone 克隆仓库
