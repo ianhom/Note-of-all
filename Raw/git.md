@@ -32,5 +32,7 @@
 - git mv git管理内的移动。
 - git cherry-pick 选择一个commit合入。
 - git reflog git相关操作记录
-- git stash 暂缓未commit的修改。stash pop可将缓存数据恢复。
+- git stash 暂缓未commit的修改。
+- git stash pop可将缓存数据恢复。
+- git remote 检查远端信息。
 - gitk 可视化管理。
