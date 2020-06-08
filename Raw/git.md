@@ -1,5 +1,6 @@
 # git
 - git clone 克隆仓库
+   - `git clone https://github.com/ianhom/moe.git`
 - git status 检查状态
 - git add 增加修改记录
 - git commit 在本地提交修改
