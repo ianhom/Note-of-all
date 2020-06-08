@@ -1,7 +1,7 @@
 # git
 - git clone 克隆仓库
    - `git clone https://github.com/ianhom/moe.git`
-- git status 检查状态
+- git status 检查状态，当前修改的文件，新增的文件和已经add但未commit的文件
 - git add 增加修改记录
 - git commit 在本地提交修改
 - git push 提交到远端服务器
