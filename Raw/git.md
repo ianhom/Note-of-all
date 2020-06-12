@@ -39,3 +39,4 @@
 - git remote 检查远端信息。
 - gitk 可视化管理。
 - git format-patch 制作补丁文件
+   - `git format-patch -1`
