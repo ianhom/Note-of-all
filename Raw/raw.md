@@ -282,6 +282,8 @@ void main(int argc, char **argv)
 - git stash pop可将缓存数据恢复。
 - git remote 检查远端信息。
 - gitk 可视化管理。
+- git format-patch 制作补丁文件
+   - `git format-patch -1`
 
 #### Makefile
 - Makefile是一种编译脚本，通过目标文件和依赖文件的关系来执行相对于操作，以实现构建完整应用的功能。
