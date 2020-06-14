@@ -356,6 +356,7 @@ void main(int argc, char **argv)
 - Friend node作为低功耗节点的缓存。friend和低功耗节点链接建立的大致流程为，低功耗节点寻找附近friend，friend回应请求，建立连接。
 - DFU基于GATT进行数据交换，利用通知和写入来传递固件，暂时没有官方profile，各芯片厂家有自己的方案。
 - supervision_timeout是在数据链路层上决定了两个设备最小需要有成功连接的超时时间，若在这个时间内没有有效的数据交互，则会断开连接。
+
 #### le audio
 - 助听器，音频广播，真无线耳机等应用。
 #### 蓝牙技术相关产品畅想
@@ -460,6 +461,7 @@ void main(int argc, char **argv)
 - 专或广还是专和广，价值体现在专?是否有这样的体力和脑力?
 - 深度，思考的深度很重要，you have been there before!找到根源，抽象到不能再抽，不论是编程还是其他问题。
 - 人一定要有目标，目标一定要达成，刷新自己的认知，拥有更高的平台。
+- change before you have to.
 
 ### i.mxrt系列
 - i.mxrt1050/1020/1010/1060/1170
