@@ -229,6 +229,8 @@ void main(int argc, char **argv)
 
 ### go（golang）
 - go语言是由Google开发的开源编程语言，特点是编译速度快，并发能力强，适应于服务器后端应用。
+- go文件开头是通过package来识别文件属于哪一个包，比如package main
+- 同Python，对引用库或外部模块，可以适应import。
 
 ### shell
 - shell是linux开发基础，只有基于linux开发基本都绕不开shell命令或脚本。
