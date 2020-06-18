@@ -259,6 +259,8 @@ void main(int argc, char **argv)
 - git pull 将远端服务器同步到本地
 - git branch 检查分支
 - git checkout 切换分支，也可以用于撤销某个文件的修改
+   - `git checkout xxx` 切换到xxx分支
+   - `git checkout abc.file` 把abc.file文件的修改全部撤销。
 - git log 输出修改记录
 - git shortlog 输出修改记录简要
 - git merge 合并分支
