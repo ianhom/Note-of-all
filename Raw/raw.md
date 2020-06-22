@@ -208,6 +208,7 @@ void main(int argc, char **argv)
 - Python同样有高级语言的很多特性，如面向对象等。
 - Python更像是编程的本质提炼，用简洁的语言重新组织了一下，专注实现本身，而非语法。
 - Python的多线程也非常方便，同时一个线程的意外crash不会影响其他线程。
+- os模块支持一些操作系统基本的操作，例如os.system函数可以执行shell命令：`os.system(echo "hello")`
 #### micropython
 - micropython是运行在mcu上Python，具有丰富的库和良好的实时性。
 - 特色库为machine，操作底层的硬件模块。
