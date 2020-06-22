@@ -211,6 +211,7 @@ void main(int argc, char **argv)
 #### micropython
 - micropython是运行在mcu上Python，具有丰富的库和良好的实时性。
 - 特色库为machine，操作底层的硬件模块。
+- 同python环境，MicroPython也支持os，sys，time，_thread等内建模块
 
 ### Java
 - Java的class的构造函数与类名同名，可以有多个构造函数，通过不同的参数来识别不同的构造入口。
