@@ -22,8 +22,13 @@ def half_pace(t_str):
 
 def full_pace(t_str):
     return cal_pace(42.2,t_str)
+
+def pace_speed(t_str):
+    t = pace_sec(t_str)
+    return (3600*1.00/t)
     
 if __name__ == '__main__':
     pace_sec(400)
     half_pace(200)
     full_pace(400)
+    pace_speed(400)
