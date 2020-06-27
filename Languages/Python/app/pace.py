@@ -17,6 +17,15 @@ def cal_pace(d,t_str):
     t = time_sec(t_str)
     return (t*1.00/d)
 
+def three_pace(t_str):
+    return cal_pace(3.0,t_str)
+
+def five_pace(t_str):
+    return cal_pace(5.0,t_str)
+
+def ten_pace(t_str):
+    return cal_pace(10.0,t_str)
+
 def half_pace(t_str):
     return cal_pace(21.1,t_str)
 
