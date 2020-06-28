@@ -11,7 +11,7 @@ def pace_sec(p_str):
 
 def time_sec(t_str):
     t = time_int(t_str)
-    return (p/100*3600+p%100*60)
+    return (t/100*3600+t%100*60)
 
 def cal_pace(d,t_str):
     t = time_sec(t_str)
@@ -37,16 +37,16 @@ def pace_to_speed(t_str):
     return (3600*1.00/t)
 
 def pace_readable(p):
-    return (p/60*100+p%60)
+    return (int(p/60)*100+p%60)
 
-def speed_to_pace(sp_str)：
+def speed_to_pace(sp_str):
     sp = round(sp_str,2)
-    return pace_readable(int(3600.00/sp))
+    return int(pace_readable(int(3600.00/sp)))
     
     
 if __name__ == '__main__':
-    pace_sec(400)
-    half_pace(200)
-    full_pace(400)
-    pace_to_speed(400)
-    speed_to_pace(15.0)
+    print(pace_sec(400))
+    print(half_pace(200))
+    print(full_pace(400))
+    print(pace_to_speed(400))
+    print(speed_to_pace(13.0))
