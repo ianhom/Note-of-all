@@ -36,6 +36,18 @@ def cal_time(d,p_str):
     p = pace_sec(p_str)
     return time_readable(d*p)
 
+def three_time(p_str):
+    return cal_time(3, p_str)
+
+def five_time(p_str):
+    return cal_time(5, p_str)
+
+def ten_time(p_str):
+    return cal_time(10, p_str)
+
+def half_time(p_str):
+    return cal_time(21.1, p_str)
+
 def full_time(p_str):
     return cal_time(42.2, p_str)
 
