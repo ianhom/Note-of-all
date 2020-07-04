@@ -10,3 +10,6 @@ def find_empty():
             if map[i][j] == 0:
                 return i,j
     return -1,-1
+
+if __name__ == '__main__':
+    print(find_empty())
