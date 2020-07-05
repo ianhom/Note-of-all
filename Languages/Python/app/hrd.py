@@ -29,4 +29,9 @@ def move(dir):
         print('error direction')
 
 if __name__ == '__main__':
+    move('up')
+    move('left')
+    move('left') # double left move
+    move('right')
+    move('down')
     print(find_empty())
