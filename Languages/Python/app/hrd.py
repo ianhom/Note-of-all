@@ -11,5 +11,22 @@ def find_empty():
                 return i,j
     return -1,-1
 
+def move(dir):
+    i,j = find_empty()
+    if dir == 'up':
+        map[i][j] = map[i-1][j]
+        map[i-1][j] = 0
+    else if dir == 'down':
+        map[i][j] = map[i+1][j]
+        map[i+1][j] = 0
+    else if dir == 'left':
+        map[i][j] = map[i][j-1]
+        map[i][j-1] = 0
+    else if dir == 'right':
+        map[i][j] = map[i][j+1]
+        map[i][j+1] = 0
+    else:
+        print('error direction')
+
 if __name__ == '__main__':
     print(find_empty())
