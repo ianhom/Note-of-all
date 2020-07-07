@@ -28,6 +28,9 @@ def move(dir):
     else:
         print('error direction')
 
+def printmap():
+    print (map)
+
 if __name__ == '__main__':
     move('up')
     move('left')
