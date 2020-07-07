@@ -28,13 +28,16 @@ def move(dir):
     else:
         print('error direction')
 
-def printmap():
-    print (map)
+def print_map():
+    for i in range(4):
+        print(map[i])
 
 if __name__ == '__main__':
+    print(find_empty())
+    print_map()
     move('up')
     move('left')
     move('left') # double left move
     move('right')
     move('down')
-    print(find_empty())
+    print_map()
