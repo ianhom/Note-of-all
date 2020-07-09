@@ -12,7 +12,16 @@ def find_num(num):
     return -1,-1
 
 def find_empty():
-    return find_num(0)
+    i,j = find_num(0)
+    if i > 0:
+        up = map[i-1][j]
+    if i < 3:
+       down = map[i+1][j]
+    if j > 0:
+       left = map[i][j-1]
+    if j < 3:
+       right = map[i][j+1]
+    return i,j,up,down,left,right
 
 def move(dir):
     i,j = find_empty()
