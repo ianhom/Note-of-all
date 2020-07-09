@@ -4,12 +4,15 @@ map = [[1,2,3,4],
        [9,10,11,12],
        [13,14,15,0]]
 
-def find_empty():
+def find_num(num):
     for i in range(4):
         for j in range(4):
-            if map[i][j] == 0:
+            if map[i][j] == num:
                 return i,j
     return -1,-1
+
+def find_empty():
+    return find_num(0)
 
 def move(dir):
     i,j = find_empty()
