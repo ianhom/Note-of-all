@@ -4,6 +4,11 @@ map = [[1,2,3,4],
        [9,10,11,12],
        [13,14,15,0]]
 
+map_ck = [[1,2,3,4],
+          [5,6,7,8],
+          [9,10,11,12],
+          [13,14,15,0]]
+
 def find_num(num):
     for i in range(4):
         for j in range(4):
@@ -44,6 +49,11 @@ def print_map():
     for i in range(4):
         print(map[i])
 
+def start():
+    while True:
+        dir = input()
+        
+              
 if __name__ == '__main__':
     print(find_empty())
     print_map()
