@@ -9,6 +9,13 @@ map_ck = [[1,2,3,4],
           [9,10,11,12],
           [13,14,15,0]]
 
+def win_ck():
+    for i in range(4):
+        for j in range(4):
+            if map[i][j] != map[i][j]:
+                return False
+    return True
+
 def find_num(num):
     for i in range(4):
         for j in range(4):
