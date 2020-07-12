@@ -58,8 +58,10 @@ def print_map():
 
 def start():
     while True:
+        if win_ck() == True:
+            return
         dir = input()
-        
+        move(dir)     
               
 if __name__ == '__main__':
     print(find_empty())
