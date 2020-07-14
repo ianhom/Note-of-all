@@ -24,29 +24,30 @@ def find_num(num):
     return -1,-1
 
 def find_empty():
+    i = j = up = down = left = right = -1
     i,j = find_num(0)
     if i > 0:
         up = map[i-1][j]
     if i < 3:
-       down = map[i+1][j]
+        down = map[i+1][j]
     if j > 0:
-       left = map[i][j-1]
+        left = map[i][j-1]
     if j < 3:
-       right = map[i][j+1]
+        right = map[i][j+1]
     return i,j,up,down,left,right
 
 def move(dir):
-    i,j = find_empty()
+    i,j,up,down,left,right = find_empty()
     if dir == 'up':
         map[i][j] = map[i-1][j]
         map[i-1][j] = 0
-    else if dir == 'down':
+    elif dir == 'down':
         map[i][j] = map[i+1][j]
         map[i+1][j] = 0
-    else if dir == 'left':
+    elif dir == 'left':
         map[i][j] = map[i][j-1]
         map[i][j-1] = 0
-    else if dir == 'right':
+    elif dir == 'right':
         map[i][j] = map[i][j+1]
         map[i][j+1] = 0
     else:
