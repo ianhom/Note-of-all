@@ -12,7 +12,7 @@ map_ck = [[1,2,3,4],
 def win_ck():
     for i in range(4):
         for j in range(4):
-            if map[i][j] != map[i][j]:
+            if map[i][j] != map_ck[i][j]:
                 return False
     return True
 
@@ -60,16 +60,31 @@ def print_map():
 def start():
     while True:
         if win_ck() == True:
+            print("You win")
             return
-        dir = input()
-        move(dir)     
+        dir = input("Please input")
+        if dir == 'w':
+            dir = "up"
+        elif dir == 's':
+            dir = "down"
+        elif dir == 'a':
+            dir == "left"
+        else:
+            dir == "right"
+        move(dir)
+        print("----------------")
+        print_map()
               
 if __name__ == '__main__':
     print(find_empty())
     print_map()
+    print("=================")
     move('up')
     move('left')
     move('left') # double left move
     move('right')
     move('down')
     print_map()
+    print("=================")
+    start()
+    
