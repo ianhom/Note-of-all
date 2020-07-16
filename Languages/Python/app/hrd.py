@@ -55,7 +55,7 @@ def move(dir):
 
 def print_map():
     for i in range(4):
-        print(map[i])
+        print("%02d,%02d,%02d,%02d"%(map[i][0],map[i][1],map[i][2],map[i][3]))
 
 def start():
     while True:
@@ -68,9 +68,9 @@ def start():
         elif dir == 's':
             dir = "down"
         elif dir == 'a':
-            dir == "left"
+            dir = "left"
         else:
-            dir == "right"
+            dir = "right"
         move(dir)
         print("----------------")
         print_map()
