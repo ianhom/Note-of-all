@@ -63,11 +63,11 @@ def start():
             print("You win")
             return
         dir = input("Please input")
-        if dir == 'w':
+        if dir == 's':
             dir = "up"
-        elif dir == 's':
+        elif dir == 'w':
             dir = "down"
-        elif dir == 'a':
+        elif dir == 'd':
             dir = "left"
         else:
             dir = "right"
