@@ -38,16 +38,16 @@ def find_empty():
 
 def move(dir):
     i,j,up,down,left,right = find_empty()
-    if dir == 'up':
+    if dir == 'up'and i != 0:
         map[i][j] = map[i-1][j]
         map[i-1][j] = 0
-    elif dir == 'down':
+    elif dir == 'down'and i != 3:
         map[i][j] = map[i+1][j]
         map[i+1][j] = 0
-    elif dir == 'left':
+    elif dir == 'left'and j != 0:
         map[i][j] = map[i][j-1]
         map[i][j-1] = 0
-    elif dir == 'right':
+    elif dir == 'right'and j != 3:
         map[i][j] = map[i][j+1]
         map[i][j+1] = 0
     else:
