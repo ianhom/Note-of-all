@@ -1,4 +1,5 @@
 #!/usr/bin/python
+import random
 map = [[1,2,3,4],
        [5,6,7,8],
        [9,10,11,12],
@@ -8,6 +9,13 @@ map_ck = [[1,2,3,4],
           [5,6,7,8],
           [9,10,11,12],
           [13,14,15,0]]
+
+dirs =["up","down","left","right"]
+
+def mess_up(n):
+    for i in range(n):
+        r = int(random.random()*10)%4
+        move(dirs[r])
 
 def win_ck():
     for i in range(4):
@@ -51,7 +59,8 @@ def move(dir):
         map[i][j] = map[i][j+1]
         map[i][j+1] = 0
     else:
-        print('error direction')
+        return
+        #print('error direction')
 
 def print_map():
     for i in range(4):
@@ -77,14 +86,7 @@ def start():
               
 if __name__ == '__main__':
     print(find_empty())
+    mess_up(100)
     print_map()
-    print("=================")
-    move('up')
-    move('left')
-    move('left') # double left move
-    move('right')
-    move('down')
-    print_map()
-    print("=================")
     start()
     
