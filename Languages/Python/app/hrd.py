@@ -64,7 +64,7 @@ def move(dir):
 
 def print_map():
     for i in range(4):
-        print("%02d,%02d,%02d,%02d"%(map[i][0],map[i][1],map[i][2],map[i][3]))
+        print("%2d,%2d,%2d,%2d"%(map[i][0],map[i][1],map[i][2],map[i][3]))
 
 def start():
     while True:
