@@ -13,6 +13,11 @@ map_ck = [[1,2,3,4],
 
 dirs =["up","down","left","right"]
 
+def reset():
+    for i in range(MAX):
+        for j in range(MAX):
+            if map[i][j] = map_ck[i][j]
+
 def mess_up(n):
     for i in range(n):
         r = int(random.random()*10)%4
