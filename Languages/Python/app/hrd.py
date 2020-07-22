@@ -83,8 +83,10 @@ def start():
             dir = "down"
         elif dir == 'd':
             dir = "left"
-        else:
+        elif dir = "a":
             dir = "right"
+        elif dir = "t":
+            reset()
         move(dir)
         print("----------------")
         print_map()
