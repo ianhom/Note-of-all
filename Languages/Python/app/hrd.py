@@ -87,6 +87,8 @@ def start():
             dir = "right"
         elif dir = "t":
             reset()
+            print("Reset the game \r\n\r\n")
+            continue
         move(dir)
         print("----------------")
         print_map()
