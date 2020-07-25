@@ -89,6 +89,8 @@ def start():
             reset()
             print("Reset the game \r\n\r\n")
             continue
+        else:
+            print("Please input valid key")
         move(dir)
         print("----------------")
         print_map()
