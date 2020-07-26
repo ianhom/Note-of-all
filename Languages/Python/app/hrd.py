@@ -91,6 +91,7 @@ def start():
             continue
         else:
             print("Please input valid key")
+            continue
         move(dir)
         print("----------------")
         print_map()
