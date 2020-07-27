@@ -13,6 +13,19 @@ map_ck = [[1,2,3,4],
 
 dirs =["up","down","left","right"]
 
+def create_map(n):
+    global MAX
+    MAX = n
+    num = 1
+    map_l = [[-1 for i in range(n)] for j in range(n)]
+
+    for i in range(n):
+        for j in range(n):
+            map_l[i][j] = num
+            num = num + 1
+    map_l[n-1][n-1] = 0;
+    return map_l
+
 def reset():
     for i in range(MAX):
         for j in range(MAX):
