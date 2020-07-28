@@ -1,6 +1,10 @@
 #!/usr/bin/python
 import random
 MAX = 4
+
+act = {'w':"up",'s':"down",'a':"left",'d':"right"}
+lst = ["up","down","left","right"]
+
 map = [[1,2,3,4],
        [5,6,7,8],
        [9,10,11,12],
