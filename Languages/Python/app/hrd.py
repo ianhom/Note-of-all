@@ -86,10 +86,9 @@ def move(dir):
 
 def print_map():
     for i in range(MAX):
-        #print("%2d,%2d,%2d,%2d"%(map[i][0],map[i][1],map[i][2],map[i][3]))
         for j in range(MAX):
             print(map[i][j],"\t")
-       print(" ")
+        print(" ")
     print("****************************************")
 
 def start():
@@ -98,18 +97,11 @@ def start():
             print("You win")
             return
         dir = input("Please input")
-        if dir == 's':
-            dir = "up"
-        elif dir == 'w':
-            dir = "down"
+        if act.haskey(dir):
+            move(act(dir))
+        elif dir == 'r':
+            print("Reset the game")
         elif dir == 'd':
-            dir = "left"
-        elif dir = "a":
-            dir = "right"
-        elif dir = "t":
-            reset()
-            print("Reset the game \r\n\r\n")
-            continue
         else:
             print("Please input valid key")
             continue
