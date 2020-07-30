@@ -101,11 +101,8 @@ def start():
             move(act(dir))
         elif dir == 'r':
             print("Reset the game")
-        elif dir == 'd':
         else:
             print("Please input valid key")
-            continue
-        move(dir)
         print("----------------")
         print_map()
               
