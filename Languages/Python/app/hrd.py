@@ -100,6 +100,7 @@ def start():
         if act.haskey(dir):
             move(act(dir))
         elif dir == 'r':
+            reset()
             print("Reset the game")
         else:
             print("Please input valid key")
