@@ -5,15 +5,6 @@ MAX = 4
 act = {'w':"up",'s':"down",'a':"left",'d':"right"}
 lst = ["up","down","left","right"]
 
-map = [[1,2,3,4],
-       [5,6,7,8],
-       [9,10,11,12],
-       [13,14,15,0]]
-
-map_ck = [[1,2,3,4],
-          [5,6,7,8],
-          [9,10,11,12],
-          [13,14,15,0]]
 
 dirs =["up","down","left","right"]
 
@@ -31,9 +22,14 @@ def create_map(n):
     return map_l
 
 def reset():
+    global MAX
+    global map
+    num = 1
     for i in range(MAX):
         for j in range(MAX):
-            if map[i][j] = map_ck[i][j]
+            map[i][j] = num
+            num = num + 1
+    map[MAX-1][MAX-1] = 0;
 
 def mess_up(n):
     for i in range(n):
@@ -41,10 +37,16 @@ def mess_up(n):
         move(dirs[r])
 
 def win_ck():
+    global MAX
+    global map
+    num = 1
     for i in range(MAX):
         for j in range(MAX):
-            if map[i][j] != map_ck[i][j]:
+            if map[i][j] != num:
+                if i == MAX-1 and j == MAX-1 and map[i][j] == 0:
+                    return True
                 return False
+            num = num + 1
     return True
 
 def find_num(num):
@@ -85,6 +87,7 @@ def move(dir):
         return
 
 def print_map():
+    global map
     for i in range(MAX):
         for j in range(MAX):
             print(map[i][j],"\t")
@@ -108,7 +111,7 @@ def start():
         print_map()
               
 if __name__ == '__main__':
-    print(find_empty())
+    map = create_map(4)
     mess_up(1000)
     print_map()
     start()
