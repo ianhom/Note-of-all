@@ -90,7 +90,10 @@ def print_map():
     global map
     for i in range(MAX):
         for j in range(MAX):
-            print(map[i][j],end="\t")
+            if map[i][j] == 0:
+                print(" ",end="\t")
+            else:
+                print(map[i][j],end="\t")
         print(" ")
     print("****************************************")
 
@@ -100,7 +103,7 @@ def start():
             print("You win")
             return
         dir = input("Please input")
-        if act.haskey(dir):
+        if act.haskeys(dir):
             move(act(dir))
         elif dir == 'r':
             reset()
