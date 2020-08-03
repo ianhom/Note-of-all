@@ -90,7 +90,7 @@ def print_map():
     global map
     for i in range(MAX):
         for j in range(MAX):
-            print(map[i][j],"\t")
+            print(map[i][j],end="\t")
         print(" ")
     print("****************************************")
 
