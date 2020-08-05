@@ -1,6 +1,6 @@
 #!/usr/bin/python
 import random
-MAX = 4
+MAX = 0
 
 act = {'w':"up",'s':"down",'a':"left",'d':"right"}
 lst = ["up","down","left","right"]
@@ -103,7 +103,7 @@ def start():
             print("You win")
             return
         dir = input("Please input")
-        if act.haskeys(dir):
+        if act.has_key(dir):
             move(act(dir))
         elif dir == 'r':
             reset()
@@ -114,7 +114,7 @@ def start():
         print_map()
               
 if __name__ == '__main__':
-    map = create_map(4)
+    map = create_map(5)
     mess_up(1000)
     print_map()
     start()
