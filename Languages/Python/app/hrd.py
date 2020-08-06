@@ -2,11 +2,15 @@
 import random
 MAX = 0
 
-act = {'w':"up",'s':"down",'a':"left",'d':"right"}
-lst = ["up","down","left","right"]
+act  = {'w':"up",'s':"down",'a':"left",'d':"right"}
+dirs = ["up","down","left","right"]
 
+cnt = 0
+def inc_cnt():
+    global cnt
+    cnt = cnt + 1
+    return cnt
 
-dirs =["up","down","left","right"]
 
 def create_map(n):
     global MAX
