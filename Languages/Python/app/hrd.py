@@ -11,6 +11,9 @@ def inc_cnt():
     cnt = cnt + 1
     return cnt
 
+def reset_cnt():
+    global cnt
+    cnt = 0
 
 def create_map(n):
     global MAX
