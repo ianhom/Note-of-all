@@ -18,14 +18,10 @@ def reset_cnt():
 def create_map(n):
     global MAX
     MAX = n
-    num = 1
-    map_l = [[-1 for i in range(n)] for j in range(n)]
+    map_l = [[inc_cnt() for i in range(n)] for j in range(n)]
+    reset_cnt()
 
-    for i in range(n):
-        for j in range(n):
-            map_l[i][j] = num
-            num = num + 1
-    map_l[n-1][n-1] = 0;
+    map_l[n-1][n-1] = 0
     return map_l
 
 def reset():
