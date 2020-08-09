@@ -30,9 +30,9 @@ def reset():
     num = 1
     for i in range(MAX):
         for j in range(MAX):
-            map[i][j] = num
-            num = num + 1
+            map[i][j] = inc_cnt()
     map[MAX-1][MAX-1] = 0;
+    reset_cnt()
 
 def mess_up(n):
     for i in range(n):
