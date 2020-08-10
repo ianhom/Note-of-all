@@ -42,14 +42,13 @@ def mess_up(n):
 def win_ck():
     global MAX
     global map
-    num = 1
     for i in range(MAX):
         for j in range(MAX):
-            if map[i][j] != num:
+            if map[i][j] != inc_cnt():
                 if i == MAX-1 and j == MAX-1 and map[i][j] == 0:
                     return True
                 return False
-            num = num + 1
+        reset_cnt()
     return True
 
 def find_num(num):
