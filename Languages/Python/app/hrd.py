@@ -109,6 +109,7 @@ def start():
             move(act(dir))
         elif dir == 'r':
             reset()
+            mess_up()
             print("Reset the game")
         else:
             print("Please input valid key")
