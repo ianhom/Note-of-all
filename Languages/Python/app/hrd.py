@@ -73,16 +73,16 @@ def find_empty():
 
 def move(dir):
     i,j,up,down,left,right = find_empty()
-    if dir == 'up'and i != 0:
+    if dir == 'down'and i != 0:
         map[i][j] = map[i-1][j]
         map[i-1][j] = 0
-    elif dir == 'down'and i != MAX-1:
+    elif dir == 'up'and i != MAX-1:
         map[i][j] = map[i+1][j]
         map[i+1][j] = 0
-    elif dir == 'left'and j != 0:
+    elif dir == 'right'and j != 0:
         map[i][j] = map[i][j-1]
         map[i][j-1] = 0
-    elif dir == 'right'and j != MAX-1:
+    elif dir == 'left'and j != MAX-1:
         map[i][j] = map[i][j+1]
         map[i][j+1] = 0
     else:
@@ -105,11 +105,11 @@ def start():
             print("You win")
             return
         dir = input("Please input")
-        if act.has_key(dir):
-            move(act(dir))
+        if dir in act:
+            move(act[dir])
         elif dir == 'r':
             reset()
-            mess_up()
+            mess_up(1000)
             print("Reset the game")
         else:
             print("Please input valid key")
@@ -117,7 +117,7 @@ def start():
         print_map()
               
 if __name__ == '__main__':
-    map = create_map(5)
+    map = create_map(3)
     mess_up(1000)
     print_map()
     start()
