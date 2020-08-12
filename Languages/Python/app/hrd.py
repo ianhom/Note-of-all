@@ -48,7 +48,7 @@ def win_ck():
                 if i == MAX-1 and j == MAX-1 and map[i][j] == 0:
                     return True
                 return False
-        reset_cnt()
+    reset_cnt()
     return True
 
 def find_num(num):
