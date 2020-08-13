@@ -104,7 +104,7 @@ def start():
         if win_ck() == True:
             print("You win")
             return
-        dir = input("Please input")
+        dir = input("Please input('w/s/a/d' to move, 'r' to reset):")
         if dir in act:
             move(act[dir])
         elif dir == 'r':
