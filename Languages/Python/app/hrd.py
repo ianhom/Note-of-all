@@ -1,7 +1,7 @@
 #!/usr/bin/python
 import random
 MAX = 0
-
+step=0
 act  = {'w':"up",'s':"down",'a':"left",'d':"right"}
 dirs = ["up","down","left","right"]
 
@@ -33,6 +33,7 @@ def reset():
             map[i][j] = inc_cnt()
     map[MAX-1][MAX-1] = 0;
     reset_cnt()
+    step=0
 
 def mess_up(n):
     for i in range(n):
