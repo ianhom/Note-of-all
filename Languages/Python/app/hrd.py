@@ -91,6 +91,7 @@ def move(dir):
 
 def print_map():
     global map
+    print("Total step is ", step)
     for i in range(MAX):
         for j in range(MAX):
             if map[i][j] == 0:
@@ -108,6 +109,7 @@ def start():
         dir = input("Please input('w/s/a/d' to move, 'r' to reset):")
         if dir in act:
             move(act[dir])
+            step=step+1
         elif dir == 'r':
             reset()
             mess_up(1000)
