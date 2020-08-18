@@ -41,6 +41,7 @@ def mess_up(n):
 
 def win_ck():
     global MAX
+    global step
     for i in range(MAX):
         for j in range(MAX):
             if map[i][j] != inc_cnt():
@@ -48,6 +49,7 @@ def win_ck():
                     return True
                 return False
     reset_cnt()
+    print("Total step is ",step)
     return True
 
 def find_num(num):
