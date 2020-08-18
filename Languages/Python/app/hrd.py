@@ -26,7 +26,6 @@ def create_map(n):
 
 def reset():
     global MAX
-    global map
     num = 1
     for i in range(MAX):
         for j in range(MAX):
@@ -42,7 +41,6 @@ def mess_up(n):
 
 def win_ck():
     global MAX
-    global map
     for i in range(MAX):
         for j in range(MAX):
             if map[i][j] != inc_cnt():
@@ -93,7 +91,6 @@ def move(dir):
         return
 
 def print_map():
-    global map
     print("Total step is ", step)
     for i in range(MAX):
         for j in range(MAX):
