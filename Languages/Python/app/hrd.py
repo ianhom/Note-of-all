@@ -1,7 +1,8 @@
 #!/usr/bin/python
 import random
 MAX = 0
-step=0
+step = 0
+best = 0
 act  = {'w':"up",'s':"down",'a':"left",'d':"right"}
 dirs = ["up","down","left","right"]
 
@@ -121,6 +122,7 @@ def start():
         print_map()
               
 if __name__ == '__main__':
+    init()
     map = create_map(3)
     mess_up(1000)
     print_map()
