@@ -6,6 +6,10 @@ best = 0
 act  = {'w':"up",'s':"down",'a':"left",'d':"right"}
 dirs = ["up","down","left","right"]
 
+def init():
+    f = open("record.txt","w")
+    best = int(f.read())
+
 cnt = 0
 def inc_cnt():
     global cnt
