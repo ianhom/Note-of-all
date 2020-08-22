@@ -7,8 +7,10 @@ act  = {'w':"up",'s':"down",'a':"left",'d':"right"}
 dirs = ["up","down","left","right"]
 
 def init():
+    global best
     f = open("record.txt","w")
     best = int(f.read())
+    f.close()
 
 cnt = 0
 def inc_cnt():
@@ -47,6 +49,7 @@ def mess_up(n):
 def win_ck():
     global MAX
     global step
+    global best
     for i in range(MAX):
         for j in range(MAX):
             if map[i][j] != inc_cnt():
@@ -54,6 +57,10 @@ def win_ck():
                     return True
                 return False
     reset_cnt()
+    if step < best:
+        f = open("record.txt","w")
+        f.write(str(step))
+        f.close()
     print("Total step is ",step)
     return True
 
