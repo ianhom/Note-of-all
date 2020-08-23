@@ -61,6 +61,7 @@ def win_ck():
         f = open("record.txt","w")
         f.write(str(step))
         f.close()
+        print("New record!")
     print("Total step is ",step)
     return True
 
