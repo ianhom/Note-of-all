@@ -128,6 +128,8 @@ def start():
             reset()
             mess_up(1000)
             print("Reset the game")
+        elif dir == 'R':
+            print("Reset the record!!")
         else:
             print("Please input valid key")
         print("----------------")
