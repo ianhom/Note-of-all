@@ -129,6 +129,9 @@ def start():
             mess_up(1000)
             print("Reset the game")
         elif dir == 'R':
+            f = open("record.txt","w")
+            f.write('0')
+            f.close()
             print("Reset the record!!")
         else:
             print("Please input valid key")
