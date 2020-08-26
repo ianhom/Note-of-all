@@ -132,6 +132,9 @@ def start():
             f = open("record.txt","w")
             f.write('0')
             f.close()
+            reset()
+            mess_up(1000)
+            print("Reset the game")
             print("Reset the record!!")
         else:
             print("Please input valid key")
