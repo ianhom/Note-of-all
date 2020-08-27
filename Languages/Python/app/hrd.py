@@ -46,6 +46,11 @@ def mess_up(n):
         r = int(random.random()*10)%4
         move(dirs[r])
 
+def update_record(n):
+        f = open("record.txt","w")
+        f.write(n)
+        f.close()
+
 def win_ck():
     global MAX
     global step
