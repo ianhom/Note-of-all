@@ -63,9 +63,7 @@ def win_ck():
                 return False
     reset_cnt()
     if step < best:
-        f = open("record.txt","w")
-        f.write(str(step))
-        f.close()
+        update_record(str(step))
         print("New record!")
     print("Total step is ",step)
     return True
@@ -134,9 +132,7 @@ def start():
             mess_up(1000)
             print("Reset the game")
         elif dir == 'R':
-            f = open("record.txt","w")
-            f.write('0')
-            f.close()
+            update_record('0')
             reset()
             mess_up(1000)
             print("Reset the game")
