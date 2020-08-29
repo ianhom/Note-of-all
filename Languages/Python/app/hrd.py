@@ -40,6 +40,7 @@ def reset():
     map[MAX-1][MAX-1] = 0;
     reset_cnt()
     step=0
+    mess_up(1000)
 
 def mess_up(n):
     for i in range(n):
@@ -129,12 +130,10 @@ def start():
             move(act[dir])
         elif dir == 'r':
             reset()
-            mess_up(1000)
             print("Reset the game")
         elif dir == 'R':
             update_record('0')
             reset()
-            mess_up(1000)
             print("Reset the game")
             print("Reset the record!!")
         else:
