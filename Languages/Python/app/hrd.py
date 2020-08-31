@@ -123,6 +123,7 @@ def print_map():
     print("****************************************")
 
 def start():
+    print("Welcome to digital HRD")
     while True:
         if win_ck() == True:
             print("You win")
@@ -133,11 +134,13 @@ def start():
         elif dir == 'r':
             reset()
             print("Reset the game")
+            return
         elif dir == 'R':
             update_record('0')
             reset()
             print("Reset the game")
             print("Reset the record!!")
+            return
         else:
             print("Please input valid key")
         print("----------------")
@@ -148,5 +151,6 @@ if __name__ == '__main__':
     map = create_map(3)
     mess_up(1000)
     print_map()
-    start()
+    while True:
+        start()
     
