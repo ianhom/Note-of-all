@@ -140,7 +140,7 @@ def start():
             reset()
             print("Reset the game")
             print("Reset the record!!")
-            return
+            return True
         else:
             print("Please input valid key")
         print("----------------")
@@ -152,5 +152,6 @@ if __name__ == '__main__':
     mess_up(1000)
     print_map()
     while True:
-        start()
+        if false == start():
+            return
     
