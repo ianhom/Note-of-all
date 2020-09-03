@@ -8,7 +8,7 @@ dirs = ["up","down","left","right"]
 
 def init():
     global best
-    f = open("record.txt","w")
+    f = open("record.txt","r")
     if None==f:
         best= 0
     best = int(f.read())
