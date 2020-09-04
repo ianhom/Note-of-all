@@ -8,11 +8,14 @@ dirs = ["up","down","left","right"]
 
 def init():
     global best
-    f = open("record.txt","r")
-    if None==f:
-        best= 0
-    best = int(f.read())
-    f.close()
+    try:
+        f = open("record.txt","r")
+        s = f.read()
+        if s == '':
+            best = 0
+        else:
+            best = int(f.read())
+        f.close()
 
 cnt = 0
 def inc_cnt():
