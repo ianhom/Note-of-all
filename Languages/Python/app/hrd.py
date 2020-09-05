@@ -16,6 +16,8 @@ def init():
         else:
             best = int(f.read())
         f.close()
+    except:
+        print("open failed")
 
 cnt = 0
 def inc_cnt():
