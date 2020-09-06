@@ -55,9 +55,12 @@ def mess_up(n):
         move(dirs[r])
 
 def update_record(n):
+    try:
         f = open("record.txt","w")
         f.write(n)
         f.close()
+    except:
+        print("open failed")
 
 def win_ck():
     global MAX
