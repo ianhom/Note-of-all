@@ -14,7 +14,7 @@ def init():
         if s == '':
             best = 0
         else:
-            best = int(f.read())
+            best = int(s)
         f.close()
     except:
         print("open failed")
