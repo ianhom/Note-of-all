@@ -12,7 +12,7 @@ def init():
         f = open("record.txt","r")
         s = f.read()
         if s == '':
-            best = 0
+            best = 999999
         else:
             best = int(s)
         f.close()
