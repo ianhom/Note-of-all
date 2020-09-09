@@ -10,14 +10,16 @@ def init():
     global best
     try:
         f = open("record.txt","r")
+    except IOError:
+        print("open failed")
+    else:
         s = f.read()
         if s == '':
             best = 999999
         else:
             best = int(s)
         f.close()
-    except:
-        print("open failed")
+       
 
 cnt = 0
 def inc_cnt():
