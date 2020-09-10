@@ -58,7 +58,7 @@ def mess_up(n):
 
 def update_record(n):
     try:
-        f = open("record.txt","w")
+        f = open("record.txt","w+")
     except IOError:
         print("open failed")
     else:
@@ -142,15 +142,12 @@ def start():
         dir = input("Please input('w/s/a/d' to move, 'r' to reset):")
         if dir in act:
             move(act[dir])
-        elif dir == 'r':
+        elif dir == 'r' or dir == 'R':
+            if dir == 'R':
+                update_record('0')
+                print("Reset the record!!")          
             reset()
             print("Reset the game")
-            return
-        elif dir == 'R':
-            update_record('0')
-            reset()
-            print("Reset the game")
-            print("Reset the record!!")
             return True
         else:
             print("Please input valid key")
