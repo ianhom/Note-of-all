@@ -59,10 +59,11 @@ def mess_up(n):
 def update_record(n):
     try:
         f = open("record.txt","w")
+    except IOError:
+        print("open failed")
+    else:
         f.write(n)
         f.close()
-    except:
-        print("open failed")
 
 def win_ck():
     global MAX
