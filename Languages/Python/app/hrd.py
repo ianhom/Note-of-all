@@ -138,7 +138,7 @@ def start():
     while True:
         if win_ck() == True:
             print("You win")
-            return
+            return True
         dir = input("Please input('w/s/a/d' to move, 'r' to reset):")
         if dir in act:
             move(act[dir])
@@ -160,6 +160,6 @@ if __name__ == '__main__':
     mess_up(1000)
     print_map()
     while True:
-        if false == start():
+        if False == start():
             break
     
