@@ -42,6 +42,7 @@ def create_map(n):
 
 def reset():
     global MAX
+    global step
     reset_cnt()
     num = 1
     for i in range(MAX):
@@ -49,8 +50,8 @@ def reset():
             map[i][j] = inc_cnt()
     map[MAX-1][MAX-1] = 0;
     reset_cnt()
-    step=0
     mess_up(1000)
+    step = 0
 
 def mess_up(n):
     for i in range(n):
