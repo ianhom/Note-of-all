@@ -42,6 +42,7 @@ def create_map(n):
 
 def reset():
     global MAX
+    reset_cnt()
     num = 1
     for i in range(MAX):
         for j in range(MAX):
@@ -158,8 +159,8 @@ if __name__ == '__main__':
     init()
     map = create_map(3)
     mess_up(1000)
-    print_map()
     while True:
+        print_map()
         if False == start():
             break
     
