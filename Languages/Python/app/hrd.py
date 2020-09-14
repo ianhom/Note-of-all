@@ -106,7 +106,7 @@ def find_empty():
 
 def move(dir):
     global step
-    step=step+1
+    step = step + 1
     i,j,up,down,left,right = find_empty()
     if dir == 'down'and i != 0:
         map[i][j] = map[i-1][j]
@@ -121,7 +121,7 @@ def move(dir):
         map[i][j] = map[i][j+1]
         map[i][j+1] = 0
     else:
-        step=step-1
+        step = step - 1
         return
 
 def print_map():
