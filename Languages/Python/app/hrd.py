@@ -141,12 +141,12 @@ def start():
         if win_ck() == True:
             print("You win")
             return True
-        dir = input("Please input('w/s/a/d' to move, 'r' to reset):")
+        dir = input("Please input('w/s/a/d' to move, 'r' to reset, 'R' to reset the record):")
         if dir in act:
             move(act[dir])
         elif dir == 'r' or dir == 'R':
             if dir == 'R':
-                update_record('0')
+                update_record('9999')
                 print("Reset the record!!")          
             reset()
             print("Reset the game")
