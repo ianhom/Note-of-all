@@ -1,6 +1,6 @@
 #!/usr/bin/python
 import random
-MAX = 0
+MAX  = 0
 step = 0
 best = 0
 act  = {'w':"up",'s':"down",'a':"left",'d':"right"}
@@ -20,7 +20,6 @@ def init():
             best = int(s)
         f.close()
        
-
 cnt = 0
 def inc_cnt():
     global cnt
@@ -141,17 +140,18 @@ def start():
         if win_ck() == True:
             print("You win")
             return True
-        dir = input("Please input('w/s/a/d' to move, 'r' to reset, 'R' to reset the record):")
+        dir = input("Please input('w/s/a/d' to move, 'r' to restart, 'R' to reset the record and restart):")
         if dir in act:
             move(act[dir])
         elif dir == 'r' or dir == 'R':
             if dir == 'R':
-                update_record('9999')
+                update_record('999999')
                 print("Reset the record!!")          
             reset()
-            print("Reset the game")
+            print("Restart the game")
             return True
         else:
+            print("'w/s/a/d' to move, 'r' to restart, 'R' to reset the record and restart")
             print("Please input valid key")
         print("----------------")
         print_map()
