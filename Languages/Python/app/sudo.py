@@ -5,6 +5,8 @@ map = [[],[],[],[],[],[],[],[],[]]
 cnt = 0
 def inc_cnt():
     global cnt
+    if cnt == 10:
+        cnt = 0
     cnt = cnt + 1
     return cnt
 
