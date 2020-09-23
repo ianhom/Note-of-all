@@ -140,7 +140,7 @@ def start():
         if win_ck() == True:
             print("You win")
             return True
-        dir = input("Please input('w/s/a/d' to move, 'r' to restart, 'R' to reset the record and restart):")
+        dir = input("Please input:")
         if dir in act:
             move(act[dir])
         elif dir == 'r' or dir == 'R':
@@ -160,6 +160,7 @@ if __name__ == '__main__':
     init()
     map = create_map(3)
     mess_up(1000)
+    step = 0
     while True:
         print_map()
         if False == start():
