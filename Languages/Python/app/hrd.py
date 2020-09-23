@@ -70,6 +70,7 @@ def win_ck():
     global MAX
     global step
     global best
+    reset_cnt()
     for i in range(MAX):
         for j in range(MAX):
             if map[i][j] != inc_cnt():
