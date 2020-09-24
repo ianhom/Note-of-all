@@ -166,4 +166,6 @@ if __name__ == '__main__':
         print_map()
         if False == start():
             break
-    
+        else:
+            mess_up(1000)
+            step = 0
