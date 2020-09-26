@@ -160,12 +160,9 @@ def start():
 if __name__ == '__main__':
     init()
     map = create_map(3)
-    mess_up(1000)
-    step = 0
     while True:
         print_map()
+        mess_up(1000)
+        step = 0
         if False == start():
             break
-        else:
-            mess_up(1000)
-            step = 0
