@@ -151,6 +151,8 @@ def start():
             reset()
             print("Restart the game")
             return True
+        elif dir == 'Q':
+            return False
         else:
             print("'w/s/a/d' to move, 'r' to restart, 'R' to reset the record and restart")
             print("Please input valid key")
