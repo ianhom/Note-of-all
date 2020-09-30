@@ -159,7 +159,8 @@ def start():
               
 if __name__ == '__main__':
     init()
-    map = create_map(3)
+    d = int(input("Please input size:"))
+    map = create_map(d)
     while True:
         mess_up(1000)
         step = 0
