@@ -159,7 +159,7 @@ def start():
               
 if __name__ == '__main__':
     init()
-    d = int(input("Please input size:"))
+    d = int(input("Please input matrix size(n*n):"))
     map = create_map(d)
     while True:
         mess_up(1000)
