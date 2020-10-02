@@ -133,6 +133,11 @@ def print_map():
         print(" ")
     print("****************************************")
 
+def banner():
+    print("_/_/_/_/_/_/_/_/_/_/_/_/")    
+    print("_/         HRD        _/")
+    print("_/_/_/_/_/_/_/_/_/_/_/_/")  
+
 def start():
     print("Welcome to digital HRD")
     while True:
