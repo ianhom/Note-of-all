@@ -139,7 +139,7 @@ def banner():
     print("_/_/_/_/_/_/_/_/_/_/_/_/")  
 
 def start():
-    print("Welcome to digital HRD")
+    banner()
     while True:
         if win_ck() == True:
             print("You win")
