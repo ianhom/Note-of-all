@@ -123,7 +123,7 @@ def move(dir):
         return
 
 def print_map():
-    print("Total step is ", step)
+    print("Total step is ", step，“The Best record is ”，best)
     for i in range(MAX):
         for j in range(MAX):
             if map[i][j] == 0:
