@@ -9,7 +9,8 @@ dirs = ["up","down","left","right"]
 def init():
     global best
     try:
-        f = open("record.txt","r")
+        name = "record_"+ str(MAX)+".txt"
+        f = open( name,"r")
     except IOError:
         print("open failed")
     else:
