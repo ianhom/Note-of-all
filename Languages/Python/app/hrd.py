@@ -58,7 +58,8 @@ def mess_up(n):
 
 def update_record(n):
     try:
-        f = open("record.txt","w+")
+        name = "record_"+ str(MAX)+".txt"
+        f = open(name,"w+")
     except IOError:
         print("open failed")
     else:
