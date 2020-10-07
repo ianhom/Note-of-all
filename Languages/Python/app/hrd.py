@@ -80,7 +80,7 @@ def win_ck():
     reset_cnt()
     if step < best:
         update_record(str(step))
-        print("New record!")
+        print("New record for size",MAX)
     print("Total step is ",step)
     return True
 
@@ -125,7 +125,8 @@ def move(dir):
         return
 
 def print_map():
-    print("Total step is ", step，“The Best record is ”，best)
+    print("Total step is ", step，“The Best record is ”，best,"(size ",MAX,")"
+")
     for i in range(MAX):
         for j in range(MAX):
             if map[i][j] == 0:
