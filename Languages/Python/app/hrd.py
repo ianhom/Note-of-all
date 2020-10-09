@@ -10,11 +10,12 @@ def init():
     global best
     try:
         name = "record_"+ str(MAX)+".txt"
-        f = open( name,"r")
+        f = open(name,"r")
     except IOError:
         print("open failed")
     else:
         s = f.read()
+        print("what we got is ",s)
         if s == '':
             best = 999999
         else:
