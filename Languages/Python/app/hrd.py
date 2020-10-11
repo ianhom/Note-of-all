@@ -43,7 +43,6 @@ def create_map(n):
 
 def reset():
     global MAX
-    global step
     reset_cnt()
     num = 1
     for i in range(MAX):
