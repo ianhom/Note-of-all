@@ -16,7 +16,7 @@ def init():
     else:
         s = f.read()
         print("what we got is ",s)
-        if s == '':
+        if s == '' or s == '0':
             best = 999999
         else:
             best = int(s)
