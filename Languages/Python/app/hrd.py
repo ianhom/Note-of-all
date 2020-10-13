@@ -44,7 +44,7 @@ def create_map(n):
 def reset():
     global MAX
     reset_cnt()
-    num = 1
+    #num = 1
     for i in range(MAX):
         for j in range(MAX):
             map[i][j] = inc_cnt()
