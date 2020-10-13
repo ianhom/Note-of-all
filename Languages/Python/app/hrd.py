@@ -141,7 +141,6 @@ def banner():
     print("_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/")  
 
 def start():
-    banner()
     while True:
         if win_ck() == True:
             print("You win")
@@ -166,6 +165,7 @@ def start():
               
 if __name__ == '__main__':
     init()
+    banner()
     d = int(input("Please input matrix size(n*n):"))
     map = create_map(d)
     while True:
