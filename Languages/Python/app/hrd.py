@@ -13,6 +13,7 @@ def init():
         f = open(name,"r")
     except IOError:
         print("open failed")
+        best = 99999
     else:
         s = f.read()
         print("what we got is ",s)
@@ -143,7 +144,7 @@ def banner():
 def start():
     while True:
         if win_ck() == True:
-            print("You win")
+            print("You win\r\n\n")
             return True
         dir = input("Please input:")
         if dir in act:
