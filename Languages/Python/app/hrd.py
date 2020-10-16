@@ -10,7 +10,8 @@ def init():
     global best
     try:
         name = "record_"+ str(MAX)+".txt"
-        f = open(name,"r")
+        print(name)
+        f = open(name,"r+")
     except IOError:
         print("open failed")
         best = 99999
@@ -76,10 +77,12 @@ def win_ck():
         for j in range(MAX):
             if map[i][j] != inc_cnt():
                 if i == MAX-1 and j == MAX-1 and map[i][j] == 0:
-                    return True
+                    break
                 return False
     reset_cnt()
+    print("CK win step and best are",step, best)
     if step < best:
+        best = step
         update_record(str(step))
         print("New record for size",MAX)
     print("Total step is ",step)
@@ -165,10 +168,10 @@ def start():
         print_map()
               
 if __name__ == '__main__':
-    init()
     banner()
     d = int(input("Please input matrix size(n*n):"))
     map = create_map(d)
+    init()
     while True:
         mess_up(1000)
         step = 0
