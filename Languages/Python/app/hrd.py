@@ -17,7 +17,6 @@ def init():
         best = 99999
     else:
         s = f.read()
-        print("what we got is ",s)
         if s == '' or s == '0':
             best = 999999
         else:
@@ -154,6 +153,7 @@ def start():
             move(act[dir])
         elif dir == 'r' or dir == 'R':
             if dir == 'R':
+                best = 999999
                 update_record('999999')
                 print("Reset the record!!")          
             reset()
