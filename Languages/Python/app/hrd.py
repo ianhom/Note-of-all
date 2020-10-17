@@ -160,6 +160,7 @@ def start():
             print("Restart the game")
             return True
         elif dir == 'Q':
+            print("Thank you for playing")
             return False
         else:
             print("'w/s/a/d' to move, 'r' to restart, 'R' to reset the record and restart")
