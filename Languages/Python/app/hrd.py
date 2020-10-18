@@ -18,7 +18,7 @@ def init():
     else:
         s = f.read()
         if s == '' or s == '0':
-            best = 999999
+            best = 99999
         else:
             best = int(s)
         f.close()
@@ -153,8 +153,8 @@ def start():
             move(act[dir])
         elif dir == 'r' or dir == 'R':
             if dir == 'R':
-                best = 999999
-                update_record('999999')
+                best = 99999
+                update_record('99999')
                 print("Reset the record!!")          
             reset()
             print("Restart the game")
