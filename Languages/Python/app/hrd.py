@@ -147,7 +147,11 @@ def start():
     while True:
         if win_ck() == True:
             print("You win\r\n\n")
-            return True
+            r = input("Do you want to restart(y/n):")
+            if r == 'y':
+                 return True
+            else:
+                 return False
         dir = input("Please input:")
         if dir in act:
             move(act[dir])
