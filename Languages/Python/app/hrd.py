@@ -151,6 +151,7 @@ def start():
             if r == 'y':
                  return True
             else:
+                 print("Thank you for your playing")
                  return False
         dir = input("Please input:")
         if dir in act:
