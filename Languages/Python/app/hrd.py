@@ -151,7 +151,6 @@ def start():
             if r == 'y':
                  return True
             else:
-                 print("Thank you for your playing")
                  return False
         dir = input("Please input:")
         if dir in act:
@@ -165,7 +164,6 @@ def start():
             print("Restart the game")
             return True
         elif dir == 'Q':
-            print("Thank you for playing")
             return False
         else:
             print("'w/s/a/d' to move, 'r' to restart, 'R' to reset the record and restart")
@@ -183,4 +181,5 @@ if __name__ == '__main__':
         step = 0
         print_map()
         if False == start():
+            print("Thank you for playing") 
             break
