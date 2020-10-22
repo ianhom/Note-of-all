@@ -165,6 +165,9 @@ def start():
             return True
         elif dir == 'Q':
             return False
+        elif dir == 'h'：
+            print_help()
+            return true
         else:
             print("'w/s/a/d' to move, 'r' to restart, 'R' to reset the record and restart")
             print("Please input valid key")
