@@ -1,5 +1,6 @@
 #!/usr/bin/python
 import random
+NA   = 99999
 MAX  = 0
 step = 0
 best = 0
@@ -14,11 +15,11 @@ def init():
         f = open(name,"r+")
     except IOError:
         print("open failed")
-        best = 99999
+        best = NA
     else:
         s = f.read()
         if s == '' or s == '0':
-            best = 99999
+            best = NA
         else:
             best = int(s)
         f.close()
@@ -157,8 +158,8 @@ def start():
             move(act[dir])
         elif dir == 'r' or dir == 'R':
             if dir == 'R':
-                best = 99999
-                update_record('99999')
+                best = NA
+                update_record(str(NA))
                 print("Reset the record!!")          
             reset()
             print("Restart the game")
