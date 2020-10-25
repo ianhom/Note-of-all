@@ -80,7 +80,6 @@ def win_ck():
                     break
                 return False
     reset_cnt()
-    print("CK win step and best are",step, best)
     if step < best:
         best = step
         update_record(str(step))
