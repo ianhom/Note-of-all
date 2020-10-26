@@ -1,6 +1,5 @@
 #!/usr/bin/python
 import random
-
 NA   = 99999
 MAX  = 0
 step = 0
@@ -86,7 +85,7 @@ def win_ck():
         update_record(str(step))
         print("New record for size",MAX)
     print("Total step is ",step)
-
+    print("You win!")
     return True
 
 def find_num(num):
@@ -149,7 +148,6 @@ def banner():
 def start():
     while True:
         if win_ck() == True:
-            print("You win\r\n\n")
             r = input("Do you want to restart(y/n):")
             if r == 'y':
                  return True
