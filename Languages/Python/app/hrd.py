@@ -1,5 +1,6 @@
 #!/usr/bin/python
 import random
+
 NA   = 99999
 MAX  = 0
 step = 0
@@ -85,6 +86,7 @@ def win_ck():
         update_record(str(step))
         print("New record for size",MAX)
     print("Total step is ",step)
+
     return True
 
 def find_num(num):
@@ -137,6 +139,7 @@ def print_map():
                 print(map[i][j],end="\t")
         print(" ")
     print("****************************************")
+    print()
 
 def banner():
     print("_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/")    
