@@ -140,6 +140,9 @@ def print_map():
     print("****************************************")
     print()
 
+def print_help()
+    print("'w/s/a/d' to move, 'r' to restart, 'R' to reset the record and restart")
+
 def banner():
     print("_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/")    
     print("_/    Welcone to play HRD   _/")
