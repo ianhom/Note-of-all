@@ -1,5 +1,6 @@
 #!/usr/bin/python
 import random
+NA   = 99999
 MAX  = 0
 step = 0
 best = 0
@@ -9,13 +10,16 @@ dirs = ["up","down","left","right"]
 def init():
     global best
     try:
-        f = open("record.txt","r")
+        name = "record_"+ str(MAX)+".txt"
+        print(name)
+        f = open(name,"r+")
     except IOError:
         print("open failed")
+        best = NA
     else:
         s = f.read()
-        if s == '':
-            best = 999999
+        if s == '' or s == '0':
+            best = NA
         else:
             best = int(s)
         f.close()
@@ -41,16 +45,13 @@ def create_map(n):
 
 def reset():
     global MAX
-    global step
     reset_cnt()
-    num = 1
+    #num = 1
     for i in range(MAX):
         for j in range(MAX):
             map[i][j] = inc_cnt()
     map[MAX-1][MAX-1] = 0;
     reset_cnt()
-    mess_up(1000)
-    step = 0
 
 def mess_up(n):
     for i in range(n):
@@ -59,7 +60,8 @@ def mess_up(n):
 
 def update_record(n):
     try:
-        f = open("record.txt","w+")
+        name = "record_"+ str(MAX)+".txt"
+        f = open(name,"w+")
     except IOError:
         print("open failed")
     else:
@@ -70,17 +72,20 @@ def win_ck():
     global MAX
     global step
     global best
+    reset_cnt()
     for i in range(MAX):
         for j in range(MAX):
             if map[i][j] != inc_cnt():
                 if i == MAX-1 and j == MAX-1 and map[i][j] == 0:
-                    return True
+                    break
                 return False
     reset_cnt()
     if step < best:
+        best = step
         update_record(str(step))
-        print("New record!")
+        print("New record for size",MAX)
     print("Total step is ",step)
+    print("You win!")
     return True
 
 def find_num(num):
@@ -124,7 +129,7 @@ def move(dir):
         return
 
 def print_map():
-    print("Total step is ", step)
+    print("Total step is ", step,"The Best record is ", best,"(size ",MAX,")")
     for i in range(MAX):
         for j in range(MAX):
             if map[i][j] == 0:
@@ -133,23 +138,37 @@ def print_map():
                 print(map[i][j],end="\t")
         print(" ")
     print("****************************************")
+    print()
+
+def banner():
+    print("_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/")    
+    print("_/    Welcone to play HRD   _/")
+    print("_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/")  
 
 def start():
-    print("Welcome to digital HRD")
     while True:
         if win_ck() == True:
-            print("You win")
-            return True
-        dir = input("Please input('w/s/a/d' to move, 'r' to restart, 'R' to reset the record and restart):")
+            r = input("Do you want to restart(y/n):")
+            if r == 'y':
+                 return True
+            else:
+                 return False
+        dir = input("Please input:")
         if dir in act:
             move(act[dir])
         elif dir == 'r' or dir == 'R':
             if dir == 'R':
-                update_record('999999')
+                best = NA
+                update_record(str(NA))
                 print("Reset the record!!")          
             reset()
             print("Restart the game")
             return True
+        elif dir == 'Q':
+            return False
+        elif dir == 'h'：
+            print_help()
+            return true
         else:
             print("'w/s/a/d' to move, 'r' to restart, 'R' to reset the record and restart")
             print("Please input valid key")
@@ -157,11 +176,14 @@ def start():
         print_map()
               
 if __name__ == '__main__':
+    banner()
+    d = int(input("Please input matrix size(n*n):"))
+    map = create_map(d)
     init()
-    map = create_map(3)
-    mess_up(1000)
     while True:
+        mess_up(1000)
+        step = 0
         print_map()
         if False == start():
+            print("Thank you for playing") 
             break
-    
