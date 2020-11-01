@@ -145,6 +145,7 @@ def print_help()
     print("'r' to restart")
     print("'R' to reset the record and restart")
     print("'h' to print this help info")
+    print("'Q' to quit")
 
 def banner():
     print("_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/")    
