@@ -141,7 +141,10 @@ def print_map():
     print()
 
 def print_help()
-    print("'w/s/a/d' to move, 'r' to restart, 'R' to reset the record and restart")
+    print("'w/s/a/d' to move up/down/left/right")
+    print("'r' to restart")
+    print("'R' to reset the record and restart")
+    print("'h' to print this help info")
 
 def banner():
     print("_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/")    
