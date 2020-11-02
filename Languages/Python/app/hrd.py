@@ -140,7 +140,7 @@ def print_map():
     print("****************************************")
     print()
 
-def print_help()
+def print_help():
     print("'w/s/a/d' to move up/down/left/right")
     print("'r' to restart")
     print("'R' to reset the record and restart")
@@ -173,7 +173,7 @@ def start():
             return True
         elif dir == 'Q':
             return False
-        elif dir == 'h'：
+        elif dir == 'h':
             print_help()
             return true
         else:
