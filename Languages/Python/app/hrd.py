@@ -39,7 +39,6 @@ def create_map(n):
     MAX = n
     map_l = [[inc_cnt() for i in range(n)] for j in range(n)]
     reset_cnt()
-
     map_l[n-1][n-1] = 0
     return map_l
 
@@ -177,7 +176,7 @@ def start():
             print_help()
             return true
         else:
-            print("'w/s/a/d' to move, 'r' to restart, 'R' to reset the record and restart")
+            print("'w/s/a/d' to move, 'r' to restart, 'R' to reset the record and restart,'Q' to quit")
             print("Please input valid key")
         print("----------------")
         print_map()
