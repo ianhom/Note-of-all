@@ -1,4 +1,4 @@
-# Unclassified
+﻿# Unclassified
 
 ## 编程语言
 ### C
@@ -278,6 +278,10 @@ void main(int argc, char **argv)
 - git am 打patch
 - git init 初始化git仓库
 - git submodule 子模块操作
+   - status 检查子模块状态
+   - sync 同步子模块信息
+   - init 初始化子模块信息
+   - update 下载更新子模块
 - git show 显示已经commit后的修改内容
 - git blame 显示文件的修改记录。
 - git rm 删除文件在git中的管理。
