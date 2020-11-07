@@ -39,7 +39,6 @@ def create_map(n):
     MAX = n
     map_l = [[inc_cnt() for i in range(n)] for j in range(n)]
     reset_cnt()
-
     map_l[n-1][n-1] = 0
     return map_l
 
@@ -140,6 +139,13 @@ def print_map():
     print("****************************************")
     print()
 
+def print_help():
+    print("'w/s/a/d' to move up/down/left/right")
+    print("'r' to restart")
+    print("'R' to reset the record and restart")
+    print("'h' to print this help info")
+    print("'Q' to quit")
+
 def banner():
     print("_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/")    
     print("_/    Welcone to play HRD   _/")
@@ -166,11 +172,11 @@ def start():
             return True
         elif dir == 'Q':
             return False
-        elif dir == 'h'：
+        elif dir == 'h':
             print_help()
             return true
         else:
-            print("'w/s/a/d' to move, 'r' to restart, 'R' to reset the record and restart")
+            print("'w/s/a/d' to move, 'r' to restart, 'R' to reset the record and restart,'Q' to quit")
             print("Please input valid key")
         print("----------------")
         print_map()
