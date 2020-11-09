@@ -166,6 +166,7 @@ void main(int argc, char **argv)
 
 #### printf格式
 - %d 十进制整型
+- %d 五符合十进制整数
 - %x 十六进制整型
 - %2d 2位对齐整型
 - %03d 3位补零对齐整型 
