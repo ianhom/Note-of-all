@@ -140,9 +140,9 @@ def print_map():
     print()
 
 def print_help():
-    print("'w/s/a/d' to move up/down/left/right")
-    print("'r' to restart")
-    print("'R' to reset the record and restart")
+    print("'w/s/a/d and enter' to move up/down/left/right")
+    print("'r' to restart the game")
+    print("'R' to reset the record and restart the game")
     print("'h' to print this help info")
     print("'Q' to quit")
 
