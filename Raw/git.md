@@ -19,6 +19,7 @@
 - git am 打patch并commit
 - git init 初始化git仓库
 - git submodule 子模块操作
+   - add xxx.git yyy 增加xxx子模块到yyy路径下
    - status 检查子模块状态
    - sync 同步子模块信息
    - init 初始化子模块信息
