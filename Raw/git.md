@@ -8,6 +8,9 @@
 - git pull 将远端服务器同步到本地
 - git branch 检查分支
 - git checkout 切换分支，也可以用于撤销某个文件的修改
+   - (branch) 切换某个分支
+   - (commit id) 回退到某个commit
+   - (file name) 撤销某个文件的修改
 - git checkout -b 创建新分支并切换至新分支。
 - git log 输出修改记录
 - git shortlog 输出修改记录简要
