@@ -483,9 +483,10 @@ void main(int argc, char **argv)
 - 有计划的叫执行，未知的叫坚持。
 
 ### i.mxrt系列
-- i.mxrt1050/1020/1010/1060/1170
+- i.mxrt1050/1020/1010/1060/1170/600
 - RT1052是nxp推出的一款跨界mcu，600mhz主频的m7架构。
 - RT1170是nxp首款1GHz的mcu。
+- RT600系列是专用于ai应用的嵌入式平台
 
 ### MOE(Minds Of Embedded system)
 - 决定重写moe，重点在于各种组件的支持，服务编程者。
