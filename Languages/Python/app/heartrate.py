@@ -1,9 +1,12 @@
 import sys
 import datetime
 
-if len(sys.argv) == 0:
-    birth = 1987
-    peace_rate = 60
+birth = 1987
+peace_rate = 60
+if len(sys.argv) > 1:
+    peace_rate = sys.argv[1]
+if len(sys.argv) > 2:
+    birth = sys.argv[2]
 
 age = datetime.datetime.now().year - birth
 MAX = 220 - age
