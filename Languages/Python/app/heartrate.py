@@ -10,6 +10,13 @@ if len(sys.argv) > 2:
 
 age = datetime.datetime.now().year - birth
 MAX = 220 - age
+hrr = MAX - peace_rate
+
+def cal(a):
+    global hrr
+    global peace_rate
+    return hrr * a / 100 + peace_rate
+
 Ep  = MAX * 0.6
 Mp  = MAX * 0.75
 Tp  = MAX * 0.9
