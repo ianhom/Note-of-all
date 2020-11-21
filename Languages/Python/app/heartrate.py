@@ -21,6 +21,9 @@ Ep  = cal(60)
 Mp  = cal(75)
 Tp  = cal(90)
 
+print("Level\t%\tHRR")
+print("E\t65~74\t%d~%d"%(cal(65),cal(74))
+
 
 
 
