@@ -17,9 +17,9 @@ def cal(a):
     global peace_rate
     return hrr * a / 100 + peace_rate
 
-Ep  = MAX * 0.6
-Mp  = MAX * 0.75
-Tp  = MAX * 0.9
+Ep  = cal(60)
+Mp  = cal(75)
+Tp  = cal(90)
 
 
 
