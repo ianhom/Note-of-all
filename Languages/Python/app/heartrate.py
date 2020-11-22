@@ -23,7 +23,7 @@ Tp  = cal(90)
 
 print("Level\t%\tHRR")
 print("E\t65~74\t%d~%d"%(cal(65),cal(74))
-
-
-
+print("M\t74~85\t%d~%d"%(cal(74),cal(85))
+print("T\t85~88\t%d~%d"%(cal(85),cal(88))
+print("I\t88~97\t%d~%d"%(cal(88),cal(97))
 
