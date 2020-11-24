@@ -21,7 +21,7 @@ Ep  = cal(65)
 Mp  = cal(74)
 Tp  = cal(88)
 
-print("Age is %, peace rate is %d"%(age,hrr))
+print("Age is %d, peace rate is %d"%(age,hrr))
 print("Level\t%\tHRR")
 print("E\t65~74\t%d~%d"%(cal(65),cal(74))
 print("M\t74~85\t%d~%d"%(cal(74),cal(85))
