@@ -6,4 +6,5 @@ def cal(x):
     else:
         retun cal(x-1) + cal(x-2)
 
-cal(50)
+a=int(sys.argv[1])
+cal(a)
