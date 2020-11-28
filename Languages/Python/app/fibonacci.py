@@ -1,4 +1,7 @@
 import sys
+import time
+
+a=[1,1]
 
 def cal(x):
     if x == 1 or x == 2:
@@ -17,4 +20,6 @@ def cal2(x):
         retun a[x-1]+a[x-2]
 
 a=int(sys.argv[1])
+
 cal(a)
+cal2(a)
