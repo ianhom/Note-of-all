@@ -10,6 +10,7 @@ def cal(x):
         retun cal(x-1) + cal(x-2)
 
 def cal2(x):
+    global a
     if a[x] != 0:
         return a[x]
     if x == 1 or x == 2:
