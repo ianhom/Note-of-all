@@ -13,12 +13,9 @@ def cal2(x):
     global a
     if a[x] != 0:
         return a[x]
-    if x == 1 or x == 2:
-        return
-    else:
-        a[x-1]=cal2(x-1)
-        a[x-2]=cal2(x-2)
-        retun a[x-1]+a[x-2]
+    a[x-1]=cal2(x-1)
+    a[x-2]=cal2(x-2)
+    retun a[x-1]+a[x-2]
 
 c=int(sys.argv[1])
 
