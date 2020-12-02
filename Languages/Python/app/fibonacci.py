@@ -1,7 +1,7 @@
 import sys
 import time
 
-a=[1,1]
+a=[1,1,1]
 
 def cal(x):
     if x == 1 or x == 2:
