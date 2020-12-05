@@ -28,3 +28,4 @@ c=int(sys.argv[1])
 
 cal(c)
 cal2(c)
+cal3(c)
