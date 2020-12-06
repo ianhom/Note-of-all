@@ -26,7 +26,10 @@ def cal3(x):
     return a[x]
 
 c=int(sys.argv[1])
-
+t0=time.time()
 cal(c)
+t1=time.time()-t0
 cal2(c)
+t2=time.time()-t1
 cal3(c)
+t3=time.time()-t2
