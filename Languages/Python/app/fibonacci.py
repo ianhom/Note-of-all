@@ -33,3 +33,6 @@ cal2(c)
 t2=time.time()-t1
 cal3(c)
 t3=time.time()-t2
+print(t1)
+print(t2)
+print(t3)
