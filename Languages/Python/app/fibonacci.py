@@ -14,9 +14,8 @@ def cal2(x):
     global a
     if a[x] != 0:
         return a[x]
-    a[x-1]=cal2(x-1)
-    a[x-2]=cal2(x-2)
-    retun a[x-1]+a[x-2]
+    a[x]=cal2(x-1)+cal2(x-2)
+    retun a[x]
 
 def cal3(x):
     global a
