@@ -1,7 +1,8 @@
 import sys
 import time
 
-a=[1,1,1]
+a=[0 for i in range(100000)]
+a[0]=a[1]=a[2]=1
 
 def cal(x):
     if x == 1 or x == 2:
