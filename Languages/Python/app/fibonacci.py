@@ -3,6 +3,8 @@ import time
 
 a=[0 for i in range(100000)]
 a[0]=a[1]=a[2]=1
+b=[0 for i in range(100000)]
+b[0]=b[1]=b[2]=1
 
 def cal(x):
     if x == 1 or x == 2:
@@ -18,12 +20,12 @@ def cal2(x):
     retun a[x]
 
 def cal3(x):
-    global a
+    global b
     if x == 1 or x == 2:
         return 1
     for i in range(3,x-1):
-        a[x] = a[x-1] + a[x-2]
-    return a[x]
+        b[x] = b[x-1] + b[x-2]
+    return b[x]
 
 c=int(sys.argv[1])
 t0=time.time()
