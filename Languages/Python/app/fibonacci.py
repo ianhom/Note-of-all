@@ -20,9 +20,9 @@ def cal2(x):
     retun a[x]
 
 def cal3(x):
-    global b
-    if x == 1 or x == 2:
-        return 1
+    global b    
+    if b[x] != 0:
+        return b[x]
     for i in range(3,x-1):
         b[x] = b[x-1] + b[x-2]
     return b[x]
