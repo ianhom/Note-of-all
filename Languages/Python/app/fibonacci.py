@@ -1,6 +1,10 @@
 import sys
 import time
 
+cnt2 = 0
+cnt3 = 3
+
+
 a=[0 for i in range(100000)]
 a[0]=a[1]=a[2]=1
 b=[0 for i in range(100000)]
@@ -23,7 +27,8 @@ def cal3(x):
     global b    
     if b[x] != 0:
         return b[x]
-    for i in range(3,x-1):
+    cnt3=x
+    for i in range(cnt3,x-1):
         b[x] = b[x-1] + b[x-2]
     return b[x]
 
