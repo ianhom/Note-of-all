@@ -2,7 +2,9 @@ import sys
 import time
 
 done = 3
-
+cnt1 = 0
+cnt2 = 0
+cnt3 = 0
 
 a=[0 for i in range(100000)]
 a[0]=a[1]=a[2]=1
@@ -10,6 +12,8 @@ b=[0 for i in range(100000)]
 b[0]=b[1]=b[2]=1
 
 def cal(x):
+    global cnt1
+    cnt1 = cnt1 + 1
     if x == 1 or x == 2:
         return 1
     else:
@@ -17,15 +21,19 @@ def cal(x):
 
 def cal2(x):
     global a
+    global cnt2
     if a[x] != 0:
         return a[x]
+    cnt2 = cnt2 + 1
     a[x]=cal2(x-1)+cal2(x-2)
     retun a[x]
 
 def cal3(x):
-    global b    
+    global b
+    global cnt3
     if b[x] != 0:
         return b[x]
+    cnt3 = cnt3 + 1
     done = x
     for i in range(done,x-1):
         b[x] = b[x-1] + b[x-2]
