@@ -1,8 +1,7 @@
 import sys
 import time
 
-cnt2 = 0
-cnt3 = 3
+done = 3
 
 
 a=[0 for i in range(100000)]
@@ -27,8 +26,8 @@ def cal3(x):
     global b    
     if b[x] != 0:
         return b[x]
-    cnt3=x
-    for i in range(cnt3,x-1):
+    done = x
+    for i in range(done,x-1):
         b[x] = b[x-1] + b[x-2]
     return b[x]
 
