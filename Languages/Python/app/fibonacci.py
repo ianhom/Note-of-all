@@ -1,14 +1,15 @@
 import sys
 import time
 
+MAX = 1000000
 done = 3
 cnt1 = 0
 cnt2 = 0
 cnt3 = 0
 
-a=[0 for i in range(100000)]
+a=[0 for i in range(MAX)]
 a[0]=a[1]=a[2]=1
-b=[0 for i in range(100000)]
+b=[0 for i in range(MAX)]
 b[0]=b[1]=b[2]=1
 
 def cal(x):
