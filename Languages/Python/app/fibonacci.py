@@ -37,8 +37,8 @@ def cal3(x):
     cnt3 = cnt3 + 1
     done = x
     for i in range(done,x-1):
-        b[x] = b[x-1] + b[x-2]
-    return b[x]
+        b[i] = b[i-1] + b[i-2]
+    return b[i]
 
 c=int(sys.argv[1])
 t0=time.time()
