@@ -35,9 +35,9 @@ def cal3(x):
     if b[x] != 0:
         return b[x]
     cnt3 = cnt3 + 1
-    done = x
     for i in range(done,x-1):
         b[i] = b[i-1] + b[i-2]
+    done = x
     return b[i]
 
 c=int(sys.argv[1])
