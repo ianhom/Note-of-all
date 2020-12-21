@@ -18,7 +18,7 @@ def cal(x):
     if x == 1 or x == 2:
         return 1
     else:
-        retun cal(x-1) + cal(x-2)
+        return cal(x-1) + cal(x-2)
 
 def cal2(x):
     global a
@@ -27,7 +27,7 @@ def cal2(x):
         return a[x]
     cnt2 = cnt2 + 1
     a[x] = cal2(x-1) + cal2(x-2)
-    retun a[x]
+    return a[x]
 
 def cal3(x):
     global b
