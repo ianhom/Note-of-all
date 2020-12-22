@@ -32,6 +32,7 @@ def cal2(x):
 def cal3(x):
     global b
     global cnt3
+    global done
     if b[x] != 0:
         return b[x]
     cnt3 = cnt3 + 1
