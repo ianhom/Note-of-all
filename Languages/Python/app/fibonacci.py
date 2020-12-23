@@ -36,10 +36,10 @@ def cal3(x):
     if b[x] != 0:
         return b[x]
     cnt3 = cnt3 + 1
-    for i in range(done,x-1):
+    for i in range(done,x+1):
         b[i] = b[i-1] + b[i-2]
     done = x
-    return b[i]
+    return b[x]
 
 c=int(sys.argv[1])
 t0=time.time()
