@@ -49,6 +49,6 @@ r2=cal2(c)
 t2=time.time()-t1
 r3=cal3(c)
 t3=time.time()-t2
-print(r1,t1,cnt1)
+print("The result is ",r1,"\trunning time is ",t1,"\trunning count is ",cnt1)
 print(r2,t2,cnt2)
 print(r3,t3,cnt3)
