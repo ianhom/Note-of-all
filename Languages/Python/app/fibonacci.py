@@ -12,6 +12,10 @@ a[0]=a[1]=a[2]=1
 b=[0 for i in range(MAX)]
 b[0]=b[1]=b[2]=1
 
+def reset_array(a):
+    a=[0 for i in range(MAX)]
+    a[0]=a[1]=a[2]=1
+
 def cal(x):
     global cnt1
     cnt1 = cnt1 + 1
@@ -41,7 +45,7 @@ def cal3(x):
     done = x
     return b[x]
 
-c=input("Please input a number")
+c=input("Please input a number(1~50)")
 t0=time.time()
 r1=cal(c)
 t1=time.time()-t0
