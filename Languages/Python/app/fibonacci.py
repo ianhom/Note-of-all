@@ -27,6 +27,7 @@ def cal(x):
 def cal2(x):
     global a
     global cnt2
+    reset_array(a)
     if a[x] != 0:
         return a[x]
     cnt2 = cnt2 + 1
@@ -37,6 +38,7 @@ def cal3(x):
     global b
     global cnt3
     global done
+    reset_array(b)
     if b[x] != 0:
         return b[x]
     cnt3 = cnt3 + 1
