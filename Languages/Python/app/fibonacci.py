@@ -47,7 +47,7 @@ def cal3(x):
     done = x
     return b[x]
 
-c=input("Please input a number(1~50)")
+c=int(input("Please input a number(1~50)"))
 t0=time.time()
 r1=cal(c)
 t1=time.time()-t0
