@@ -11,10 +11,16 @@ a=[0 for i in range(MAX)]
 a[0]=a[1]=a[2]=1
 b=[0 for i in range(MAX)]
 b[0]=b[1]=b[2]=1
-
+    
 def reset_array(a):
     a=[0 for i in range(MAX)]
     a[0]=a[1]=a[2]=1
+
+def reset_arrays():
+    global a
+    global b
+    reset_array(a)
+    reset_array(b)
 
 def cal(x):
     global cnt1
@@ -27,7 +33,6 @@ def cal(x):
 def cal2(x):
     global a
     global cnt2
-#    reset_array(a)
     if a[x] != 0:
         return a[x]
     cnt2 = cnt2 + 1
@@ -38,7 +43,6 @@ def cal3(x):
     global b
     global cnt3
     global done
-#    reset_array(b)
     if b[x] != 0:
         return b[x]
     cnt3 = cnt3 + 1
