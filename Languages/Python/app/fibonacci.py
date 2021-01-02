@@ -1,4 +1,3 @@
-import sys
 import time
 
 MAX = 1000000
