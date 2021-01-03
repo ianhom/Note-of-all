@@ -49,17 +49,17 @@ def cal3(x):
         b[i] = b[i-1] + b[i-2]
     done = x
     return b[x]
-
-c=int(input("Please input a number(1~50)"))
-t0=time.time()
-r1=cal(c)
-t1=time.time()-t0
-print("The result is ",r1,"\trunning time is ",t1,"\trunning count is ",cnt1)
-t0=time.time()
-r2=cal2(c)
-t2=time.time()-t0
-print("The result is ",r2,"\trunning time is ",t2,"\trunning count is ",cnt2)
-t0=time.time()
-r3=cal3(c)
-t3=time.time()-t0
-print("The result is ",r3,"\trunning time is ",t3,"\trunning count is ",cnt3)
+def do_it():
+    c=int(input("Please input a number(1~50)"))
+    t0=time.time()
+    r1=cal(c)
+    t1=time.time()-t0
+    print("The result is ",r1,"\trunning time is ",t1,"\trunning count is ",cnt1)
+    t0=time.time()
+    r2=cal2(c)
+    t2=time.time()-t0
+    print("The result is ",r2,"\trunning time is ",t2,"\trunning count is ",cnt2)
+    t0=time.time()
+    r3=cal3(c)
+    t3=time.time()-t0
+    print("The result is ",r3,"\trunning time is ",t3,"\trunning count is ",cnt3)
