@@ -49,7 +49,13 @@ def cal3(x):
         b[i] = b[i-1] + b[i-2]
     done = x
     return b[x]
+
 def do_it():
+    global a
+    global b
+    global cnt1
+    global cnt2
+    global cnt3
     c=int(input("Please input a number(1~50)"))
     t0=time.time()
     r1=cal(c)
