@@ -69,3 +69,5 @@ def do_it():
     r3=cal3(c)
     t3=time.time()-t0
     print("The result is ",r3,"\trunning time is ",t3,"\trunning count is ",cnt3)
+
+do_it()
