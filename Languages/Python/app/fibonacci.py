@@ -70,5 +70,5 @@ def do_it():
     t3=time.time()-t0
     print("The result is ",r3,"\trunning time is ",t3,"\trunning count is ",cnt3)
 
-if __name__ == "main":
+if __name__ == '__main__':
     do_it()
