@@ -50,6 +50,12 @@ def cal3(x):
     done = x
     return b[x]
 
+def timing(func,cnt):
+    t0=time.time()
+    r1=func(cnt)
+    t1=time.time()-t0
+    return t1
+    
 def do_it():
     global a
     global b
