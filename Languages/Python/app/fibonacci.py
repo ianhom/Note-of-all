@@ -52,9 +52,9 @@ def cal3(x):
 
 def timing(func,cnt):
     t0=time.time()
-    r1=func(cnt)
+    r=func(cnt)
     t1=time.time()-t0
-    return t1
+    return t,r
     
 def do_it():
     global a
@@ -63,6 +63,10 @@ def do_it():
     global cnt2
     global cnt3
     c=int(input("Please input a number(1~50)"))
+    t1,r1 = timing(cal,c)
+    t2,r2 = timing(cal2,c)
+    t3,r3 = timing(cal3,c)
+
     t0=time.time()
     r1=cal(c)
     t1=time.time()-t0
