@@ -57,8 +57,6 @@ def timing(func,cnt):
     return t,r
     
 def do_it():
-    global a
-    global b
     global cnt1
     global cnt2
     global cnt3
