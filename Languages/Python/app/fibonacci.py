@@ -53,7 +53,7 @@ def cal3(x):
 def timing(func,cnt):
     t0=time.time()
     r=func(cnt)
-    t1=time.time()-t0
+    t=time.time()-t0
     return t,r
     
 def do_it():
@@ -70,4 +70,6 @@ def do_it():
     print("The result is ",r3,"\trunning time is ",t3,"\trunning count is ",cnt3)
 
 if __name__ == '__main__':
+    reset_arrays()
     do_it()
+
