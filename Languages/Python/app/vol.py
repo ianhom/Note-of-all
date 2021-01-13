@@ -2,7 +2,9 @@
 import time
 import sys
 
+days = time.dayofmonth()
 vol_total = sys.argv[1]
-vol = int(vol_total) / 30
+vol = int(vol_total) / days
 
-print(vol)
+if __name__ == '__main__':
+    print(vol)
