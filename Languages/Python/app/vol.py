@@ -17,9 +17,9 @@ def get_last_day(year, month):
     if month == 2 and flag == False:
         return 28
 
-dyas = time.dayofmonth()
-vol_total = sys.argv[1]
-vol = int(vol_total) / days
+vol_total = int(input("The object is :"));
+#vol_total = sys.argv[1]
+vol = int(vol_total) / get_last_day(2020,1)
 
 if __name__ == '__main__':
     print(vol)
