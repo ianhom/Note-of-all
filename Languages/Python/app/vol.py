@@ -1,6 +1,9 @@
 #!/usr/bin/python
-import time
 import sys
+import datetime
+y=datetime.datetime.now().year
+m=datetime.datetime.now().month
+d=datetime.datetime.now().day
 
 def get_last_day(year, month):
     flag = False
@@ -19,7 +22,7 @@ def get_last_day(year, month):
 
 vol_total = int(input("The object is :"));
 #vol_total = sys.argv[1]
-vol = int(vol_total) / get_last_day(2020,1)
+vol = int(vol_total) / get_last_day(y,m)
 
 if __name__ == '__main__':
     print(vol)
