@@ -22,7 +22,9 @@ def get_last_day(year, month):
 
 vol_total = int(input("The object is :"));
 #vol_total = sys.argv[1]
-vol = int(vol_total) / get_last_day(y,m)
+days = get_last_day(y,m)
+vol = int(vol_total) / days
 
 if __name__ == '__main__':
-    print(vol)
+    print("The object distance of this month is %d"%(vol))
+    print("The days of this month is %d"%(days))
