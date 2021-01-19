@@ -30,3 +30,5 @@ if __name__ == '__main__':
     print("The object distance of this month is %d"%(vol))
     print("The days of this month is %d"%(days))
     print("The left vol is %d"%(left))
+    print("The left days is %d"%(days - d))
+
