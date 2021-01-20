@@ -1,6 +1,7 @@
 #!/usr/bin/python
-import sys
+
 import datetime
+
 y=datetime.datetime.now().year
 m=datetime.datetime.now().month
 d=datetime.datetime.now().day
@@ -21,7 +22,6 @@ def get_last_day(year, month):
         return 28
 
 vol_total = int(input("The object is :"));
-#vol_total = sys.argv[1]
 days = get_last_day(y,m)
 vol = int(vol_total) / days
 left = vol * ( days - d)
