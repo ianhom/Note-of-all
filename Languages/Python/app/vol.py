@@ -27,11 +27,10 @@ vol = int(vol_total) / days
 left = vol * ( days - d)
 
 if __name__ == '__main__':
-    global vol
-    global days
-    global left
-    print("The object distance of this month is %d"%(vol))
+    print("The object distance of this month is %d"%(vol_total))
     print("The days of this month is %d"%(days))
+    print("The daily distance is %d"%(vol))
+    print("The current distance is %d"%(vol*d))
     print("The left vol is %d"%(left))
     print("The left days is %d"%(days - d))
 
