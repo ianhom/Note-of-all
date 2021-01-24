@@ -22,9 +22,11 @@ def get_last_day(year, month):
         return 28
 
 vol_total = int(input("The object is :"));
+cur_total = int(input("The current is :"));
 days = get_last_day(y,m)
 vol = int(vol_total) / days
 left = vol * ( days - d)
+haveto = (vol_total - cur_total) / (days - d)
 
 if __name__ == '__main__':
     print("The object distance of this month is %d"%(vol_total))
