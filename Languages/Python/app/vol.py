@@ -35,4 +35,5 @@ if __name__ == '__main__':
     print("The current distance is %d"%(vol*d))
     print("The left vol is %d"%(left))
     print("The left days is %d"%(days - d))
+    print("You have to run %d every day"%(haveto))
 
