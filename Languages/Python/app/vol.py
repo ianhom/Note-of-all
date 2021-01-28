@@ -1,6 +1,10 @@
 #!/usr/bin/python
-
 import datetime
+import requests
+
+r = requests.get('http://www.weather.com.cn/data/sk/101070201.html')
+r.encoding='utf-8'
+print(r.json())
 
 y=datetime.datetime.now().year
 m=datetime.datetime.now().month
@@ -8,7 +12,6 @@ d=datetime.datetime.now().day
 
 def get_last_day(year, month):
     return (datetime.datetime(year.month+1) - datetime.datetime(year.month)).days
-
 
 vol_total = int(input("The object is :"));
 cur_total = int(input("The current is :"));
