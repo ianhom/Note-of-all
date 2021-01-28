@@ -1,6 +1,7 @@
 #!/usr/bin/python
 import datetime
 import requests
+import json
 
 r = requests.get('http://www.weather.com.cn/data/sk/101070201.html')
 r.encoding='utf-8'
