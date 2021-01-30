@@ -12,7 +12,7 @@ m=datetime.datetime.now().month
 d=datetime.datetime.now().day
 
 def get_last_day(year, month):
-    return (datetime.datetime(year.month+1) - datetime.datetime(year.month)).days
+    return (datetime.datetime(year,month+1,1) - datetime.datetime(year,month,1)).days
 
 vol_total = int(input("The object is :"));
 cur_total = int(input("The current is :"));
