@@ -11,6 +11,7 @@ y=datetime.datetime.now().year
 m=datetime.datetime.now().month
 d=datetime.datetime.now().day
 
-def rnd():
-    return int(random.random()*100)
+def rnd(lst):
+    l = len(lst)
+    return lst[int(random.random()*100%l)]
 
