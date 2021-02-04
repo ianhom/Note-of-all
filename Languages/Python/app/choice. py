@@ -12,6 +12,5 @@ m=datetime.datetime.now().month
 d=datetime.datetime.now().day
 
 def rnd(lst):
-    l = len(lst)
-    return lst[int(random.random()*100%l)]
+    return lst[int(random.random()*100%len(lst))]
 
