@@ -3,6 +3,11 @@ import datetime
 import requests
 import random
 
+shoes = [{ "name" : "AlphyFly Next%",   "Used km" : 100},  
+         { "name" : "VaporFly Next%",   "Used km" : 152 }, 
+         { "name" : "Tempo Next%",      "Used km" : 100 }, 
+         { "name" : "Fly3",             "Used km" : 200 }] 
+
 r = requests.get('http://www.weather.com.cn/data/sk/101070201.html')
 r.encoding='utf-8'
 print(r.json()['weatherinfo']['city'], r.json()['weatherinfo']['temp'])
