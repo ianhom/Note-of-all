@@ -3,10 +3,11 @@ import datetime
 import requests
 import random
 
-shoes = [{ "name" : "AlphyFly Next%",   "used km" : 100, "race" : True},  
-         { "name" : "VaporFly Next%",   "used km" : 152, "race" : True }, 
-         { "name" : "Tempo Next%",      "used km" : 100, "race" : True }, 
-         { "name" : "Fly3",             "used km" : 200, "race" : True }] 
+shoes = [{ "name" : "AlphyFly Next%",   "used km" : 100, "race" : True, "rainy day" : False},  
+         { "name" : "VaporFly Next%",   "used km" : 152, "race" : True, "rainy day" : False}, 
+         { "name" : "Tempo Next%",      "used km" : 100, "race" : True, "rainy day" : False}, 
+         { "name" : "Fly3",             "used km" : 300, "race" : True, "rainy day" : False}] 
+         { "name" : "160X",             "used km" : 520, "race" : True, "rainy day" : True}]
 
 r = requests.get('http://www.weather.com.cn/data/sk/101070201.html')
 r.encoding='utf-8'
