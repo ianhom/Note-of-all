@@ -6,7 +6,8 @@ import random
 shoes = [{ "name" : "AlphyFly Next%",   "used km" : 100, "race" : True, "rainy day" : False},  
          { "name" : "VaporFly Next%",   "used km" : 152, "race" : True, "rainy day" : False}, 
          { "name" : "Tempo Next%",      "used km" : 100, "race" : True, "rainy day" : False}, 
-         { "name" : "Fly3",             "used km" : 300, "race" : True, "rainy day" : False}] 
+         { "name" : "Fly3",             "used km" : 300, "race" : True, "rainy day" : False}, 
+         { "name" : "K26",              "used km" : 530, "race" : False, "rainy day" : True}, 
          { "name" : "160X",             "used km" : 520, "race" : True, "rainy day" : True}]
 
 r = requests.get('http://www.weather.com.cn/data/sk/101070201.html')
