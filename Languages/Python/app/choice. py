@@ -3,12 +3,13 @@ import datetime
 import requests
 import random
 
-shoes = [{ "name" : "AlphyFly Next%",   "used km" : 100, "race" : True, "rainy day" : False},  
-         { "name" : "VaporFly Next%",   "used km" : 152, "race" : True, "rainy day" : False}, 
-         { "name" : "Tempo Next%",      "used km" : 100, "race" : True, "rainy day" : False}, 
-         { "name" : "Fly3",             "used km" : 300, "race" : True, "rainy day" : False}, 
-         { "name" : "K26",              "used km" : 530, "race" : False, "rainy day" : True}, 
-         { "name" : "160X",             "used km" : 520, "race" : True, "rainy day" : True}]
+shoes = [{ "name" : "AlphyFly Next%",   "used km" : 100, "race" : True,  "SFD" : False, "SSD" : False, "LSD" : False, "rainy day" : False},  
+         { "name" : "VaporFly Next%",   "used km" : 152, "race" : True,  "SFD" : False, "SSD" : False, "LSD" : False, "rainy day" : False}, 
+         { "name" : "Tempo Next%",      "used km" : 100, "race" : True,  "SFD" : True,  "SSD" : False, "LSD" : False, "rainy day" : False}, 
+         { "name" : "Fly3",             "used km" : 300, "race" : True,  "SFD" : True,  "SSD" : False, "LSD" : False, "rainy day" : False},  
+         { "name" : "160X",             "used km" : 520, "race" : True,  "SFD" : True,  "SSD" : True,  "LSD" : True,  "rainy day" : True },
+         { "name" : "FlyingShadow",     "used km" : 70,  "race" : True,  "SFD" : True,  "SSD" : False, "LSD" : False, "rainy day" : False},
+         { "name" : "K26",              "used km" : 530, "race" : False, "SFD" : False, "SSD" : True,  "LSD" : True,  "rainy day" : False},]
 
 r = requests.get('http://www.weather.com.cn/data/sk/101070201.html')
 r.encoding='utf-8'
