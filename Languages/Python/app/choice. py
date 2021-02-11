@@ -25,3 +25,6 @@ def rslt(a,b):
 def rnd(lst):
     return lst[int(random.random()*100%len(lst))]
 
+def output_name(lst):
+    for i in lst:
+         print(i["name"])
