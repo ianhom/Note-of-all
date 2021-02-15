@@ -4,16 +4,16 @@ import requests
 import random
 
 shoes = [{ "name" : "AlphyFly Next%",    "used km" : 100, "race" : True,  "SFD" : False, "LSD" : False, "rainy day" : False},  
-         { "name" : "VaporFly Next%",    "used km" : 152, "race" : True,  "SFD" : False, "LSD" : False, "rainy day" : False}, 
-         { "name" : "Tempo Next%",       "used km" : 100, "race" : True,  "SFD" : True,  "LSD" : False, "rainy day" : False}, 
-         { "name" : "Fly3",              "used km" : 300, "race" : True,  "SFD" : True,  "LSD" : False, "rainy day" : False},  
-         { "name" : "160X",              "used km" : 520, "race" : True,  "SFD" : True,  "LSD" : True,  "rainy day" : True },
+         { "name" : "VaporFly Next%",    "used km" : 170, "race" : True,  "SFD" : False, "LSD" : False, "rainy day" : False}, 
+         { "name" : "Tempo Next%",       "used km" : 120, "race" : True,  "SFD" : True,  "LSD" : False, "rainy day" : False}, 
+         { "name" : "Fly3",              "used km" : 293, "race" : True,  "SFD" : True,  "LSD" : False, "rainy day" : False},  
+         { "name" : "160X",              "used km" : 551, "race" : True,  "SFD" : True,  "LSD" : True,  "rainy day" : True },
          { "name" : "Feiying",           "used km" : 92,  "race" : True,  "SFD" : True,  "LSD" : False, "rainy day" : False},
-         { "name" : "Jueying essential", "used km" : 50,  "race" : False, "SFD" : False, "LSD" : False, "rainy day" : False},
-         { "name" : "Jingtan",           "used km" : 100, "race" : False, "SFD" : True,  "LSD" : True,  "rainy day" : False},
-         { "name" : "Takumi",            "used km" : 50,  "race" : False, "SFD" : True,  "LSD" : False, "rainy day" : False},
-         { "name" : "Zhanshen",          "used km" : 20,  "race" : False, "SFD" : False, "LSD" : True,  "rainy day" : True },
-         { "name" : "K26",               "used km" : 530, "race" : False, "SFD" : False, "LSD" : True,  "rainy day" : False},]
+         { "name" : "Jueying essential", "used km" : 36,  "race" : False, "SFD" : False, "LSD" : True,  "rainy day" : False},
+         { "name" : "Jingtan",           "used km" : 59,  "race" : False, "SFD" : True,  "LSD" : True,  "rainy day" : False},
+         { "name" : "Takumi",            "used km" : 19,  "race" : False, "SFD" : True,  "LSD" : False, "rainy day" : False},
+         { "name" : "Zhanshen",          "used km" : 30,  "race" : False, "SFD" : False, "LSD" : True,  "rainy day" : True },
+         { "name" : "K26",               "used km" : 653, "race" : False, "SFD" : False, "LSD" : True,  "rainy day" : False},]
 
 r = requests.get('http://www.weather.com.cn/data/sk/101070201.html')
 r.encoding='utf-8'
