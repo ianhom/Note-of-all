@@ -30,11 +30,17 @@ def by_used_km():
 def by_race():
     return flt("race")
 
-def by_weather():
+def by_rainy():
     return flt("rainy day")
 
 def by_walk():
     return flt("walk")
+
+def by_lsd():
+    return flt("LSD")
+
+def by_sfd():
+    return flt("SFD")
 
 def rslt(a):
     return sorted(shoes, key = lambda i: (i[a]))
