@@ -42,6 +42,9 @@ def by_lsd():
 def by_sfd():
     return flt(shoes, "SFD")
 
+def by_rainy_lsd():
+    return flt(by_rainy(), "LSD")
+
 def rslt(a):
     return sorted(shoes, key = lambda i: (i[a]))
 
