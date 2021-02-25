@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 write_in = "Hello world"
 
 with open("./test.txt","w") as f:
