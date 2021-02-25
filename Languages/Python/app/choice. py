@@ -54,6 +54,11 @@ def flt(lis,k):
 def rnd(lst):
     return lst[int(random.random()*100%len(lst))]
 
+def prt(lis):
+    for i in lis:
+         print(i)
+    pirnt("------------------")
+
 def output_name(lst):
     for i in lst:
          print(i["name"])
