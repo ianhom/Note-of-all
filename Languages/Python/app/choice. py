@@ -63,9 +63,9 @@ def prt(lis):
          print(i)
     pirnt("------------------")
 
-def output_name(lst):
+def output(lst):
     for i in lst:
-         print(i["name"])
+         print(i["name"],i["distance"])
          
 if __name__=="__main__":
-    prt(for_lsd())
+    output(for_lsd())
