@@ -66,3 +66,6 @@ def prt(lis):
 def output_name(lst):
     for i in lst:
          print(i["name"])
+         
+if __name__=="__main__":
+    prt(for_lsd())
