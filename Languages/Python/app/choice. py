@@ -66,6 +66,10 @@ def prt(lis):
 def output(lst):
     for i in lst:
          print(i["name"],i["distance"])
+
+def pickone(lst):
+     l=rnd(lst)
+     print(l[0]["name"],l[0]["distance"])         
          
 if __name__=="__main__":
     output(for_lsd())
