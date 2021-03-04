@@ -15,7 +15,8 @@ shoes = [{ "name" : "AlphyFly Next%",    "used km" : 100, "race" : True,  "SFD" 
          { "name" : "Zhanshen",          "used km" : 30,  "race" : False, "SFD" : False, "LSD" : True,  "rainy day" : True , "walk" : True},
          { "name" : "K26",               "used km" : 653, "race" : False, "SFD" : False, "LSD" : True,  "rainy day" : False, "walk" : True},
          { "name" : "K21",               "used km" : 553, "race" : False, "SFD" : False, "LSD" : True,  "rainy day" : True, "walk" : True},
-         { "name" : "Ultraboost 18",     "used km" : 430, "race" : False, "SFD" : False, "LSD" : True,  "rainy day" : False, "walk" : True},]
+         { "name" : "Ultraboost 18",     "used km" : 430, "race" : False, "SFD" : False, "LSD" : True,  "rainy day" : False, "walk" : True},
+         { "name" : "feiran",            "used km" : 0,   "race" : True,  "SFD" : True,  "LSD" : False, "rainy day" : False, "walk" : True},]
 
 r = requests.get('http://www.weather.com.cn/data/sk/101070201.html')
 r.encoding='utf-8'
