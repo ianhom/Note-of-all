@@ -73,7 +73,7 @@ def output(lst):
 
 def pickone(lst):
      l=rnd(lst)
-     print(l[0]["name"],l[0]["distance"])         
+     output(l)
          
 if __name__=="__main__":
     output(for_lsd())
