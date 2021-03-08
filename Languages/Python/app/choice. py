@@ -1,6 +1,7 @@
 #!/usr/bin/python
 import datetime
 import random
+import json
 
 shoes = [{ "name" : "AlphyFly Next%",    "used km" : 100, "race" : True,  "SFD" : False, "LSD" : False, "rainy day" : False, "walk" : False},  
          { "name" : "VaporFly Next%",    "used km" : 170, "race" : True,  "SFD" : False, "LSD" : False, "rainy day" : False, "walk" : False}, 
@@ -16,6 +17,9 @@ shoes = [{ "name" : "AlphyFly Next%",    "used km" : 100, "race" : True,  "SFD" 
          { "name" : "K21",               "used km" : 553, "race" : False, "SFD" : False, "LSD" : True,  "rainy day" : True, "walk" : True},
          { "name" : "Ultraboost 18",     "used km" : 430, "race" : False, "SFD" : False, "LSD" : True,  "rainy day" : False, "walk" : True},
          { "name" : "feiran",            "used km" : 0,   "race" : True,  "SFD" : True,  "LSD" : False, "rainy day" : False, "walk" : True},]
+
+with open("./shoes.json","r") as shoes_f:
+    shoes = json.load(shoes_f)
 
 y=datetime.datetime.now().year
 m=datetime.datetime.now().month
