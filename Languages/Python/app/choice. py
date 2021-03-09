@@ -21,6 +21,10 @@ shoes = [{ "name" : "AlphyFly Next%",    "used km" : 100, "race" : True,  "SFD" 
 with open("./shoes.json","r") as shoes_f:
     shoes = json.load(shoes_f)
 
+def update_box():
+    with open("./shoes.json","w") as shoes_f:
+        json.dump(shoes)
+
 y=datetime.datetime.now().year
 m=datetime.datetime.now().month
 d=datetime.datetime.now().day
