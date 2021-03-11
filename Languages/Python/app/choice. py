@@ -16,7 +16,7 @@ shoes = [{ "name" : "AlphyFly Next%",    "used km" : 100, "race" : True,  "SFD" 
          { "name" : "K26",               "used km" : 653, "race" : False, "SFD" : False, "LSD" : True,  "rainy day" : False, "walk" : True},
          { "name" : "K21",               "used km" : 553, "race" : False, "SFD" : False, "LSD" : True,  "rainy day" : True, "walk" : True},
          { "name" : "Ultraboost 18",     "used km" : 430, "race" : False, "SFD" : False, "LSD" : True,  "rainy day" : False, "walk" : True},
-         { "name" : "feiran",            "used km" : 0,   "race" : True,  "SFD" : True,  "LSD" : False, "rainy day" : False, "walk" : True},]
+         { "name" : "feiran",            "used km" : 8,   "race" : Fasle, "SFD" : True,  "LSD" : False, "rainy day" : False, "walk" : True},]
 
 with open("./shoes.json","r") as shoes_f:
     shoes = json.load(shoes_f)
@@ -87,6 +87,8 @@ if __name__=="__main__":
     cmd = input("Please input a command)
     if cmd == "lsd":
         output(for_lsd())
+    elif cmd == "race":
+        output(by_race())
     elif cmd == "update":
         name = input("which one?")
         km = inout("how long?")
