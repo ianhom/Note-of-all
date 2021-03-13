@@ -84,6 +84,7 @@ def pickone(lst):
      output(l)
          
 if __name__=="__main__":
+    output(by_used_km())
     cmd = input("Please input a command)
     if cmd == "lsd":
         output(for_lsd())
