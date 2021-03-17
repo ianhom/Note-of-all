@@ -22,7 +22,7 @@ def init():
     with open("./shoes.json","r") as shoes_f:
         return json.load(shoes_f)
 
-def update_box():
+def update_box(shoes):
     with open("./shoes.json","w") as shoes_f:
         json.dump(shoes)
 
