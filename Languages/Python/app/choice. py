@@ -96,4 +96,5 @@ if __name__=="__main__":
         name = input("which one?")
         km = inout("how long?")
         update_km(shoes,name,km)
+        update_shoes(shoes)
         output(shoes)
