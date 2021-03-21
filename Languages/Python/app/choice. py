@@ -63,7 +63,12 @@ def flt(lis,k):
 def rnd(lst):
     return lst[int(random.random()*100%len(lst))]
 
-def update_km(lis,name,plus):
+def update_km(lis,name,km):
+    for i in lis:
+        if i[name] == name:
+            i["used km"] = km
+
+def increase_km(lis,name,plus):
     for i in lis:
         if i[name] == name:
             i["used km"] = i["used km"] + plus
