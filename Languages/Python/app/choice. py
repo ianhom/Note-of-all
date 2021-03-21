@@ -85,7 +85,7 @@ def pickone(lst):
      output(l)
          
 if __name__=="__main__":
-    init()
+    shoes = init()
     output(by_used_km())
     cmd = input("Please input a command)
     if cmd == "lsd":
