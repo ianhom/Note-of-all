@@ -16,7 +16,7 @@ shoes = [{ "name" : "AlphyFly Next%",    "used km" : 100, "race" : True,  "SFD" 
          { "name" : "K26",               "used km" : 653, "race" : False, "SFD" : False, "LSD" : True,  "rainy day" : False, "walk" : True},
          { "name" : "K21",               "used km" : 553, "race" : False, "SFD" : False, "LSD" : True,  "rainy day" : True, "walk" : True},
          { "name" : "Ultraboost 18",     "used km" : 430, "race" : False, "SFD" : False, "LSD" : True,  "rainy day" : False, "walk" : True},
-         { "name" : "feiran",            "used km" : 30,  "race" : Fasle, "SFD" : True,  "LSD" : False, "rainy day" : False, "walk" : True},]
+         { "name" : "feiran",            "used km" : 60,  "race" : Fasle, "SFD" : True,  "LSD" : False, "rainy day" : False, "walk" : True},]
 
 def init():
     with open("./shoes.json","r") as shoes_f:
@@ -58,7 +58,7 @@ def rslt(lis,a):
     return sorted(lis, key = lambda i: (i[a]))
 
 def flt(lis,k):
-    return filter(lambda x:x[k] == True, lis)
+    return filter(lambda x:x[k] == "True", lis)
 
 def rnd(lst):
     return lst[int(random.random()*100%len(lst))]
