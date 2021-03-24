@@ -96,7 +96,7 @@ if __name__=="__main__":
     if cmd == "lsd":
         output(for_lsd())
         output(pickone(for_lsd()))
-    elif cmd == “raining”:
+    elif cmd == “rainy”:
         output(by_rainy())
     elif cmd == "race":
         output(by_race())
@@ -106,3 +106,6 @@ if __name__=="__main__":
         update_km(shoes,name,km)
         update_shoes(shoes)
         output(shoes)
+    else:
+        print_help()
+
