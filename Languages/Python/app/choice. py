@@ -96,6 +96,8 @@ if __name__=="__main__":
     if cmd == "lsd":
         output(for_lsd())
         output(pickone(for_lsd()))
+    elif cmd == “raining”:
+        output(by_rainy())
     elif cmd == "race":
         output(by_race())
     elif cmd == "update":
