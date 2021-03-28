@@ -1,13 +1,14 @@
 #include <stdio.h>
 
-int a[10] = {7,3,4,1,2,6,8,5,9,0};
+int n;
+scanf("%d",&n);
 int i,j,t;
-
-int bubble_sort(void)
-{
-    for(i = 0; i < 9; i++)
+int ar[n];
+for(i=0;i<n;i++)
+    scanf("%d",&ar[i]);
+for(i = 0; i < n; i++)
     {
-        for(j = 0; j < 9-i; j++)
+        for(j = 0; j < n-i; j++)
         {
             if(a[j] <= a[j+1])
             {
