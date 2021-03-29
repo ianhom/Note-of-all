@@ -15,3 +15,6 @@ def file_write():
 
 if __name__ == "__main__":
     s = file_read()
+    print(s)
+    write = write_in + "+1"
+    file_write()
