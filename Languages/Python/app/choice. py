@@ -92,6 +92,9 @@ def pickone(lst):
      l=rnd(lst)
      output(l)
 
+def check_same(d1,d2,k):
+    return d1[k] == d2[k]
+
 def find_same():
 
          
