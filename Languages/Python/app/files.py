@@ -9,9 +9,12 @@ def file_read():
         print(s)
         return s
 
-def file_write():
+def file_write(s):
     with open("./test.txt","w") as f:
-        f.write(write_in)
+        f.write(s)
 
 if __name__ == "__main__":
     s = file_read()
+    print(s)
+    write = write_in + "+1"
+    file_write()
