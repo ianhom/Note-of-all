@@ -106,11 +106,15 @@ def find_same(d1,d2):
 def check_same(a):
     b = a
     c = []
+    d = [1] * len(b)
     for i in range(0,len(b)):
+         if d[i] == 0:
+             continue
          c.append(b[i])
          for j in range(i+1,len(b)):
              if find_same(b[i],b[j]):
                   c.append(b[j])
+                  d[j] = 0
          
 if __name__=="__main__":
     shoes = init()
