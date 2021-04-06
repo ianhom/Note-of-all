@@ -103,18 +103,18 @@ def find_same(d1,d2):
             check_same(d1,d2,"rainy") and
             check_same(d1,d2,"walk"))
 
-def check_same(a):
-    b = a
+def check_same(b):
     c = []
-    d = [1] * len(b)
+    flag = [1] * len(b)
     for i in range(0,len(b)):
-         if d[i] == 0:
+         if flag[i] == 0:
              continue
          c.append(b[i])
          for j in range(i+1,len(b)):
              if find_same(b[i],b[j]):
                   c.append(b[j])
-                  d[j] = 0
+                  flag[j] = 0
+         pt(c)
          
 if __name__=="__main__":
     shoes = init()
