@@ -134,6 +134,8 @@ if __name__=="__main__":
         update_km(shoes,name,km)
         update_shoes(shoes)
         output(shoes)
+    elif cmd == "same":
+        check_same()
     else:
         print_help()
 
