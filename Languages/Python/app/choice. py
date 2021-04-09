@@ -135,7 +135,7 @@ if __name__=="__main__":
         update_shoes(shoes)
         output(shoes)
     elif cmd == "same":
-        check_same()
+        check_same(shoes)
     else:
         print_help()
 
