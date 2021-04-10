@@ -140,4 +140,8 @@ if __name__=="__main__":
         print_help()
 
 def print_help():
-    print("Please input lsd/race/update/same")
+    print("Please input the valid command:")
+    print("----lsd : Filter LSD shoes")
+    print("----race : Filter race shoes")
+    print("----update : Update used km")
+    print("----same : Find the same usage shoes")
