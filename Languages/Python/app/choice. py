@@ -3,22 +3,22 @@ import datetime
 import random
 import json
 
-shoes = [{ "name" : "AlphyFly Next%",    "used km" : 100, "race" : "True",  "SFD" : "False", "LSD" : "False", "rainy day" : "False", "walk" : "False"},  
-         { "name" : "VaporFly Next%",    "used km" : 170, "race" : "True",  "SFD" : "False", "LSD" : "False", "rainy day" : "False", "walk" : "False"}, 
+shoes = [{ "name" : "AlphyFly Next%",    "used km" : 123, "race" : "True",  "SFD" : "False", "LSD" : "False", "rainy day" : "False", "walk" : "False"},  
+         { "name" : "VaporFly Next%",    "used km" : 175, "race" : "True",  "SFD" : "False", "LSD" : "False", "rainy day" : "False", "walk" : "False"}, 
          { "name" : "Tempo Next%",       "used km" : 120, "race" : "True",  "SFD" : "True",  "LSD" : "False", "rainy day" : "False", "walk" : "False"}, 
          { "name" : "Fly3",              "used km" : 293, "race" : "True",  "SFD" : "True",  "LSD" : "False", "rainy day" : "False", "walk" : "True"},  
-         { "name" : "160X",              "used km" : 563, "race" : "True",  "SFD" : "True",  "LSD" : "True",  "rainy day" : "True",  "walk" : "True"},
-         { "name" : "Feiying",           "used km" : 92,  "race" : "True",  "SFD" : "True",  "LSD" : "False", "rainy day" : "False", "walk" : "False"},
-         { "name" : "Jueying essential", "used km" : 36,  "race" : "False", "SFD" : "False", "LSD" : "True",  "rainy day" : "False", "walk" : "False"},
-         { "name" : "Jingtan",           "used km" : 59,  "race" : "False", "SFD" : "True",  "LSD" : "True",  "rainy day" : "False", "walk" : "False"},
+         { "name" : "160X",              "used km" : 608, "race" : "True",  "SFD" : "True",  "LSD" : "True",  "rainy day" : "True",  "walk" : "True"},
+         { "name" : "Feiying PB",        "used km" : 92,  "race" : "True",  "SFD" : "True",  "LSD" : "False", "rainy day" : "False", "walk" : "False"},
+         { "name" : "Jueying essential", "used km" : 41,  "race" : "False", "SFD" : "False", "LSD" : "True",  "rainy day" : "False", "walk" : "False"},
+         { "name" : "Jingtan",           "used km" : 70,  "race" : "False", "SFD" : "True",  "LSD" : "True",  "rainy day" : "False", "walk" : "False"},
          { "name" : "Takumi",            "used km" : 19,  "race" : "False", "SFD" : "True",  "LSD" : "False", "rainy day" : "False", "walk" : "True"},
-         { "name" : "Zhanshen",          "used km" : 30,  "race" : "False", "SFD" : "False", "LSD" : "True",  "rainy day" : "True",  "walk" : "True"},
-         { "name" : "K26",               "used km" : 653, "race" : "False", "SFD" : "False", "LSD" : "True",  "rainy day" : "False", "walk" : "True"},
+         { "name" : "Zhanshen",          "used km" : 33,  "race" : "False", "SFD" : "False", "LSD" : "True",  "rainy day" : "True",  "walk" : "True"},
+         { "name" : "K26",               "used km" : 700, "race" : "False", "SFD" : "False", "LSD" : "True",  "rainy day" : "False", "walk" : "True"},
          { "name" : "K21",               "used km" : 553, "race" : "False", "SFD" : "False", "LSD" : "True",  "rainy day" : "True",  "walk" : "True"},
          { "name" : "Ultraboost 18",     "used km" : 430, "race" : "False", "SFD" : "False", "LSD" : "True",  "rainy day" : "False", "walk" : "True"},
          { "name" : "Feiran",            "used km" : 108, "race" : "Fasle", "SFD" : "True",  "LSD" : "False", "rainy day" : "False", "walk" : "True"},
-         { "name" : "Jifeng",            "used km" : 26,  "race" : "Fasle", "SFD" : "False", "LSD" : "True",  "rainy day" : "False", "walk" : "True"},
-         { "name" : "160x 2.0",          "used km" : 19,  "race" : "True",  "SFD" : "True",  "LSD" : "True",  "rainy day" : "False", "walk" : "False"},
+         { "name" : "Jifeng",            "used km" : 34,  "race" : "Fasle", "SFD" : "False", "LSD" : "True",  "rainy day" : "False", "walk" : "True"},
+         { "name" : "160x 2.0",          "used km" : 30,  "race" : "True",  "SFD" : "True",  "LSD" : "True",  "rainy day" : "False", "walk" : "False"},
         ]
 
 def init():
