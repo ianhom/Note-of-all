@@ -118,7 +118,10 @@ def check_same(b):
          print("----------")
          
 if __name__=="__main__":
-    shoes = init()
+    try:
+        shoes = init()
+    except:
+        pass
     output(by_used_km())
     cmd = input("Please input a command")
     if cmd == "lsd":
