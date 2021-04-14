@@ -121,12 +121,14 @@ if __name__=="__main__":
     try:
         shoes = init()
     except:
-        pass
+        pass #Use shoes list in this file
     output(by_used_km())
     cmd = input("Please input a command")
     if cmd == "lsd":
         output(for_lsd())
         output(pickone(for_lsd()))
+    elif cmd == “km”:
+        output(by_used_km())
     elif cmd == "rainy":
         output(by_rainy())
     elif cmd == "race":
@@ -144,7 +146,7 @@ if __name__=="__main__":
 
 def print_help():
     print("Please input the valid command:")
-    print("----lsd : Filter LSD shoes")
-    print("----race : Filter race shoes")
+    print("----lsd    : Filter LSD shoes")
+    print("----race   : Filter race shoes")
     print("----update : Update used km")
-    print("----same : Find the same usage shoes")
+    print("----same   : Find the same usage shoes")
