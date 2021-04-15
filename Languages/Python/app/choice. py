@@ -86,11 +86,11 @@ def prt(lis):
 
 def output(lst):
     for i in lst:
-         print(i["name"],i["distance"])
+         print(i["name"],"\t\t\t",i["used km"])
 
 def pickone(lst):
      l=rnd(lst)
-     output(l)
+     return l
 
 def check_same(d1,d2,k):
     return d1[k] == d2[k]
@@ -116,18 +116,25 @@ def check_same(b):
                   flag[j] = 0
          pt(c)
          print("----------")
+
+def print_help():
+    print("Please input the valid command:")
+    print("----lsd    : Filter LSD shoes")
+    print("----km     : Filter by used km")
+    print("----race   : Filter race shoes")
+    print("----update : Update used km")
+    print("----same   : Find the same usage shoes")
          
 if __name__=="__main__":
     try:
         shoes = init()
     except:
         pass #Use shoes list in this file
-    output(by_used_km())
-    cmd = input("Please input a command")
+    cmd = input("Please input a command: ")
     if cmd == "lsd":
         output(for_lsd())
-        output(pickone(for_lsd()))
-    elif cmd == “km”:
+        print(pickone(for_lsd()))
+    elif cmd == "km":
         output(by_used_km())
     elif cmd == "rainy":
         output(by_rainy())
@@ -144,9 +151,4 @@ if __name__=="__main__":
     else:
         print_help()
 
-def print_help():
-    print("Please input the valid command:")
-    print("----lsd    : Filter LSD shoes")
-    print("----race   : Filter race shoes")
-    print("----update : Update used km")
-    print("----same   : Find the same usage shoes")
+
