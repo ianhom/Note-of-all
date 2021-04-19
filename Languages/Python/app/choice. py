@@ -122,6 +122,7 @@ def print_help():
     print("Please input the valid command:")
     print("----lsd    : Filter LSD shoes")
     print("----km     : Filter by used km")
+    print("----rainy  : Filter by rainy day")
     print("----race   : Filter race shoes")
     print("----update : Update used km")
     print("----same   : Find the same usage shoes")
