@@ -69,7 +69,7 @@ def rnd(lst):
 
 def update_km(lis,name,km):
     for i in lis:
-        if i[name] == name:
+        if i["name"] == name:
             i["used km"] = km
 
 def increase_km(lis,name,plus):
@@ -145,7 +145,7 @@ if __name__=="__main__":
             output(by_race())
         elif cmd == "update":
             name = input("which one?")
-            km = inout("how long?")
+            km = input("how long?")
             update_km(shoes,name,km)
             update_shoes(shoes)
             output(shoes)
