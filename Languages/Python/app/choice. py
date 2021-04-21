@@ -143,6 +143,8 @@ if __name__=="__main__":
             output(by_rainy())
         elif cmd == "race":
             output(by_race())
+        elif cmd == "sfd":
+            output(by_sfd())
         elif cmd == "update":
             name = input("which one?")
             km = input("how long?")
