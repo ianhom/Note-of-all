@@ -3,7 +3,7 @@ import datetime
 import random
 import json
 
-shoes = [{ "name" : "AlphyFly Next%",    "used km" : 123, "race" : "True",  "SFD" : "False", "LSD" : "False", "rainy day" : "False", "walk" : "False"},  
+'''shoes = [{ "name" : "AlphyFly Next%",    "used km" : 123, "race" : "True",  "SFD" : "False", "LSD" : "False", "rainy day" : "False", "walk" : "False"},  
          { "name" : "VaporFly Next%",    "used km" : 175, "race" : "True",  "SFD" : "False", "LSD" : "False", "rainy day" : "False", "walk" : "False"}, 
          { "name" : "Tempo Next%",       "used km" : 120, "race" : "True",  "SFD" : "True",  "LSD" : "False", "rainy day" : "False", "walk" : "False"}, 
          { "name" : "Fly3",              "used km" : 293, "race" : "True",  "SFD" : "True",  "LSD" : "False", "rainy day" : "False", "walk" : "True"},  
@@ -18,10 +18,10 @@ shoes = [{ "name" : "AlphyFly Next%",    "used km" : 123, "race" : "True",  "SFD
          { "name" : "Ultraboost 18",     "used km" : 430, "race" : "False", "SFD" : "False", "LSD" : "True",  "rainy day" : "False", "walk" : "True"},
          { "name" : "Feiran",            "used km" : 108, "race" : "Fasle", "SFD" : "True",  "LSD" : "False", "rainy day" : "False", "walk" : "True"},
          { "name" : "Jifeng",            "used km" : 34,  "race" : "Fasle", "SFD" : "False", "LSD" : "True",  "rainy day" : "False", "walk" : "True"},
-         { "name" : "160x 2.0",          "used km" : 40,  "race" : "True",  "SFD" : "True",  "LSD" : "True",  "rainy day" : "False", "walk" : "False"},
-         { "name" : "160x Pro",          "used km" : 48,  "race" : "True",  "SFD" : "True",  "LSD" : "False", "rainy day" : "False", "walk" : "False"},
+         { "name" : "160x 2.0",          "used km" : 30,  "race" : "True",  "SFD" : "True",  "LSD" : "True",  "rainy day" : "False", "walk" : "False"},
+         { "name" : "160x Pro",          "used km" : 15,  "race" : "True",  "SFD" : "True",  "LSD" : "False", "rainy day" : "False", "walk" : "False"},
         ]
-
+'''
 def init():
     with open("./shoes.json","r") as shoes_f:
         return json.load(shoes_f)
@@ -120,15 +120,16 @@ def check_same(b):
 
 def print_help():
     print("Please input the valid command:")
-    print("----all    : Print all shoes")
-    print("----help   : Print this help info")
-    print("----lsd    : Filter LSD shoes")
-    print("----sfd    : Filter SFD shoes")
-    print("----km     : Filter by used km")
-    print("----rainy  : Filter by rainy day")
-    print("----race   : Filter race shoes")
-    print("----update : Update used km")
-    print("----same   : Find the same usage shoes")
+    print("----all      : Print all shoes")
+    print("----help     : Print this help info")
+    print("----lsd      : Filter LSD shoes")
+    print("----sfd      : Filter SFD shoes")
+    print("----km       : Filter by used km")
+    print("----rainy    : Filter by rainy day")
+    print("----race     : Filter race shoes")
+    print("----update   : Update used km")
+    print("----increase : Increase used km")
+    print("----same     : Find the same usage shoes")
     print()
          
 if __name__=="__main__":
@@ -156,6 +157,12 @@ if __name__=="__main__":
             name = input("which one?")
             km = input("how long?")
             update_km(shoes,name,km)
+            update_box(shoes)
+            output(shoes)
+        elif cmd == "increase":
+            name = input("which one?")
+            km = input("how long?")
+            increase_km(shoes,name,km)
             update_box(shoes)
             output(shoes)
         elif cmd == "same":
