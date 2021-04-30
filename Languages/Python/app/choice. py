@@ -127,6 +127,7 @@ def print_help():
     print("----km       : Filter by used km")
     print("----rainy    : Filter by rainy day")
     print("----race     : Filter race shoes")
+    print("----format   : Format shoes list") 
     print("----update   : Update used km")
     print("----increase : Increase used km")
     print("----same     : Find the same usage shoes")
