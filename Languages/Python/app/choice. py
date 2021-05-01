@@ -71,11 +71,17 @@ def update_km(lis,name,km):
     for i in lis:
         if i["name"] == name:
             i["used km"] = km
+            return True
+    print("Wrong name")
+    return False
 
 def increase_km(lis,name,plus):
     for i in lis:
         if i[name] == name:
             i["used km"] = i["used km"] + plus
+            return True
+    print("Wrong name")
+    return False
 
 def add_shoes(dict):
     shoes.append(dict)
@@ -159,15 +165,15 @@ if __name__=="__main__":
         elif cmd == "update":
             name = input("which one?")
             km = input("how long?")
-            update_km(shoes,name,km)
-            update_box(shoes)
-            output(shoes)
+            if True == update_km(shoes,name,km):
+                update_box(shoes)
+                output(shoes)
         elif cmd == "increase":
             name = input("which one?")
             km = input("how long?")
-            increase_km(shoes,name,km)
-            update_box(shoes)
-            output(shoes)
+            if True == increase_km(shoes,name,km):
+                update_box(shoes)
+                output(shoes)
         elif cmd == "same":
             check_same(shoes)
         else:
