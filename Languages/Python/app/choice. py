@@ -22,6 +22,8 @@ SHOES = [{ "name" : "AlphyFly Next%",    "used km" : 123, "race" : "True",  "SFD
          { "name" : "160x Pro",          "used km" : 48,  "race" : "True",  "SFD" : "True",  "LSD" : "False", "rainy day" : "False", "walk" : "False"},
         ]
 
+NULL = 0
+
 def init():
     with open("./shoes.json","r") as shoes_f:
         return json.load(shoes_f)
@@ -67,20 +69,25 @@ def flt(lis,k):
 def rnd(lst):
     return lst[int(random.random()*100%len(lst))]
 
-def update_km(lis,name,km):
+def find_by_name(lis,name):
     for i in lis:
         if i["name"] == name:
-            i["used km"] = km
-            return True
+            return i
     print("Wrong name")
+    return NULL
+
+def update_km(lis,name,km):
+    i = find_by_name(lis,name)
+    if i != NULL:
+        i["used km"] = km
+        return True
     return False
 
 def increase_km(lis,name,plus):
-    for i in lis:
-        if i[name] == name:
-            i["used km"] = i["used km"] + plus
-            return True
-    print("Wrong name")
+    i = find_by_name(lis,name)
+    if i != NULL:
+        i["used km"] = i["used km"] + plus
+        return True
     return False
 
 def add_shoes(dict):
