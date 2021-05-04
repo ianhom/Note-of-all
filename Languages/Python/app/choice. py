@@ -170,6 +170,7 @@ if __name__=="__main__":
         elif cmd == "format":
             update_box(SHOES)
         elif cmd == "update":
+            output(shoes)
             name = input("which one?")
             km = input("how long?")
             if True == update_km(shoes,name,km):
