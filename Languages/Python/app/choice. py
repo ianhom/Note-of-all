@@ -18,7 +18,7 @@ SHOES = [{ "name" : "AlphyFly Next%",    "used km" : 123, "race" : "True",  "SFD
          { "name" : "Ultraboost 18",     "used km" : 433, "race" : "False", "SFD" : "False", "LSD" : "True",  "rainy day" : "False", "walk" : "True"},
          { "name" : "Feiran",            "used km" : 162, "race" : "Fasle", "SFD" : "True",  "LSD" : "False", "rainy day" : "False", "walk" : "True"},
          { "name" : "Jifeng",            "used km" : 34,  "race" : "Fasle", "SFD" : "False", "LSD" : "True",  "rainy day" : "False", "walk" : "True"},
-         { "name" : "160x 2.0",          "used km" : 77,  "race" : "True",  "SFD" : "True",  "LSD" : "True",  "rainy day" : "False", "walk" : "False"},
+         { "name" : "160x 2.0",          "used km" : 124, "race" : "True",  "SFD" : "True",  "LSD" : "True",  "rainy day" : "False", "walk" : "False"},
          { "name" : "160x Pro",          "used km" : 48,  "race" : "True",  "SFD" : "True",  "LSD" : "False", "rainy day" : "False", "walk" : "False"},
         ]
 
@@ -177,6 +177,7 @@ if __name__=="__main__":
                 update_box(shoes)
                 output(shoes)
         elif cmd == "increase":
+            output(shoes)
             name = input("which one?")
             km = input("how long?")
             if True == increase_km(shoes,name,km):
