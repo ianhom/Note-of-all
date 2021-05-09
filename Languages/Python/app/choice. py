@@ -169,22 +169,17 @@ if __name__=="__main__":
             output(by_sfd())
         elif cmd == "format":
             update_box(SHOES)
-        elif cmd == "update":
+        elif cmd == "update" or "increase":
             output(shoes)
             name = input("which one?")
             if find_by_name(shoes, name) == NULL:
                 continue
             km = input("how long?")
-            if True == update_km(shoes,name,km):
-                update_box(shoes)
-                output(shoes)
-        elif cmd == "increase":
-            output(shoes)
-            name = input("which one?")
-            if find_by_name(shoes, name) == NULL:
-                continue
-            km = input("how long?")
-            if True == increase_km(shoes,name,km):
+            if cmd == "update":
+                ret = update_km(shoes,name,km)
+            else:
+                ret = increase_km(shoes,name,km)
+            if True == ret:
                 update_box(shoes)
                 output(shoes)
         elif cmd == "same":
