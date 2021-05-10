@@ -86,7 +86,7 @@ def update_km(lis,name,km):
 def increase_km(lis,name,plus):
     i = find_by_name(lis,name)
     if i != NULL:
-        i["used km"] = i["used km"] + plus
+        i["used km"] = i["used km"] + int(plus)
         return True
     return False
 
