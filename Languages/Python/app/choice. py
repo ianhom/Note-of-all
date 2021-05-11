@@ -169,7 +169,7 @@ if __name__=="__main__":
             output(by_sfd())
         elif cmd == "format":
             update_box(SHOES)
-        elif cmd == "update" or "increase":
+        elif cmd == "update" or cmd == "increase":
             output(shoes)
             name = input("which one?")
             if find_by_name(shoes, name) == NULL:
