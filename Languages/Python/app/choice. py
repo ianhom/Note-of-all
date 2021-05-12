@@ -133,7 +133,7 @@ def check_same(b):
 
 def print_help():
     print("Please input the valid command:")
-    print("----all      : Print all shoes")
+    print("----list     : Print all shoes")
     print("----help     : Print this help info")
     print("----lsd      : Filter LSD shoes")
     print("----sfd      : Filter SFD shoes")
@@ -159,7 +159,7 @@ if __name__=="__main__":
             print(pickone(for_lsd()))
         elif cmd == "km":
             output(by_used_km())
-        elif cmd == "all":
+        elif cmd == "list":
             output(shoes)
         elif cmd == "rainy":
             output(by_rainy())
