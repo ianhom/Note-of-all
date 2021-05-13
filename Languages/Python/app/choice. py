@@ -184,6 +184,8 @@ if __name__=="__main__":
                 output(shoes)
         elif cmd == "same":
             check_same(shoes)
+        elif cmd == "add":
+            add_shoes(new_shoe)
         else:
             print_help()
 
