@@ -100,7 +100,7 @@ def prt(lis):
 
 def output(lst):
     for i in lst:
-         print(i["name"],"\t\t\t",i["used km"])
+         print("%-30s%d"%(i["name"],i["used km"]))
 
 def pickone(lst):
      l=rnd(lst)
