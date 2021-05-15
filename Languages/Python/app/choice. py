@@ -21,7 +21,7 @@ SHOES = [{ "name" : "AlphyFly Next%",    "used km" : 123, "race" : "True",  "SFD
          { "name" : "160x 2.0",          "used km" : 124, "race" : "True",  "SFD" : "True",  "LSD" : "True",  "rainy day" : "False", "walk" : "False"},
          { "name" : "160x Pro",          "used km" : 48,  "race" : "True",  "SFD" : "True",  "LSD" : "False", "rainy day" : "False", "walk" : "False"},
         ]
-
+new_shoe = { "name" : "new", "used km" : 0,  "race" : "False",  "SFD" : "False",  "LSD" : "False", "rainy day" : "False", "walk" : "False"}
 NULL = 0
 
 def init():
