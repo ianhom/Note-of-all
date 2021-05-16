@@ -21,7 +21,7 @@ SHOES = [{ "name" : "AlphyFly Next%",    "used km" : 123, "race" : "True",  "SFD
          { "name" : "160x 2.0",          "used km" : 124, "race" : "True",  "SFD" : "True",  "LSD" : "True",  "rainy day" : "False", "walk" : "False"},
          { "name" : "160x Pro",          "used km" : 48,  "race" : "True",  "SFD" : "True",  "LSD" : "False", "rainy day" : "False", "walk" : "False"},
         ]
-new_shoe = { "name" : "new", "used km" : 0,  "race" : "False",  "SFD" : "False",  "LSD" : "False", "rainy day" : "False", "walk" : "False"}
+
 NULL = 0
 
 def init():
@@ -100,7 +100,7 @@ def prt(lis):
 
 def output(lst):
     for i in lst:
-         print("%-30s%d"%(i["name"],i["used km"]))
+         print(i["name"],"\t\t\t",i["used km"])
 
 def pickone(lst):
      l=rnd(lst)
@@ -185,8 +185,13 @@ if __name__=="__main__":
         elif cmd == "same":
             check_same(shoes)
         elif cmd == "add":
+            name = input("Shoe name")
+            if infd_by_name(shoes, name) != NULL:
+                print("Already exist")
+                continue
             add_shoes(new_shoe)
         else:
             print_help()
 
 
+ 
