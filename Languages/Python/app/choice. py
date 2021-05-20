@@ -192,6 +192,11 @@ if __name__=="__main__":
             new_shoes["name"] = name
             km = input("How long used")
             new_shoes["used km"] = int(km)
+            lsd = input("lsd? y/n")
+            if lsd == "y":
+                new_shoes["LSD"] = "True"
+            else:
+                new_shoes["LSD"] = "False"
             add_shoes(new_shoe)
         else:
             print_help()
