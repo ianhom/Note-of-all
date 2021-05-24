@@ -145,7 +145,15 @@ def print_help():
     print("----increase : Increase used km")
     print("----same     : Find the same usage shoes")
     print()
-         
+
+def yn_value(dic,key):
+    k = input(key,"? y/n")
+    if k == "y":
+        dic[key] = "True"
+    else:
+        dic[key] = "False"   
+
+
 if __name__=="__main__":
     try:
         shoes = init()
