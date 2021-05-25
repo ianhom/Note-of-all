@@ -153,7 +153,6 @@ def yn_value(dic,key):
     else:
         dic[key] = "False"   
 
-
 if __name__=="__main__":
     try:
         shoes = init()
@@ -200,11 +199,7 @@ if __name__=="__main__":
             new_shoes["name"] = name
             km = input("How long used")
             new_shoes["used km"] = int(km)
-            race = input("race? y/n")
-            if race == "y":
-                new_shoes["race"] = "True"
-            else:
-                new_shoes["race"] = "False"
+            yn_value(new_shoes,"race")
             lsd = input("lsd? y/n")
             if lsd == "y":
                 new_shoes["LSD"] = "True"
