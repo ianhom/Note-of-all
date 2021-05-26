@@ -200,11 +200,7 @@ if __name__=="__main__":
             km = input("How long used")
             new_shoes["used km"] = int(km)
             yn_value(new_shoes,"race")
-            lsd = input("lsd? y/n")
-            if lsd == "y":
-                new_shoes["LSD"] = "True"
-            else:
-                new_shoes["LSD"] = "False"
+            yn_value(new_shoes,"LSD")
             sfd = input("sfd? y/n")
             if sfd == "y":
                 new_shoes["SFD"] = "True"
