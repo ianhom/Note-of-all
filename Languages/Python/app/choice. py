@@ -201,11 +201,7 @@ if __name__=="__main__":
             new_shoes["used km"] = int(km)
             yn_value(new_shoes,"race")
             yn_value(new_shoes,"LSD")
-            sfd = input("sfd? y/n")
-            if sfd == "y":
-                new_shoes["SFD"] = "True"
-            else:
-                new_shoes["SFD"] = "False"
+            yn_value(new_shoes,"SFD")
             rain = input("rainy day? y/n")
             if rain == "y":
                 new_shoes["rainy"] = "True"
