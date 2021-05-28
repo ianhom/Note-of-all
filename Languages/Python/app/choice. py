@@ -202,16 +202,12 @@ if __name__=="__main__":
             yn_value(new_shoes,"race")
             yn_value(new_shoes,"LSD")
             yn_value(new_shoes,"SFD")
+            yn_value(new_shoes,"walk")
             rain = input("rainy day? y/n")
             if rain == "y":
                 new_shoes["rainy"] = "True"
             else:
                 new_shoes["rainy"] = "False"
-            walk = input("walk? y/n")
-            if walk == "y":
-                new_shoes["walk"] = "True"
-            else:
-                new_shoes["walk"] = "False"
             add_shoes(new_shoe)
         else:
             print_help()
