@@ -22,6 +22,8 @@ SHOES = [{ "name" : "AlphyFly Next%",    "used km" : 123, "race" : "True",  "SFD
          { "name" : "160x Pro",          "used km" : 48,  "race" : "True",  "SFD" : "True",  "LSD" : "False", "rainy day" : "False", "walk" : "False"},
         ]
 
+new_shoe = { "name" : "xxx",          "used km" : 0,  "race" : "True",  "SFD" : "True",  "LSD" : "False", "rainy day" : "False", "walk" : "False"}
+
 NULL = 0
 
 def init():
