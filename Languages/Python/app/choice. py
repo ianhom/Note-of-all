@@ -198,14 +198,14 @@ if __name__=="__main__":
             if infd_by_name(shoes, name) != NULL:
                 print("Already exist")
                 continue
-            new_shoes["name"] = name
+            new_shoe["name"] = name
             km = input("How long used")
-            new_shoes["used km"] = int(km)
-            yn_value(new_shoes,"race")
-            yn_value(new_shoes,"LSD")
-            yn_value(new_shoes,"SFD")
-            yn_value(new_shoes,"walk")
-            yn_value(new_shoes,"rainy")
+            new_shoe["used km"] = int(km)
+            yn_value(new_shoe,"race")
+            yn_value(new_shoe,"LSD")
+            yn_value(new_shoe,"SFD")
+            yn_value(new_shoe,"walk")
+            yn_value(new_shoe,"rainy")
             add_shoes(new_shoe)
         else:
             print_help()
