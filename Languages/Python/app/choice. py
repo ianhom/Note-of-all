@@ -195,7 +195,7 @@ if __name__=="__main__":
             check_same(shoes)
         elif cmd == "add":
             name = input("Shoe name")
-            if infd_by_name(shoes, name) != NULL:
+            if find_by_name(shoes, name) != NULL:
                 print("Already exist")
                 continue
             new_shoe["name"] = name
