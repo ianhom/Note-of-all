@@ -17,7 +17,7 @@
 {"name": "160x 2.0", "used km": "126", "race": "True", "SFD": "True", "LSD": "True", "rainy day": "False", "walk": "False"}, 
 {"name": "160x Pro", "used km": 120, "race": "True", "SFD": "True", "LSD": "False", "rainy day": "False", "walk": "False"},
 {"name": "Fengxing 10", "used km": 0, "race": "False", "SFD": "False", "LSD": "True", "rainy day": "False", "walk": "True"},
-{"name": "Speedstar", "used km": 15, "race": "False", "SFD": "True", "LSD": "True", "rainy day": "False", "walk": "False"},
+{"name": "Speedstar", "used km": 20, "race": "False", "SFD": "True", "LSD": "True", "rainy day": "False", "walk": "False"},
 {"name": "The one", "used km": 0, "race": "True", "SFD": "True", "LSD": "True", "rainy day": "True", "walk": "True"},
 {"name": "Bad one", "used km": 0, "race": "False", "SFD": "False", "LSD": "False", "rainy day": "False", "walk": "False"},
 ]
