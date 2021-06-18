@@ -21,4 +21,5 @@
 {"name": "The one", "used km": 0, "race": "True", "SFD": "True", "LSD": "True", "rainy day": "True", "walk": "True"},
 {"name": "Bad one", "used km": 0, "race": "False", "SFD": "False", "LSD": "False", "rainy day": "False", "walk": "False"},
 {"name": "Metaspeed sky", "used km": 0, "race": "True", "SFD": "True", "LSD": "False", "rainy day": "False", "walk": "False"},
+{"name": "C202GT", "used km": 0, "race": "False", "SFD": "False", "LSD": "False", "rainy day": "False", "walk": "False"},
 ]
