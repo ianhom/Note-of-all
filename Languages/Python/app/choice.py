@@ -121,8 +121,7 @@ def check_right(d1,d2,k):
     return d1[k] == d2[k]
 
 def find_same(d1,d2):
-    return (check_right(d1,d2,"used km") and
-            check_right(d1,d2,"race") and
+    return (check_right(d1,d2,"race") and
             check_right(d1,d2,"SFD") and
             check_right(d1,d2,"LSD") and
             check_right(d1,d2,"rainy day") and
