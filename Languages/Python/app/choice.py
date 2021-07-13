@@ -3,24 +3,33 @@ import datetime
 import random
 import json
 
-SHOES = [{ "name" : "AlphyFly Next%",    "used km" : 123, "race" : "True",  "SFD" : "False", "LSD" : "False", "rainy day" : "False", "walk" : "False"},  
-         { "name" : "VaporFly Next%",    "used km" : 175, "race" : "True",  "SFD" : "False", "LSD" : "False", "rainy day" : "False", "walk" : "False"}, 
-         { "name" : "Tempo Next%",       "used km" : 120, "race" : "True",  "SFD" : "True",  "LSD" : "False", "rainy day" : "False", "walk" : "False"}, 
-         { "name" : "Fly3",              "used km" : 293, "race" : "True",  "SFD" : "True",  "LSD" : "False", "rainy day" : "False", "walk" : "True"},  
-         { "name" : "160x",              "used km" : 624, "race" : "True",  "SFD" : "True",  "LSD" : "True",  "rainy day" : "True",  "walk" : "True"},
-         { "name" : "Feiying PB",        "used km" : 92,  "race" : "True",  "SFD" : "True",  "LSD" : "False", "rainy day" : "False", "walk" : "False"},
-         { "name" : "Jueying essential", "used km" : 41,  "race" : "False", "SFD" : "False", "LSD" : "True",  "rainy day" : "False", "walk" : "False"},
-         { "name" : "Jingtan",           "used km" : 70,  "race" : "False", "SFD" : "True",  "LSD" : "True",  "rainy day" : "False", "walk" : "False"},
-         { "name" : "Takumi",            "used km" : 19,  "race" : "False", "SFD" : "True",  "LSD" : "False", "rainy day" : "False", "walk" : "True"},
-         { "name" : "Zhanshen",          "used km" : 33,  "race" : "False", "SFD" : "False", "LSD" : "True",  "rainy day" : "True",  "walk" : "True"},
-         { "name" : "K26",               "used km" : 728, "race" : "False", "SFD" : "False", "LSD" : "True",  "rainy day" : "False", "walk" : "True"},
-         { "name" : "K21",               "used km" : 553, "race" : "False", "SFD" : "False", "LSD" : "True",  "rainy day" : "True",  "walk" : "True"},
-         { "name" : "Ultraboost 18",     "used km" : 433, "race" : "False", "SFD" : "False", "LSD" : "True",  "rainy day" : "False", "walk" : "True"},
-         { "name" : "Feiran",            "used km" : 162, "race" : "Fasle", "SFD" : "True",  "LSD" : "False", "rainy day" : "False", "walk" : "True"},
-         { "name" : "Jifeng",            "used km" : 34,  "race" : "Fasle", "SFD" : "False", "LSD" : "True",  "rainy day" : "False", "walk" : "True"},
-         { "name" : "160x 2.0",          "used km" : 124, "race" : "True",  "SFD" : "True",  "LSD" : "True",  "rainy day" : "False", "walk" : "False"},
-         { "name" : "160x Pro",          "used km" : 85,  "race" : "True",  "SFD" : "True",  "LSD" : "False", "rainy day" : "False", "walk" : "False"},
-        ]
+SHOES = [
+{"name": "AlphyFly Next%", "used km": 139, "race": "True", "SFD": "False", "LSD": "False", "rainy day": "False", "walk": "False"}, 
+{"name": "VaporFly Next%", "used km": 190, "race": "True", "SFD": "False", "LSD": "False", "rainy day": "False", "walk": "False"}, 
+{"name": "Tempo Next%", "used km": 120, "race": "True", "SFD": "True", "LSD": "False", "rainy day": "False", "walk": "False"}, 
+{"name": "Fly3", "used km": 293, "race": "True", "SFD": "True", "LSD": "False", "rainy day": "False", "walk": "True"}, 
+{"name": "160x", "used km": 690, "race": "False", "SFD": "True", "LSD": "True", "rainy day": "True", "walk": "True"}, 
+{"name": "Feiying PB", "used km": 92, "race": "True", "SFD": "True", "LSD": "False", "rainy day": "False", "walk": "False"}, 
+{"name": "Jueying essential", "used km": 41, "race": "False", "SFD": "False", "LSD": "True", "rainy day": "False", "walk": "False"}, 
+{"name": "Jingtan", "used km": 80, "race": "False", "SFD": "True", "LSD": "True", "rainy day": "False", "walk": "False"}, 
+{"name": "Takumi", "used km": 19, "race": "False", "SFD": "True", "LSD": "False", "rainy day": "False", "walk": "True"}, 
+{"name": "Zhanshen", "used km": 33, "race": "False", "SFD": "False", "LSD": "True", "rainy day": "True", "walk": "True"}, 
+{"name": "K26", "used km": 728, "race": "False", "SFD": "False", "LSD": "True", "rainy day": "False", "walk": "True"}, 
+{"name": "K21", "used km": 553, "race": "False", "SFD": "False", "LSD": "True", "rainy day": "True", "walk": "True"}, 
+{"name": "Ultraboost 18", "used km": 433, "race": "False", "SFD": "False", "LSD": "True", "rainy day": "False", "walk": "True"}, 
+{"name": "Feiran", "used km": 162, "race": "Fasle", "SFD": "True", "LSD": "False", "rainy day": "False", "walk": "True"}, 
+{"name": "Jifeng", "used km": 34, "race": "Fasle", "SFD": "False", "LSD": "True", "rainy day": "False", "walk": "True"}, 
+{"name": "160x 2.0", "used km": 126, "race": "True", "SFD": "True", "LSD": "True", "rainy day": "False", "walk": "False"}, 
+{"name": "160x Pro", "used km": 180, "race": "True", "SFD": "True", "LSD": "False", "rainy day": "False", "walk": "False"},
+{"name": "Fengxing 10", "used km": 12, "race": "False", "SFD": "False", "LSD": "True", "rainy day": "False", "walk": "True"},
+{"name": "Speedstar", "used km": 20, "race": "False", "SFD": "True", "LSD": "True", "rainy day": "False", "walk": "False"},
+{"name": "Adizero prime x", "used km": 25, "race": "False", "SFD": "True", "LSD": "False", "rainy day": "False", "walk": "False"},
+{"name": "Metaspeed sky", "used km": 0, "race": "True", "SFD": "True", "LSD": "False", "rainy day": "False", "walk": "False"},
+{"name": "C202GT", "used km": 0, "race": "False", "SFD": "True", "LSD": "True", "rainy day": "False", "walk": "False"},
+{"name": "Biaosu", "used km": 0, "race": "True", "SFD": "True", "LSD": "False", "rainy day": "False", "walk": "False"},
+{"name": "Altra 4.0", "used km": 0, "race": "False", "SFD": "False", "LSD": "True", "rainy day": "True", "walk": "True"},
+{"name": "New one", "used km": 0, "race": "False", "SFD": "False", "LSD": "False", "rainy day": "False", "walk": "False"}]
+
 
 new_shoe = { "name" : "xxx", "used km" : 0, "race" : "False", "SFD" : "False",  "LSD" : "False", "rainy day" : "False", "walk" : "False"}
 
@@ -112,8 +121,7 @@ def check_right(d1,d2,k):
     return d1[k] == d2[k]
 
 def find_same(d1,d2):
-    return (check_right(d1,d2,"used km") and
-            check_right(d1,d2,"race") and
+    return (check_right(d1,d2,"race") and
             check_right(d1,d2,"SFD") and
             check_right(d1,d2,"LSD") and
             check_right(d1,d2,"rainy day") and
