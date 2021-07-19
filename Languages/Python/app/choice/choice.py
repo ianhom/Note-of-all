@@ -26,7 +26,7 @@ SHOES = [
 {"name": "Adizero prime x", "used km": 25, "race": "False", "SFD": "True", "LSD": "False", "rainy day": "False", "walk": "False"},
 {"name": "Metaspeed sky", "used km": 0, "race": "True", "SFD": "True", "LSD": "False", "rainy day": "False", "walk": "False"},
 {"name": "C202GT", "used km": 0, "race": "False", "SFD": "True", "LSD": "True", "rainy day": "False", "walk": "False"},
-{"name": "Biaosu", "used km": 0, "race": "True", "SFD": "True", "LSD": "False", "rainy day": "False", "walk": "False"},
+{"name": "Biaosu", "used km": 17, "race": "False", "SFD": "True", "LSD": "True", "rainy day": "False", "walk": "False"},
 {"name": "Altra 4.0", "used km": 0, "race": "False", "SFD": "False", "LSD": "True", "rainy day": "True", "walk": "True"},
 {"name": "New one", "used km": 0, "race": "False", "SFD": "False", "LSD": "False", "rainy day": "False", "walk": "False"}]
 
