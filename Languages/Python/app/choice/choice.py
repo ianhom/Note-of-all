@@ -154,6 +154,7 @@ def print_help():
     print("----update   : Update used km")
     print("----increase : Increase used km")
     print("----same     : Find the same usage shoes")
+    print("----backup   : Make a backup of shoe list")
     print()
 
 def yn_value(dic,key):
@@ -201,6 +202,8 @@ if __name__=="__main__":
                 output(shoes)
         elif cmd == "same":
             check_same(shoes)
+        elif cmd == "backup":
+            pass # To be done
         elif cmd == "add":
             name = input("Shoe name")
             if find_by_name(shoes, name) != NULL:
