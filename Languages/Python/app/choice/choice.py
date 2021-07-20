@@ -12,12 +12,12 @@ SHOES = [
 {"name": "Feiying PB", "used km": 92, "race": "True", "SFD": "True", "LSD": "False", "rainy day": "False", "walk": "False"}, 
 {"name": "Jueying essential", "used km": 41, "race": "False", "SFD": "False", "LSD": "True", "rainy day": "False", "walk": "False"}, 
 {"name": "Jingtan", "used km": 80, "race": "False", "SFD": "True", "LSD": "True", "rainy day": "False", "walk": "False"}, 
-{"name": "Takumi", "used km": 19, "race": "False", "SFD": "True", "LSD": "False", "rainy day": "False", "walk": "True"}, 
+{"name": "Takumi", "used km": 27, "race": "False", "SFD": "True", "LSD": "False", "rainy day": "False", "walk": "True"}, 
 {"name": "Zhanshen", "used km": 33, "race": "False", "SFD": "False", "LSD": "True", "rainy day": "True", "walk": "True"}, 
-{"name": "K26", "used km": 728, "race": "False", "SFD": "False", "LSD": "True", "rainy day": "False", "walk": "True"}, 
+{"name": "K26", "used km": 735, "race": "False", "SFD": "False", "LSD": "True", "rainy day": "False", "walk": "True"}, 
 {"name": "K21", "used km": 553, "race": "False", "SFD": "False", "LSD": "True", "rainy day": "True", "walk": "True"}, 
 {"name": "Ultraboost 18", "used km": 433, "race": "False", "SFD": "False", "LSD": "True", "rainy day": "False", "walk": "True"}, 
-{"name": "Feiran", "used km": 162, "race": "Fasle", "SFD": "True", "LSD": "False", "rainy day": "False", "walk": "True"}, 
+{"name": "Feiran", "used km": 163, "race": "Fasle", "SFD": "True", "LSD": "False", "rainy day": "False", "walk": "True"}, 
 {"name": "Jifeng", "used km": 34, "race": "Fasle", "SFD": "False", "LSD": "True", "rainy day": "False", "walk": "True"}, 
 {"name": "160x 2.0", "used km": 126, "race": "True", "SFD": "True", "LSD": "True", "rainy day": "False", "walk": "False"}, 
 {"name": "160x Pro", "used km": 180, "race": "True", "SFD": "True", "LSD": "False", "rainy day": "False", "walk": "False"},
@@ -154,7 +154,6 @@ def print_help():
     print("----update   : Update used km")
     print("----increase : Increase used km")
     print("----same     : Find the same usage shoes")
-    print("----backup   : Make a backup of shoe list")
     print()
 
 def yn_value(dic,key):
@@ -202,8 +201,6 @@ if __name__=="__main__":
                 output(shoes)
         elif cmd == "same":
             check_same(shoes)
-        elif cmd == "backup":
-            pass # To be done
         elif cmd == "add":
             name = input("Shoe name")
             if find_by_name(shoes, name) != NULL:
