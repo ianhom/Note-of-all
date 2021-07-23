@@ -5,9 +5,9 @@ import json
 
 SHOES = [
 {"name": "AlphyFly Next%", "used km": 139, "race": "True", "SFD": "False", "LSD": "False", "rainy day": "False", "walk": "False"}, 
-{"name": "VaporFly Next%", "used km": 190, "race": "True", "SFD": "False", "LSD": "False", "rainy day": "False", "walk": "False"}, 
-{"name": "Tempo Next%", "used km": 120, "race": "True", "SFD": "True", "LSD": "False", "rainy day": "False", "walk": "False"}, 
-{"name": "Fly3", "used km": 293, "race": "True", "SFD": "True", "LSD": "False", "rainy day": "False", "walk": "True"}, 
+{"name": "VaporFly Next%", "used km": 179, "race": "True", "SFD": "False", "LSD": "False", "rainy day": "False", "walk": "False"}, 
+{"name": "Tempo Next%", "used km": 125, "race": "True", "SFD": "True", "LSD": "False", "rainy day": "False", "walk": "False"}, 
+{"name": "Fly3", "used km": 298, "race": "True", "SFD": "True", "LSD": "False", "rainy day": "False", "walk": "True"}, 
 {"name": "160x", "used km": 690, "race": "False", "SFD": "True", "LSD": "True", "rainy day": "True", "walk": "True"}, 
 {"name": "Feiying PB", "used km": 92, "race": "True", "SFD": "True", "LSD": "False", "rainy day": "False", "walk": "False"}, 
 {"name": "Jueying essential", "used km": 41, "race": "False", "SFD": "False", "LSD": "True", "rainy day": "False", "walk": "False"}, 
@@ -23,7 +23,7 @@ SHOES = [
 {"name": "160x Pro", "used km": 180, "race": "True", "SFD": "True", "LSD": "False", "rainy day": "False", "walk": "False"},
 {"name": "Fengxing 10", "used km": 12, "race": "False", "SFD": "False", "LSD": "True", "rainy day": "False", "walk": "True"},
 {"name": "Speedstar", "used km": 20, "race": "False", "SFD": "True", "LSD": "True", "rainy day": "False", "walk": "False"},
-{"name": "Adizero prime x", "used km": 25, "race": "False", "SFD": "True", "LSD": "False", "rainy day": "False", "walk": "False"},
+{"name": "Adizero prime x", "used km": 22, "race": "False", "SFD": "True", "LSD": "False", "rainy day": "False", "walk": "False"},
 {"name": "Metaspeed sky", "used km": 0, "race": "True", "SFD": "True", "LSD": "False", "rainy day": "False", "walk": "False"},
 {"name": "C202GT", "used km": 0, "race": "False", "SFD": "True", "LSD": "True", "rainy day": "False", "walk": "False"},
 {"name": "Biaosu", "used km": 17, "race": "False", "SFD": "True", "LSD": "True", "rainy day": "False", "walk": "False"},
