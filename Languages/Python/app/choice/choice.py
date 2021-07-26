@@ -154,6 +154,7 @@ def print_help():
     print("----update   : Update used km")
     print("----increase : Increase used km")
     print("----same     : Find the same usage shoes")
+    print("----backup   : Backup shoes.json")
     print()
 
 def yn_value(dic,key):
