@@ -20,7 +20,7 @@ SHOES = [
 {"name": "Feiran", "used km": 163, "race": "Fasle", "SFD": "True", "LSD": "False", "rainy day": "False", "walk": "True"}, 
 {"name": "Jifeng", "used km": 34, "race": "Fasle", "SFD": "False", "LSD": "True", "rainy day": "False", "walk": "True"}, 
 {"name": "160x 2.0", "used km": 126, "race": "True", "SFD": "True", "LSD": "True", "rainy day": "False", "walk": "False"}, 
-{"name": "160x Pro", "used km": 180, "race": "True", "SFD": "True", "LSD": "False", "rainy day": "False", "walk": "False"},
+{"name": "160x Pro", "used km": 182, "race": "True", "SFD": "True", "LSD": "False", "rainy day": "False", "walk": "False"},
 {"name": "Fengxing 10", "used km": 12, "race": "False", "SFD": "False", "LSD": "True", "rainy day": "False", "walk": "True"},
 {"name": "Speedstar", "used km": 20, "race": "False", "SFD": "True", "LSD": "True", "rainy day": "False", "walk": "False"},
 {"name": "Adizero prime x", "used km": 22, "race": "False", "SFD": "True", "LSD": "False", "rainy day": "False", "walk": "False"},
@@ -216,6 +216,8 @@ if __name__=="__main__":
             yn_value(new_shoe,"walk")
             yn_value(new_shoe,"rainy")
             add_shoe(new_shoe)
+        elif cmd == "backup":
+            pass # To be done
         else:
             print_help()
 
