@@ -2,6 +2,7 @@
 import datetime
 import random
 import json
+import time
 
 SHOES = [
 {"name": "AlphyFly Next%", "used km": 139, "race": "True", "SFD": "False", "LSD": "False", "rainy day": "False", "walk": "False"}, 
@@ -141,6 +142,10 @@ def check_same(b):
          output(c)
          print("----------")
 
+def back_up():
+    tm = time.strftime("%Y%m%d%H%M%S", time.localtime())
+    print(tm)
+
 def print_help():
     print("Please input the valid command:")
     print("----list     : Print all shoes")
@@ -217,7 +222,7 @@ if __name__=="__main__":
             yn_value(new_shoe,"rainy")
             add_shoe(new_shoe)
         elif cmd == "backup":
-            pass # To be done
+            back_up()
         else:
             print_help()
 
