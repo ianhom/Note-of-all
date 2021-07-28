@@ -36,12 +36,14 @@ new_shoe = { "name" : "xxx", "used km" : 0, "race" : "False", "SFD" : "False",  
 
 NULL = 0
 
+FILE_NAME = "shoes.json"
+
 def init():
-    with open("./shoes.json","r") as shoes_f:
+    with open(FILE_NAME,"r") as shoes_f:
         return json.load(shoes_f)
 
 def update_box(s):
-    with open("./shoes.json","w") as shoes_f:
+    with open(FILE_NAME,"w") as shoes_f:
         json.dump(s, shoes_f)
 
 y=datetime.datetime.now().year
