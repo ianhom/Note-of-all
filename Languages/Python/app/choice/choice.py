@@ -146,7 +146,8 @@ def check_same(b):
 
 def back_up():
     tm = time.strftime("%Y%m%d%H%M%S", time.localtime())
-    print(tm)
+    back_up_name = "shoes_" + tm + ".json"
+    print(back_up_name)
 
 def print_help():
     print("Please input the valid command:")
