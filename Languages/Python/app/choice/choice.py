@@ -3,6 +3,7 @@ import datetime
 import random
 import json
 import time
+import shutil
 
 SHOES = [
 {"name": "AlphyFly Next%", "used km": 139, "race": "True", "SFD": "False", "LSD": "False", "rainy day": "False", "walk": "False"}, 
@@ -146,8 +147,9 @@ def check_same(b):
 
 def back_up():
     tm = time.strftime("%Y%m%d%H%M%S", time.localtime())
-    back_up_name = "shoes_" + tm + ".json"
+    back_up_name = "backup/shoes_" + tm + ".json"
     print(back_up_name)
+    shutil.copyfile(FILE_NAME, back_up_name)
 
 def print_help():
     print("Please input the valid command:")
