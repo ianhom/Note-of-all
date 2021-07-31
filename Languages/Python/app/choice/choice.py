@@ -147,7 +147,7 @@ def check_same(b):
 
 def back_up():
     tm = time.strftime("%Y%m%d%H%M%S", time.localtime())
-    back_up_name = "backup/shoes_" + tm + ".json"
+    back_up_name = "backup/shoes_backup_" + tm + ".json"
     print(back_up_name)
     shutil.copyfile(FILE_NAME, back_up_name)
 
