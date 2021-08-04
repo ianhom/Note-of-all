@@ -21,7 +21,7 @@ SHOES = [
 {"name": "Ultraboost 18", "used km": 433, "race": "False", "SFD": "False", "LSD": "True", "rainy day": "False", "walk": "True"}, 
 {"name": "Feiran", "used km": 163, "race": "Fasle", "SFD": "True", "LSD": "False", "rainy day": "False", "walk": "True"}, 
 {"name": "Jifeng", "used km": 34, "race": "Fasle", "SFD": "False", "LSD": "True", "rainy day": "False", "walk": "True"}, 
-{"name": "160x 2.0", "used km": 126, "race": "True", "SFD": "True", "LSD": "True", "rainy day": "False", "walk": "False"}, 
+{"name": "160x 2.0", "used km": 162, "race": "True", "SFD": "True", "LSD": "True", "rainy day": "False", "walk": "False"}, 
 {"name": "160x Pro", "used km": 200, "race": "True", "SFD": "True", "LSD": "False", "rainy day": "False", "walk": "False"},
 {"name": "Fengxing 10", "used km": 12, "race": "False", "SFD": "False", "LSD": "True", "rainy day": "False", "walk": "True"},
 {"name": "Speedstar", "used km": 20, "race": "False", "SFD": "True", "LSD": "True", "rainy day": "False", "walk": "False"},
