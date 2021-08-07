@@ -7,7 +7,8 @@ import shutil
 
 SHOES = [
 {"name": "AlphyFly Next%",    "used km": 139, "race": "True", "SFD": "False", "LSD": "False", "rainy day": "False", "walk": "False"}, 
-{"name": "VaporFly Next%",    "used km": 179, "race": "True", "SFD": "False", "LSD": "False", "rainy day": "False", "walk": "False"}, 
+{"name": "VaporFly Next%",    "used km": 179, "race": "True", "SFD": "False", "LSD": "False", "rainy day": "False", "walk": "False"},
+{"name": "VaporFly Next% 2",  "used km": 0, "race": "True", "SFD": "False", "LSD": "False", "rainy day": "False", "walk": "False"},
 {"name": "Tempo Next%",       "used km": 125, "race": "True", "SFD": "True", "LSD": "False", "rainy day": "False", "walk": "False"}, 
 {"name": "Fly3",              "used km": 298, "race": "True", "SFD": "True", "LSD": "False", "rainy day": "False", "walk": "True"}, 
 {"name": "160x",              "used km": 663, "race": "False", "SFD": "True", "LSD": "True", "rainy day": "True", "walk": "True"}, 
