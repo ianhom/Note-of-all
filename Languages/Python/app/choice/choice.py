@@ -77,7 +77,10 @@ def by_rainy_lsd():
     return flt(by_rainy(), "LSD")
 
 def rslt(lis,a):
-    return sorted(lis, key = lambda i: (i[a]))
+    if a == "used km":
+        return sorted(lis, key = lambda i: (i[a]), reverse = True)
+    else:
+        return sorted(lis, key = lambda i: (i[a]))
 
 def flt(lis,k):
     return filter(lambda x:x[k] == "True", lis)
