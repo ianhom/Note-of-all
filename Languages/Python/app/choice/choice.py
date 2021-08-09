@@ -6,32 +6,32 @@ import time
 import shutil
 
 SHOES = [
-{"name": "AlphyFly Next%",    "used km": 139, "race": "True", "SFD": "False", "LSD": "False", "rainy day": "False", "walk": "False"}, 
-{"name": "VaporFly Next%",    "used km": 179, "race": "True", "SFD": "False", "LSD": "False", "rainy day": "False", "walk": "False"},
-{"name": "VaporFly Next% 2",  "used km": 0, "race": "True", "SFD": "False", "LSD": "False", "rainy day": "False", "walk": "False"},
-{"name": "Tempo Next%",       "used km": 125, "race": "True", "SFD": "True", "LSD": "False", "rainy day": "False", "walk": "False"}, 
-{"name": "Fly3",              "used km": 298, "race": "True", "SFD": "True", "LSD": "False", "rainy day": "False", "walk": "True"}, 
-{"name": "160x",              "used km": 663, "race": "False", "SFD": "True", "LSD": "True", "rainy day": "True", "walk": "True"}, 
-{"name": "Feiying PB",        "used km": 97, "race": "True", "SFD": "True", "LSD": "False", "rainy day": "False", "walk": "False"}, 
-{"name": "Jueying essential", "used km": 56, "race": "False", "SFD": "False", "LSD": "True", "rainy day": "False", "walk": "False"}, 
-{"name": "Jingtan",           "used km": 80, "race": "False", "SFD": "True", "LSD": "True", "rainy day": "False", "walk": "False"}, 
-{"name": "Takumi",            "used km": 27, "race": "False", "SFD": "True", "LSD": "False", "rainy day": "False", "walk": "True"}, 
-{"name": "Zhanshen",          "used km": 46, "race": "False", "SFD": "False", "LSD": "True", "rainy day": "True", "walk": "True"}, 
-{"name": "K26",               "used km": 735, "race": "False", "SFD": "False", "LSD": "True", "rainy day": "False", "walk": "True"}, 
-{"name": "K21",               "used km": 551, "race": "False", "SFD": "False", "LSD": "True", "rainy day": "True", "walk": "True"}, 
-{"name": "Ultraboost 18",     "used km": 433, "race": "False", "SFD": "False", "LSD": "True", "rainy day": "False", "walk": "True"}, 
-{"name": "Feiran",            "used km": 163, "race": "Fasle", "SFD": "True", "LSD": "False", "rainy day": "False", "walk": "True"}, 
-{"name": "Jifeng",            "used km": 39, "race": "Fasle", "SFD": "False", "LSD": "True", "rainy day": "False", "walk": "True"}, 
-{"name": "160x 2.0",          "used km": 174, "race": "True", "SFD": "True", "LSD": "True", "rainy day": "False", "walk": "False"}, 
-{"name": "160x Pro",          "used km": 200, "race": "True", "SFD": "True", "LSD": "False", "rainy day": "False", "walk": "False"},
-{"name": "Fengxing 10",       "used km": 30, "race": "False", "SFD": "False", "LSD": "True", "rainy day": "False", "walk": "True"},
-{"name": "Speedstar",         "used km": 41, "race": "False", "SFD": "True", "LSD": "True", "rainy day": "False", "walk": "False"},
-{"name": "Adizero prime x",   "used km": 22, "race": "False", "SFD": "True", "LSD": "False", "rainy day": "False", "walk": "False"},
-{"name": "Biaosu",            "used km": 46, "race": "False", "SFD": "True", "LSD": "True", "rainy day": "False", "walk": "False"},
-{"name": "Metaspeed sky",     "used km": 0, "race": "True", "SFD": "True", "LSD": "False", "rainy day": "False", "walk": "False"},
-{"name": "C202GT",            "used km": 0, "race": "False", "SFD": "True", "LSD": "True", "rainy day": "False", "walk": "False"},
-{"name": "Altra 4.0",         "used km": 0, "race": "False", "SFD": "False", "LSD": "True", "rainy day": "True", "walk": "True"},
-{"name": "New one",           "used km": 0, "race": "False", "SFD": "False", "LSD": "False", "rainy day": "False", "walk": "False"}]
+{"name": "AlphyFly Next%",    "used km": 139, "race": "True",  "SFD": "False", "LSD": "False", "rainy day": "False", "walk": "False"}, 
+{"name": "VaporFly Next%",    "used km": 179, "race": "True",  "SFD": "False", "LSD": "False", "rainy day": "False", "walk": "False"},
+{"name": "VaporFly Next% 2",  "used km": 0,   "race": "True",  "SFD": "False", "LSD": "False", "rainy day": "False", "walk": "False"},
+{"name": "Tempo Next%",       "used km": 125, "race": "True",  "SFD": "True",  "LSD": "False", "rainy day": "False", "walk": "False"}, 
+{"name": "Fly3",              "used km": 298, "race": "True",  "SFD": "True",  "LSD": "False", "rainy day": "False", "walk": "True" }, 
+{"name": "160x",              "used km": 663, "race": "False", "SFD": "True",  "LSD": "True",  "rainy day": "True",  "walk": "True" }, 
+{"name": "Feiying PB",        "used km": 97,  "race": "True",  "SFD": "True",  "LSD": "False", "rainy day": "False", "walk": "False"}, 
+{"name": "Jueying essential", "used km": 56,  "race": "False", "SFD": "False", "LSD": "True",  "rainy day": "False", "walk": "False"}, 
+{"name": "Jingtan",           "used km": 80,  "race": "False", "SFD": "True",  "LSD": "True",  "rainy day": "False", "walk": "False"}, 
+{"name": "Takumi",            "used km": 27,  "race": "False", "SFD": "True",  "LSD": "False", "rainy day": "False", "walk": "True" }, 
+{"name": "Zhanshen",          "used km": 46,  "race": "False", "SFD": "False", "LSD": "True",  "rainy day": "True",  "walk": "True" }, 
+{"name": "K26",               "used km": 735, "race": "False", "SFD": "False", "LSD": "True",  "rainy day": "False", "walk": "True" }, 
+{"name": "K21",               "used km": 551, "race": "False", "SFD": "False", "LSD": "True",  "rainy day": "True",  "walk": "True" }, 
+{"name": "Ultraboost 18",     "used km": 433, "race": "False", "SFD": "False", "LSD": "True",  "rainy day": "False", "walk": "True" }, 
+{"name": "Feiran",            "used km": 163, "race": "Fasle", "SFD": "True",  "LSD": "False", "rainy day": "False", "walk": "True" }, 
+{"name": "Jifeng",            "used km": 39,  "race": "Fasle", "SFD": "False", "LSD": "True",  "rainy day": "False", "walk": "True" }, 
+{"name": "160x 2.0",          "used km": 174, "race": "True",  "SFD": "True",  "LSD": "True",  "rainy day": "False", "walk": "False"}, 
+{"name": "160x Pro",          "used km": 200, "race": "True",  "SFD": "True",  "LSD": "False", "rainy day": "False", "walk": "False"},
+{"name": "Fengxing 10",       "used km": 30,  "race": "False", "SFD": "False", "LSD": "True",  "rainy day": "False", "walk": "True" },
+{"name": "Speedstar",         "used km": 41,  "race": "False", "SFD": "True",  "LSD": "True",  "rainy day": "False", "walk": "False"},
+{"name": "Adizero prime x",   "used km": 22,  "race": "False", "SFD": "True",  "LSD": "False", "rainy day": "False", "walk": "False"},
+{"name": "Biaosu",            "used km": 46,  "race": "False", "SFD": "True",  "LSD": "True",  "rainy day": "False", "walk": "False"},
+{"name": "Metaspeed sky",     "used km": 0,   "race": "True",  "SFD": "True",  "LSD": "False", "rainy day": "False", "walk": "False"},
+{"name": "C202GT",            "used km": 0,   "race": "False", "SFD": "True",  "LSD": "True",  "rainy day": "False", "walk": "False"},
+{"name": "Altra 4.0",         "used km": 0,   "race": "False", "SFD": "False", "LSD": "True",  "rainy day": "True",  "walk": "True" },
+{"name": "New one",           "used km": 0,   "race": "False", "SFD": "False", "LSD": "False", "rainy day": "False", "walk": "False"}]
 
 
 new_shoe = { "name" : "xxx", "used km" : 0, "race" : "False", "SFD" : "False",  "LSD" : "False", "rainy day" : "False", "walk" : "False"}
@@ -77,10 +77,8 @@ def by_rainy_lsd():
     return flt(by_rainy(), "LSD")
 
 def rslt(lis,a):
-    if a == "used km":
-        return sorted(lis, key = lambda i: (i[a]), reverse = True)
-    else:
-        return sorted(lis, key = lambda i: (i[a]))
+    return sorted(lis, key = lambda i: (i[a]), reverse = True)
+
 
 def flt(lis,k):
     return filter(lambda x:x[k] == "True", lis)
